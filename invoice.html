@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+      strong {
+        font-weight: 600;
+        opacity: 100% !important;
+      }
+    </style>
+  </head>
+  <body
+    style="font-family: inter; background-color: #f8f8f8; margin: 0; padding: 0"
+  >
+    <div
+      style="
+        max-width: 595px;
+        margin: 20px auto;
+        background-color: #016feb;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+      "
+    >
+      <div
+        style="
+          color: white;
+          font-size: 8px;
+          padding: 25px 25px 33px 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div>
+          <strong style="font-size: 10px">Customer Name</strong>
+          <div
+            style="
+              padding: 8px 0 0 0;
+              opacity: 90%;
+              margin-bottom: 0;
+              gap: 2px;
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            <span>Business Name (optional)</span>
+            <span>VAT (optional)</span>
+            <span>Street information, number</span>
+            <span>Postal code, City</span>
+            <span>Country</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 32px; align-items: end">
+          <div style="gap: 2px; display: flex; flex-direction: column">
+            <div>
+              <strong>Invoice:</strong>
+              <span style="opacity: 90%">202404-16301-1</span>
+            </div>
+            <div>
+              <strong>Invoice Date:</strong>
+              <span style="opacity: 90%">April 04, 2024</span>
+            </div>
+            <div>
+              <strong>Expiry Date:</strong>
+              <span style="opacity: 90%">April 04, 2024</span>
+            </div>
+            <div>
+              <strong>Delivery Date:</strong>
+              <span style="opacity: 90%">April, 2024</span>
+            </div>
+          </div>
+
+          <div
+            style="
+              padding: 0 25px 0 0;
+              gap: 2px;
+              display: flex;
+              flex-direction: column;
+              font-weight: 400;
+            "
+          >
+            <a href="https://www.visitfootball.com/">
+              <img
+                src="/static/logo-white.svg"
+                width="115.4"
+                height="29"
+                alt="logo"
+                style="padding-bottom: 9px"
+              />
+            </a>
+            <span style="opacity: 90%">CityTravel Group B.V.</span>
+            <span style="opacity: 90%">Bernadottelaan 13</span>
+            <span style="opacity: 90%">3527GA, Utrecht</span>
+            <span style="opacity: 90%">The Netherlands</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          min-height: 510px;
+          margin: auto;
+          background-color: white;
+          border-radius: 12px;
+          border: 0.5px solid #d7dae0;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 1fr auto;
+            gap: 1px;
+            font-size: 8px;
+            color: #19213d;
+            background-color: #eff6ff;
+            padding: 12px 30px;
+            border-radius: 12px 12px 0 0;
+            text-align: start;
+            align-items: center;
+          "
+        >
+          <span style="font-weight: 500">Description</span>
+          <span style="font-weight: 500; text-align: center">Quantity</span>
+          <span style="font-weight: 500; text-align: center"
+            >Price per person</span
+          >
+          <span style="font-weight: 500">Total</span>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 1fr auto;
+            gap: 1px;
+            font-size: 10px;
+            background-color: white;
+            padding: 18px 30px;
+            text-align: start;
+            border-bottom: 0.5px solid #d7dae0;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 2px;
+              color: #5e6470;
+            "
+          >
+            <strong style="color: #1a1c21">Ticket</strong>
+            <strong>Bayern München vs Arsenal</strong>
+            <span>Category 2</span>
+            <span>Wednesday 17 April at 06:55</span>
+          </div>
+          <div style="color: #5d6481; text-align: center">4</div>
+          <div style="color: #5d6481; text-align: center">€ 795</div>
+          <strong style="color: #19213d">€ 1590</strong>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 1fr auto;
+            gap: 1px;
+            font-size: 10px;
+            background-color: white;
+            padding: 18px 30px;
+            text-align: start;
+            border-bottom: 0.5px solid #d7dae0;
+            align-items: center;
+          "
+        >
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <strong style="color: #1a1c21">Trip</strong>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                color: #5e6470;
+              "
+            >
+              <strong>Outgoing flight</strong>
+              <span>Manchester - Munich</span>
+              <span>Wednesday 17 April at 06:55</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                color: #5e6470;
+              "
+            >
+              <strong>Return flight</strong>
+              <span>Munich - Manchester</span>
+              <span>Thursday 18 April at 21:55</span>
+            </div>
+          </div>
+          <div style="color: #5d6481; text-align: center">4</div>
+          <div style="color: #5d6481; text-align: center">€ 475</div>
+          <strong style="color: #19213d">€ 1900</strong>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 2fr 0.5fr 1fr auto;
+            gap: 1px;
+            font-size: 10px;
+            background-color: white;
+            padding: 18px 30px;
+            text-align: start;
+            border-bottom: 0.5px solid #d7dae0;
+            align-items: center;
+          "
+        >
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <strong style="color: #1a1c21">Hotel*</strong>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                color: #5e6470;
+              "
+            >
+              <strong>Schiller 5 Hotel (4✩)</strong>
+              <span>1 Room - 1 Single bed</span>
+              <span>4 Nights </span>
+            </div>
+          </div>
+          <div style="color: #5d6481; text-align: center">4</div>
+          <div style="color: #5d6481; text-align: center">€ 50</div>
+          <strong style="color: #19213d">€ 250</strong>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 2fr 0.4fr auto;
+            gap: 1px;
+            font-size: 10px;
+            padding: 18px 30px;
+            text-align: start;
+            align-items: center;
+          "
+        >
+          <div style="font-size: 8px; color: #5e6470; max-width: 251px">
+            * Breakfast is not included in the price of the hotel. Additional
+            cost for the breakfast is €20.00 per person for the complete stay.
+          </div>
+          <div>
+            <strong style="color: 19213D">Total due</strong>
+          </div>
+          <strong style="color: #016feb; font-size: 20px">€ 1672</strong>
+        </div>
+      </div>
+      <div style="color: white; padding: 20px; border-radius: 0 0 8px 8px">
+        <p>Terms & Conditions</p>
+        <ul style="padding-left: 20px">
+          <li>
+            We request that you transfer the amount €1672 no later than 11 April
+            2024 to the account number NL47 BUNQ 2036 1466 86 in the name of
+            CityTravel Group B.V. stating the invoice number 202404-16301-1.
+          </li>
+          <li>
+            The "special arrangement for travel agencies" applies to this
+            invoice, so no VAT is stated.
+          </li>
+        </ul>
+        <p style="margin-top: 10px">
+          CoC: 74415670 | VAT: NL859888216B01 | IBAN: NL47 BUNQ 2036146686
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

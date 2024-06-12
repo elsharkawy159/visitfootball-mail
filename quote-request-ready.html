@@ -30,6 +30,9 @@
         .footer p {
           margin-left: -8px;
         }
+        .wrap {
+          flex-wrap: wrap;
+        }
       }
     </style>
   </head>
@@ -172,7 +175,13 @@
             font-size: 18px;
           "
         >
-          <p style="margin: 0">Hi Paul 👋,</p>
+         <div style="
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            line-height: 26px;
+            "
+            > <p style="margin: 0">Hi Paul 👋,</p>
           <p style="margin: 0">
             Please find attached as PDF your tailored travel package for your
             quote request
@@ -185,7 +194,7 @@
           <p style="margin: 0">
             You’re not booking a package deal but three separate elements. It’s
             also possible to book components individually.
-          </p>
+          </p></div>
           <div
             style="
               padding: 20px;
@@ -207,6 +216,7 @@
               "
             >
               <div
+              class="wrap"
                 style="
                   background-color: #f1f3fd;
                   padding: 20px;
@@ -351,6 +361,7 @@
               </div>
             </div>
             <div
+            class="wrap"
               style="
                 background-color: #f1f3fd;
                 padding: 20px;
@@ -387,6 +398,7 @@
               </div>
             </div>
             <div
+            class="wrap"
               style="
                 background-color: #f1f3fd;
                 padding: 20px;
@@ -426,7 +438,7 @@
             </div>
           </div>
           <div style="font-size: 18px; line-height: 26px; color: #4a5566">
-            <p style="margin-bottom: 24px">
+            <p style="margin: 0 0 24px 0">
               <span style="font-weight: 700">Note:</span> An invoice will be
               generated upon agreement, constituting a binding purchase
               agreement.
@@ -435,91 +447,95 @@
               >
               Inquire for details. By agreeing to this quote, you also accept
               our terms and conditions, which you can find
-              <a href="https://www.visitfootball.com/terms-conditions" target="_blank" style="color: #0052e2">here</a>.
+              <a
+                href="https://www.visitfootball.com/terms-conditions"
+                target="_blank"
+                style="color: #0052e2"
+                >here</a
+              >.
             </p>
             <p style="margin: 0px">
-You're responsible for staying updated on entry restrictions for your chosen country and stadium. Find the latest travel advisories <a href="https://www.netherlandsworldwide.nl/" target="_blank" style="color: #0052e2">here</a>. We're happy to provide additional information via phone or email. Remember, a passport is mandatory for trips to the UK.
+              You're responsible for staying updated on entry restrictions for
+              your chosen country and stadium. Find the latest travel
+              advisories <a
+                href="https://www.netherlandsworldwide.nl/"
+                target="_blank"
+                style="color: #0052e2"
+                >here</a
+              >. We're happy to provide additional information via phone or
+              email. Remember, a passport is mandatory for trips to the UK.
             </p>
           </div>
-          <div style="text-align: center; margin: 20px 0">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 10px;
+              padding: 22.5px 0;
+            "
+          >
+            <span style="font-size: 18px; line-height: 26px; color: #4a5566"
+              >Ready to book?</span
+            >
+
             <a
-              href="#"
+              href="https://www.visitfootball.com/"
               style="
                 background-color: #016feb;
                 color: white;
-                padding: 15px 36px;
-                border-radius: 8px;
+                padding: 20px 40px;
+                border-radius: 6px;
+                text-align: center;
                 text-decoration: none;
                 font-weight: 700;
-                display: inline-block;
+                margin: 0 auto;
+                font-size: 16px;
               "
               >Claim your quote</a
             >
+            <span style="color: #8492A6; font-size: 16px; line-height: 22px;">Quote valid for 24 hours day. Subject to price changes.</span>
           </div>
-          <p
-            style="
-              font-size: 1.125rem;
-              color: #4a5566;
-              margin-top: 1.5rem;
-              margin-bottom: 0;
-            "
-          >
+        <p style="color: #4a5566; margin: 0px; line-height: 26px; font-size: 18px;">
             Best regards,
             <br />
             Visitfootball Team
           </p>
-          <div
-            style="
-              font-size: 0.875rem;
-              border-top: 1px solid #ededf2;
-              padding: 17px 0;
-              color: #8492a6;
-              margin-top: 50px;
-              text-align: center;
-            "
-          >
-            <p style="margin-bottom: 7">
-              If you have any questions please refer to our link
-              <a
-                href="https://voetbaltrips.com/faqs"
-                style="color: #016feb; text-decoration: none"
-                >voetbaltrips.com/faqs</a
-              >
-            </p>
-            <p style="margin-bottom: 7">
-              You can also reply to this email or contact us at
-              <a
-                href="mailto:info@voetbaltrips.com"
-                style="color: #016feb; text-decoration: none"
-                >info@voetbaltrips.com</a
-              >
-            </p>
-            <p style="margin-bottom: 0">
-              © 2024 Voetbaltrips. All rights reserved
-            </p>
-          </div>
+        </div>
+        <div
+          class="footer"
+          style="
+            font-size: 12px;
+            line-height: 16px;
+            border-top: 1px solid #ededf2;
+            padding: 17px 0;
+            color: #8492a6;
+          "
+        >
+          <p style="margin-bottom: 7">
+            If you have any questions please refer to our link
+            <a
+              href="https://voetbaltrips.com/faqs"
+              style="color: #016feb; text-decoration: none"
+              >voetbaltrips.com/faqs</a
+            >
+          </p>
+          <p style="margin-bottom: 7">
+            You can also reply to this email or contact us at
+            <a
+              href="mailto:info@voetbaltrips.com"
+              style="color: #016feb; text-decoration: none"
+              >info@voetbaltrips.com</a
+            >
+          </p>
+          <p style="margin-bottom: 0">
+            © 2024 Voetbaltrips. All rights reserved
+          </p>
+        </div>
         </div>
       </div>
     </div>
 
-    <style>
-      @media screen and (max-width: 600px) {
-        nav {
-          display: none !important;
-        }
-        .container {
-          padding: 20px;
-        }
-        .logo {
-          margin-bottom: 30px;
-        }
-        .footer {
-          margin-top: 30px;
-        }
-        .footer p {
-          margin-left: -8px;
-        }
-      }
-    </style>
+    
   </body>
 </html>

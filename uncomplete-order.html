@@ -4,6 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uncompleted Order Email</title>
+    <style>
+      .container {
+        padding: 0px 60px;
+      }
+      .logo {
+        margin-bottom: 26px;
+        padding-top: 40px;
+      }
+      .footer {
+        margin-top: 50px;
+        padding-bottom: 67px !important;
+      }
+      .testimonial {
+        padding: 50px 60px;
+      }
+      .testimonial p:first-of-type {
+        font-size: 32px;
+      }
+      .recommended {
+        padding: 12px 32px 12px 12px;
+      }
+      @media screen and (max-width: 600px) {
+        nav {
+          display: none !important;
+        }
+        .container {
+          padding: 20px;
+        }
+        .logo {
+          margin-bottom: 6px;
+          padding-top: 0;
+        }
+        .footer {
+          margin-top: 30px;
+          padding-bottom: 37px !important;
+        }
+        .footer p {
+          margin-left: -8px;
+        }
+        .testimonial {
+          padding: 20px;
+        }
+        .testimonial p:first-of-type {
+          font-size: 26px;
+        }
+        .testimonial .content {
+          flex-wrap: wrap;
+        }
+        .testimonial .content .placeholder {
+          max-height: 145px;
+        }
+        .recommended {
+          padding: 12px;
+        }
+        .recommended a {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
 
   <body
@@ -127,31 +186,14 @@
         >
       </nav>
     </div>
-    <div
-      style="
-        border: 1px solid #d1d5db;
-        border-radius: 8px;
-        margin: 40px auto;
-        padding: 40px 60px;
-        max-width: 680px;
-        background-color: white;
-      "
-    >
-      <a
-        href="https://www.visitfootball.com/"
-        style="display: block; margin-bottom: 50px"
-      >
-        <img src="./static/logo.svg" alt="logo" width="137" height="34" />
-      </a>
+    <div style="max-width: 680px; background-color: white; margin: 0 auto">
       <div
-        style="
-          display: flex;
-          flex-direction: column;
-          gap: 24px;
-          margin-top: 50px;
-          color: #4a5566;
-        "
+        class="container"
+        style="display: flex; flex-direction: column; gap: 24px; color: #4a5566"
       >
+        <a href="https://www.visitfootball.com/" class="logo">
+          <img src="./static/logo.svg" alt="logo" width="137" height="34" />
+        </a>
         <p style="font-size: 1.125rem; margin: 0">Hi Paul 👋,</p>
         <p style="font-size: 1.125rem; margin: 0">
           We noticed that you started an order but didn't complete it 😔.
@@ -163,6 +205,7 @@
         <div
           style="
             display: flex;
+            gap: 30px;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
@@ -189,7 +232,7 @@
             </div>
           </div>
           <div style="display: flex; gap: 11.8px">
-            <a href="tel:+1234567890">
+            <a href="https://api.whatsapp.com/send?phone=31303690059">
               <img
                 src="./static/phone-blue-icon.svg"
                 width="42"
@@ -197,7 +240,7 @@
                 alt="phone"
               />
             </a>
-            <a href="https://wa.me/1234567890">
+            <a href="https://api.whatsapp.com/send?phone=31303690059">
               <img
                 src="./static/whatsapp-blue-icon.svg"
                 width="42"
@@ -250,10 +293,10 @@
           </p>
         </div>
       </div>
-      <div style="background-color: #eff6ff; padding: 50px 60px">
+      <!-- testimonial -->
+      <div style="background-color: #eff6ff" class="testimonial">
         <p
           style="
-            font-size: 2rem;
             line-height: 2.375rem;
             font-weight: 700;
             color: #016feb;
@@ -263,7 +306,7 @@
           We already made dreams .. <br />
           come true
         </p>
-        <div style="display: flex; gap: 30px">
+        <div class="content" style="display: flex; gap: 30px">
           <div
             style="
               background-color: white;
@@ -353,21 +396,35 @@
               Beek gemeente Montferland
             </p>
           </div>
-          <img
-            src="./static/testimonial-placeholder.jpg"
-            alt="review"
-            style="border-radius: 8px; width: 100%"
-          />
+          <div
+            class="placeholder"
+            style="
+              width: 100%;
+              border-radius: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="./static/testimonial-placeholder.jpg"
+              alt="review"
+              style="width: 100%"
+            />
+          </div>
         </div>
         <div
+          class="recommended"
           style="
             display: flex;
             justify-content: space-between;
             background-color: white;
-            padding: 12px 32px 12px 12px;
             border-radius: 8px;
             align-items: center;
             margin-top: 30px;
+            flex-wrap: wrap;
+            gap: 22px;
           "
         >
           <div style="display: flex; align-items: center; gap: 8px">
@@ -397,9 +454,9 @@
                 >9.3</span
               >
             </div>
-            <div>
-              <p style="margin: 0; color: #4a5566">Recommended by</p>
-              <p style="font-weight: 600; font-size: 1.75rem; margin: 0">99%</p>
+            <div style="color: #1f2937">
+              <p style="margin: 0; font-size: 16px">Recommended by</p>
+              <p style="font-weight: 600; font-size: 28px; margin: 0">99%</p>
             </div>
           </div>
           <a
@@ -410,6 +467,7 @@
               border-radius: 8px;
               display: flex;
               align-items: center;
+              justify-content: center;
               text-align: center;
               text-decoration: none;
             "
@@ -432,44 +490,48 @@
           </a>
         </div>
       </div>
-      <p
-        style="
-          font-size: 1.125rem;
-          color: #4a5566;
-          margin-top: 1.5rem;
-          margin-bottom: 0;
-        "
-      >
-        Best regards,
-        <br />
-        Visitfootball Team
-      </p>
-      <div
-        style="
-          font-size: 0.875rem;
-          border-top: 1px solid #ededf2;
-          padding: 17px 0;
-          color: #8492a6;
-          margin-top: 50px;
-        "
-      >
-        <p style="margin-bottom: 7">
-          If you have any questions please refer to our link
-          <a
-            href="https://voetbaltrips.com/faqs"
-            style="color: #016feb; text-decoration: none"
-            >voetbaltrips.com/faqs</a
-          >
+      <div class="container">
+        <p
+          style="
+            font-size: 1.125rem;
+            color: #4a5566;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+          "
+        >
+          Best regards,
+          <br />
+          Visitfootball Team
         </p>
-        <p style="margin-bottom: 7">
-          You can also reply to this email or contact us at
-          <a
-            href="mailto:info@voetbaltrips.com"
-            style="color: #016feb; text-decoration: none"
-            >info@voetbaltrips.com</a
-          >
-        </p>
-        <p style="margin: 0">© 2024 Voetbaltrips. All rights reserved</p>
+        <div
+          class="footer"
+          style="
+            font-size: 0.875rem;
+            border-top: 1px solid #ededf2;
+            padding: 17px 0;
+            color: #8492a6;
+          "
+        >
+          <p style="margin-bottom: 7">
+            If you have any questions please refer to our link
+            <a
+              href="https://voetbaltrips.com/faqs"
+              style="color: #016feb; text-decoration: none"
+              >voetbaltrips.com/faqs</a
+            >
+          </p>
+          <p style="margin-bottom: 7">
+            You can also reply to this email or contact us at
+            <a
+              href="mailto:info@voetbaltrips.com"
+              style="color: #016feb; text-decoration: none"
+              >info@voetbaltrips.com</a
+            >
+          </p>
+          <p style="margin-bottom: 0">
+            © 2024 Voetbaltrips. All rights reserved
+          </p>
+        </div>
       </div>
     </div>
   </body>

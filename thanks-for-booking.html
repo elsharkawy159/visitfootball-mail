@@ -4,37 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thanks for Booking Email</title>
-    <style>
-      .container {
-        padding: 40px 60px;
-      }
-      .logo {
-        margin-bottom: 50px;
-      }
-      .footer {
-        margin-top: 50px;
-      }
-      @media screen and (max-width: 600px) {
-        nav {
-          display: none !important;
-        }
-        .container {
-          padding: 20px;
-        }
-        .logo {
-          margin-bottom: 30px;
-        }
-        .footer {
-          margin-top: 30px;
-        }
-        .footer p {
-          margin-left: -8px;
-        }
-        .faq {
-          flex-wrap: wrap;
-        }
-      }
-    </style>
   </head>
 
   <body
@@ -47,7 +16,6 @@
   >
     <!-- Navbar -->
     <div
-      class="navbar"
       style="
         background-color: #f8f8f8;
         padding: 10px 20px;
@@ -159,31 +127,26 @@
         >
       </nav>
     </div>
-    <div style="max-width: 680px; background-color: white; margin: 0 auto">
-      <div class="container">
+    <div style="max-width: 640px; background-color: white; margin: 0 auto">
+      <div style="padding: 30px 20px">
         <a
           href="https://www.visitfootball.com/"
-          style="display: block"
-          class="logo"
+          style="display: block; margin-bottom: 50px"
         >
           <img src="./static/logo.svg" alt="logo" width="137" height="34" />
         </a>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            color: #4a5566;
-          "
-        >
-          <p style="font-size: 1.125rem; margin: 0">Hi Paul 👋,</p>
+        <div style="display: table; width: 100%; color: #4a5566">
           <p style="font-size: 1.125rem; margin: 0">
+            Hi Paul 👋,
+            <br />
+            <br />
             Thank you for booking №:
-            <span style="color: #016feb; font-weight: 600">34341!</span> You'll
-            get travel docs by email a week before your trip, and ticket details
-            will come no later than 5 days before the match.
-          </p>
-          <p style="font-size: 1.125rem; margin: 0">
+            <span style="color: #016feb; font-weight: 600">34341!</span>
+            You'll get travel docs by email a week before your trip, and ticket
+            details will come no later than 5 days before the match.
+
+            <br />
+            <br />
             We would let you know that personal issues like COVID-19 aren't
             covered by our packages, and we invite you to look into external
             travel insurance at
@@ -192,8 +155,8 @@
               style="color: #016feb; text-decoration: underline"
               >www.independer.nl</a
             >.
-          </p>
-          <p style="font-size: 1.125rem; margin: 0">
+            <br />
+            <br />
             You can directly visit our
             <span style="font-weight: 700">FAQ</span> page for frequently asked
             questions:
@@ -204,110 +167,118 @@
               background-color: #f1f3fd;
               padding: 20px;
               border-radius: 8px;
-              display: flex;
-              gap: 20px;
-              justify-content: space-between;
+              display: table;
+              width: -webkit-fill-available;
+              margin: 24px 0;
             "
-            class="faq"
           >
-            <div style="display: flex; align-items: center">
-              <img
-                src="./static/logo-sm.svg"
-                alt="visitfootball.com logo"
-                width="28"
-                height="34"
-                style="margin-right: 16px"
-              />
-              <div style="display: flex; flex-direction: column">
-                <p
-                  style="
-                    color: #4a5566;
-                    font-size: 0.875rem;
-                    margin: 0;
-                    font-weight: 500;
-                  "
-                >
-                  visitfootball.com
-                </p>
-                <a
-                  href="https://www.voetbaltrips.com/faqs"
-                  style="
-                    color: #016feb;
-                    font-weight: 700;
-                    font-size: 1rem;
-                    text-decoration: none;
-                  "
-                  >FAQ</a
-                >
-              </div>
-            </div>
-            <a
-              href="https://www.voetbaltrips.com/faqs"
-              style="
-                background-color: white;
-                padding: 10px 16px;
-                border-radius: 8px;
-                border: 1px solid #dbeafe;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                text-decoration: none;
-              "
-            >
-              <span
+            <img
+              src="./static/logo-sm.svg"
+              alt="visitfootball.com logo"
+              width="28"
+              height="34"
+            />
+            <div style="display: table-cell; vertical-align: middle">
+              <p
                 style="
-                  color: #016feb;
+                  color: #4a5566;
                   font-size: 0.875rem;
-                  font-weight: 700;
                   margin: 0;
+                  font-weight: 500;
+                  text-decoration: none;
                 "
               >
-                Go to the page
-              </span>
-              <div>
+                visitfootball.com
+              </p>
+              <a
+                href="https://www.voetbaltrips.com/faqs"
+                style="
+                  color: #016feb;
+                  font-weight: 700;
+                  font-size: 1rem;
+                  text-decoration: none;
+                "
+                >FAQ</a
+              >
+            </div>
+            <div
+              style="
+                display: table-cell;
+                vertical-align: middle;
+                text-align: right;
+              "
+            >
+              <a
+                href="https://www.voetbaltrips.com/faqs"
+                style="
+                  background-color: white;
+                  padding: 10px 16px;
+                  border-radius: 8px;
+                  border: 1px solid #dbeafe;
+                  text-align: center;
+                  margin-left: 5px;
+                  text-decoration: none;
+                  display: inline-block;
+                "
+              >
+                <span
+                  style="
+                    color: #016feb;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    margin: 0;
+                  "
+                >
+                  Go to the page
+                </span>
+
                 <img
                   src="./static/right-arrow.svg"
                   alt="arrow"
                   style="margin-left: 10px"
                 />
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-          <p style="font-size: 1.125rem; margin: 0">
+          <p style="font-size: 1.125rem; margin: 24px 0">
             You can also contact directly our team, and will be more than
             pleased to help you!
           </p>
           <div
             style="
-              display: flex;
-              gap: 30px;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              align-items: center;
+              display: table;
+              width: -webkit-fill-available;
               border: 1px solid #d1d5db;
               border-radius: 8px;
               padding: 20px;
+              margin: 24px 0;
             "
           >
-            <div style="display: flex; align-items: center">
-              <img
-                src="./static/person.svg"
-                alt="Vincent"
-                width="48"
-                height="48"
-                style="margin-right: 16px"
-              />
-              <div style="display: flex; flex-direction: column">
-                <p style="font-weight: 700; font-size: 1.125rem; margin: 0">
-                  Vincent
-                </p>
-                <p style="color: #4a5566; font-size: 0.875rem; margin: 0">
-                  Manager at VisitFootball
-                </p>
-              </div>
+            <img
+              src="./static/person.svg"
+              alt="Vincent"
+              width="48"
+              height="48"
+            />
+            <div style="display: table-cell; vertical-align: middle">
+              <p style="font-weight: 700; font-size: 1.125rem; margin: 0">
+                Vincent
+              </p>
+              <p style="color: #4a5566; font-size: 0.875rem; margin: 0">
+                Manager at VisitFootball
+              </p>
             </div>
-            <div style="display: flex; gap: 11.8px">
-              <a href="https://api.whatsapp.com/send?phone=31303690059">
+            <div
+              style="
+                display: table-cell;
+                vertical-align: middle;
+                text-align: right;
+              "
+            >
+              <a
+                href="https://api.whatsapp.com/send?phone=31303690059"
+                style="display: inline-block; margin-left: 10px"
+              >
                 <img
                   src="./static/phone-blue-icon.svg"
                   width="42"
@@ -315,7 +286,10 @@
                   alt="phone"
                 />
               </a>
-              <a href="https://api.whatsapp.com/send?phone=31303690059">
+              <a
+                href="https://api.whatsapp.com/send?phone=31303690059"
+                style="display: inline-block; margin-left: 10px"
+              >
                 <img
                   src="./static/whatsapp-blue-icon.svg"
                   width="42"
@@ -323,7 +297,10 @@
                   alt="whatsapp"
                 />
               </a>
-              <a href="mailto:info@visitfootball.com">
+              <a
+                href="mailto:info@visitfootball.com"
+                style="display: inline-block; margin-left: 10px"
+              >
                 <img
                   src="./static/email-blue-icon.svg"
                   width="42"
@@ -333,30 +310,32 @@
               </a>
             </div>
           </div>
-          <p
-            style="
-              color: #4a5566;
-              margin: 0px;
-              line-height: 26px;
-              font-size: 18px;
-            "
-          >
-            Best regards,
-            <br />
-            Visitfootball Team
-          </p>
+          <div style="display: table-row">
+            <p
+              style="
+                color: #4a5566;
+                margin: 0px;
+                line-height: 26px;
+                font-size: 18px;
+              "
+            >
+              Best regards,
+              <br />
+              Visitfootball Team
+            </p>
+          </div>
         </div>
         <div
-          class="footer"
           style="
             font-size: 12px;
             line-height: 16px;
             border-top: 1px solid #ededf2;
             padding: 17px 0;
             color: #8492a6;
+            margin-top: 50px;
           "
         >
-          <p style="margin-bottom: 7px">
+          <p style="margin: 0 0 7px 0">
             If you have any questions please refer to our link
             <a
               href="https://voetbaltrips.com/faqs"
@@ -364,7 +343,7 @@
               >voetbaltrips.com/faqs</a
             >
           </p>
-          <p style="margin-bottom: 7px">
+          <p style="margin: 0 0 7px 0">
             You can also reply to this email or contact us at
             <a
               href="mailto:info@voetbaltrips.com"
@@ -372,9 +351,7 @@
               >info@voetbaltrips.com</a
             >
           </p>
-          <p style="margin-bottom: 0">
-            © 2024 Voetbaltrips. All rights reserved
-          </p>
+          <p style="margin: 0">© 2024 Voetbaltrips. All rights reserved</p>
         </div>
       </div>
     </div>

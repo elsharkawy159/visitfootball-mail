@@ -4,39 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notification Email</title>
-    <style>
-      .container {
-        padding: 40px 60px;
-      }
-      .logo {
-        margin-bottom: 50px;
-      }
-      .footer {
-        margin-top: 50px;
-      }
-      @media screen and (max-width: 600px) {
-        nav {
-          display: none !important;
-        }
-        .container {
-          padding: 20px;
-        }
-        .logo {
-          margin-bottom: 30px;
-        }
-        .footer {
-          margin-top: 30px;
-        }
-        .footer p {
-          margin-left: -8px;
-        }
-        .match a {
-          width: 100%;
-        }
-      }
-    </style>
   </head>
-
   <body
     style="
       font-family: 'Inter', sans-serif;
@@ -158,133 +126,109 @@
         >
       </nav>
     </div>
-    <div style="margin: 0 auto; max-width: 680px; background-color: white">
-      <div class="container">
+
+    <!-- Main Content -->
+    <div style="margin: 0 auto; max-width: 640px; background-color: white">
+      <div style="padding: 30px 20px">
         <a
-          class="logo"
           href="https://www.visitfootball.com/"
-          style="display: block"
+          style="display: block; margin-bottom: 50px"
         >
           <img src="./static/logo.svg" alt="logo" width="137" height="34" />
         </a>
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            color: #4a5566;
-            gap: 24px;
-            font-size: 18px;
-          "
-        >
-          <p style="margin: 0">Hi Paul 👋,</p>
+        <div style="color: #4a5566; font-size: 18px">
           <p style="margin: 0; line-height: 26px">
-            We would like to inform you that the date of the match bellow is
+            Hi Paul 👋,<br /><br />
+            We would like to inform you that the date of the match below is
             <span style="color: #06b14a; font-weight: 700">confirmed</span> for
             <span style="font-weight: 700"
               >Saturday, 21 February, 2024 at 5:05 PM.</span
             >
           </p>
           <div
-            class="match"
             style="
               background-color: #f1f3fd;
               padding: 20px;
               border-radius: 8px;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              flex-wrap: wrap;
-              gap: 18px;
+              margin: 24px 0;
+              display: table;
+              width: -webkit-fill-available;
             "
           >
+            <div>
+              <img
+                src="./static/sevilla-logo.svg"
+                alt="Sevilla FC"
+                width="35"
+                height="50"
+              />
+              <img
+                src="./static/atletco-logo.svg"
+                alt="Atletico Madrid"
+                width="35"
+                height="50"
+                style="margin-left: -10px"
+              />
+            </div>
+            <p
+              style="
+                font-weight: 700;
+                color: #4a5566;
+                margin: 0;
+                font-size: 1rem;
+                display: table-cell;
+                vertical-align: middle;
+              "
+            >
+              Sevilla FC <span style="font-weight: 400">vs</span> Atletico
+              Madrid
+            </p>
             <div
               style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 18px;
-                align-items: center;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: right;
               "
             >
-              <div>
-                <img
-                  src="./static/sevilla-logo.svg"
-                  alt="Sevilla FC"
-                  width="35"
-                  height="50"
-                />
-                <img
-                  src="./static/atletco-logo.svg"
-                  alt="Atletico Madrid"
-                  width="35"
-                  height="50"
-                  style="margin-left: -10px"
-                />
-              </div>
-              <div style="display: flex; flex-direction: column">
-                <p
-                  style="
-                    font-weight: 700;
-                    color: #4a5566;
-                    margin: 0;
-                    font-size: 1rem;
-                  "
-                >
-                  Sevilla FC <span style="font-weight: 400">vs</span> Atletico
-                  Madrid
-                </p>
-              </div>
-            </div>
-            <a
-              href="https://www.voetbaltrips.com/faqs"
-              style="
-                background-color: white;
-                padding: 10px 16px;
-                border-radius: 8px;
-                border: 1px solid #dbeafe;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                text-decoration: none;
-              "
-            >
-              <span
+              <a
+                href="https://www.voetbaltrips.com/faqs"
                 style="
-                  color: #016feb;
-                  font-size: 14px;
-                  font-weight: 700;
-                  margin: 0;
+                  background-color: white;
+                  padding: 10px 16px;
+                  border-radius: 8px;
+                  border: 1px solid #dbeafe;
+                  display: inline-block;
+                  text-decoration: none;
+                  text-align: center;
                 "
               >
-                Book now
-              </span>
-              <div>
+                <span style="color: #016feb; font-size: 14px; font-weight: 700"
+                  >Book now</span
+                >
                 <img
                   src="./static/right-arrow.svg"
                   alt="arrow"
                   style="margin-left: 10px"
                 />
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
-
-          <p style="color: #4a5566; margin: 0px; line-height: 26px">
-            Best regards,
-            <br />
+          <p style="margin: 0; line-height: 26px">
+            Best regards,<br />
             Visitfootball Team
           </p>
         </div>
         <div
-          class="footer"
           style="
             font-size: 12px;
             line-height: 16px;
             border-top: 1px solid #ededf2;
             padding: 17px 0;
             color: #8492a6;
+            margin-top: 50px;
           "
         >
-          <p style="margin-bottom: 7">
+          <p style="margin: 0 0 7px 0">
             If you have any questions please refer to our link
             <a
               href="https://voetbaltrips.com/faqs"
@@ -292,7 +236,7 @@
               >voetbaltrips.com/faqs</a
             >
           </p>
-          <p style="margin-bottom: 7">
+          <p style="margin: 0 0 7px 0">
             You can also reply to this email or contact us at
             <a
               href="mailto:info@voetbaltrips.com"
@@ -300,9 +244,7 @@
               >info@voetbaltrips.com</a
             >
           </p>
-          <p style="margin-bottom: 0">
-            © 2024 Voetbaltrips. All rights reserved
-          </p>
+          <p style="margin: 0">© 2024 Voetbaltrips. All rights reserved</p>
         </div>
       </div>
     </div>

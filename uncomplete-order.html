@@ -4,67 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uncompleted Order Email</title>
-    <style>
-      .container {
-        padding: 0px 60px;
-      }
-      .logo {
-        margin-bottom: 26px;
-        padding-top: 40px;
-      }
-      .footer {
-        margin-top: 50px;
-        padding-bottom: 67px !important;
-      }
-      .testimonial {
-        padding: 50px 60px;
-      }
-      .testimonial p:first-of-type {
-        font-size: 32px;
-      }
-      .recommended {
-        padding: 12px 32px 12px 12px;
-      }
-      @media screen and (max-width: 600px) {
-        nav {
-          display: none !important;
-        }
-        .container {
-          padding: 20px;
-        }
-        .logo {
-          margin-bottom: 6px;
-          padding-top: 0;
-        }
-        .footer {
-          margin-top: 30px;
-          padding-bottom: 37px !important;
-        }
-        .footer p {
-          margin-left: -8px;
-        }
-        .testimonial {
-          padding: 20px;
-        }
-        .testimonial p:first-of-type {
-          font-size: 26px;
-        }
-        .testimonial .content {
-          flex-wrap: wrap;
-        }
-        .testimonial .content .placeholder {
-          max-height: 145px;
-        }
-        .recommended {
-          padding: 12px;
-        }
-        .recommended a {
-          width: 100%;
-        }
-      }
-    </style>
   </head>
-
   <body
     style="
       font-family: 'Inter', sans-serif;
@@ -186,61 +126,62 @@
         >
       </nav>
     </div>
-    <div style="max-width: 680px; background-color: white; margin: 0 auto">
-      <div
-        class="container"
-        style="
-          display: flex;
-          flex-direction: column;
-          gap: 24px;
-          color: #4a5566;
-          font-size: 18px;
-        "
-      >
-        <a href="https://www.visitfootball.com/" class="logo">
+    <div
+      style="
+        max-width: 650px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 30px 0;
+      "
+    >
+      <div style="padding: 0 30px">
+        <a
+          href="https://www.visitfootball.com/"
+          style="display: block; margin-bottom: 50px"
+        >
           <img src="./static/logo.svg" alt="logo" width="137" height="34" />
         </a>
-        <p style="margin: 0; line-height: 26px">Hi Paul 👋,</p>
-        <p style="margin: 0; line-height: 26px">
+        <p style="line-height: 26px; font-size: 18px; color: #4a5566">
+          Hi Paul 👋,
+          <br />
+          <br />
           We noticed that you started an order but didn't complete it 😔.
-        </p>
-        <p style="margin: 0; line-height: 26px">
+          <br />
+          <br />
           If you have questions, we invite you to talk to our team. We are more
           than pleased to help you directly!
         </p>
+
         <div
           style="
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
+            display: table;
+            width: -webkit-fill-available;
             border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 20px;
+            margin: 24px 0;
           "
         >
-          <div style="display: flex; align-items: center">
-            <img
-              src="./static/person.svg"
-              alt="Vincent"
-              width="48"
-              height="48"
-              style="margin-right: 16px"
-            />
-            <div
-              style="display: flex; flex-direction: column; line-height: 26px"
-            >
-              <p style="font-weight: 700; font-size: 16px; margin: 0">
-                Vincent
-              </p>
-              <p style="color: #4a5566; font-size: 16px; margin: 0">
-                Manager at VisitFootball
-              </p>
-            </div>
+          <img src="./static/person.svg" alt="Vincent" width="48" height="48" />
+          <div style="display: table-cell; vertical-align: middle">
+            <p style="font-weight: 700; font-size: 1.125rem; margin: 0">
+              Vincent
+            </p>
+            <p style="color: #4a5566; font-size: 0.875rem; margin: 0">
+              Manager at VisitFootball
+            </p>
           </div>
-          <div style="display: flex; gap: 11.8px">
-            <a href="https://api.whatsapp.com/send?phone=31303690059">
+          <div
+            style="
+              display: table-cell;
+              vertical-align: middle;
+              text-align: right;
+            "
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=31303690059"
+              style="display: inline-block; margin-left: 10px"
+            >
               <img
                 src="./static/phone-blue-icon.svg"
                 width="42"
@@ -248,7 +189,10 @@
                 alt="phone"
               />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=31303690059">
+            <a
+              href="https://api.whatsapp.com/send?phone=31303690059"
+              style="display: inline-block; margin-left: 10px"
+            >
               <img
                 src="./static/whatsapp-blue-icon.svg"
                 width="42"
@@ -256,7 +200,10 @@
                 alt="whatsapp"
               />
             </a>
-            <a href="mailto:info@visitfootball.com">
+            <a
+              href="mailto:info@visitfootball.com"
+              style="display: inline-block; margin-left: 10px"
+            >
               <img
                 src="./static/email-blue-icon.svg"
                 width="42"
@@ -266,14 +213,8 @@
             </a>
           </div>
         </div>
-        <div
-          style="
-            padding: 20px 0 44px 0;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-          "
-        >
+
+        <div style="text-align: center; padding: 44px 0">
           <a
             href="https://www.visitfootball.com/"
             style="
@@ -281,48 +222,48 @@
               color: white;
               padding: 20px 40px;
               border-radius: 4px;
-              text-align: center;
               text-decoration: none;
               font-weight: 700;
-              margin: 0 auto;
             "
             >Complete your order</a
           >
           <p
             style="
-              text-align: center;
               font-size: 16px;
               color: #8492a6;
-              margin: 0;
+              padding: 10px 0 0 0;
               line-height: 24px;
             "
           >
-            Got any questions? Reply directly to this email and we will join you
-            as soon as possible.
+            Got any questions? Reply directly to this email and we <br />
+            will join you as soon as possible.
           </p>
         </div>
       </div>
-      <!-- testimonial -->
-      <div style="background-color: #eff6ff" class="testimonial">
+
+      <div
+        style="background-color: #eff6ff; padding: 30px 30px; display: table"
+      >
         <p
           style="
-            line-height: 32rem;
             font-weight: 700;
             color: #016feb;
             margin: 0 0 30px;
+            font-size: 32px;
             line-height: 38px;
           "
         >
-          We already made dreams .. <br />
-          come true
+          We already made dreams .. <br />come true
         </p>
-        <div class="content" style="display: flex; gap: 30px">
+        <div style="overflow: hidden">
           <div
             style="
+              float: left;
+              width: fit-content;
               background-color: white;
               padding: 20px;
               border-radius: 8px;
-              max-width: 349px;
+              margin: 0 30px 30px 0;
             "
           >
             <p
@@ -335,41 +276,41 @@
             >
               Top ervaring
             </p>
-            <div style="display: flex; align-items: center; margin: 20px 0">
+            <div style="margin: 20px 0">
               <img
                 src="./static/star.svg"
                 alt="stars"
                 width="19"
                 height="19"
-                style="margin-right: 10px"
+                style="margin-right: 9.5px"
               />
               <img
                 src="./static/star.svg"
                 alt="stars"
                 width="19"
                 height="19"
-                style="margin-right: 10px"
+                style="margin-right: 9.5px"
               />
               <img
                 src="./static/star.svg"
                 alt="stars"
                 width="19"
                 height="19"
-                style="margin-right: 10px"
+                style="margin-right: 9.5px"
               />
               <img
                 src="./static/star.svg"
                 alt="stars"
                 width="19"
                 height="19"
-                style="margin-right: 10px"
+                style="margin-right: 9.5px"
               />
               <img
                 src="./static/star.svg"
                 alt="stars"
                 width="19"
                 height="19"
-                style="margin-right: 10px"
+                style="margin-right: 9.5px"
               />
             </div>
             <p
@@ -378,6 +319,7 @@
                 margin: 0;
                 font-size: 16px;
                 line-height: 22px;
+                max-width: 300px;
               "
             >
               De wedstrijd Tottenham - Brighton top ervaren. De plekken in het
@@ -407,14 +349,12 @@
             </p>
           </div>
           <div
-            class="placeholder"
             style="
-              width: 100%;
-              border-radius: 8px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
               overflow: hidden;
+              border-radius: 8px;
+              display: inline-block;
+              width: 200px;
+              margin-bottom: 30px;
             "
           >
             <img
@@ -425,28 +365,24 @@
           </div>
         </div>
         <div
-          class="recommended"
           style="
-            display: flex;
-            justify-content: space-between;
             background-color: white;
+            display: table;
+            width: -webkit-fill-available;
             border-radius: 8px;
-            align-items: center;
-            margin-top: 30px;
-            flex-wrap: wrap;
-            gap: 22px;
+            padding: 20px;
+            overflow: hidden;
           "
         >
-          <div style="display: flex; align-items: center; gap: 8px">
+          <div style="display: table-cell; vertical-align: middle">
             <div
               style="
-                position: relative;
+                float: left;
                 width: 80px;
-                height: 80px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                height: auto;
+                position: relative;
                 font-weight: 700;
+                text-align: center;
               "
             >
               <img
@@ -454,17 +390,13 @@
                 width="57"
                 height="57"
                 alt="rate icon"
+                style="display: block; margin: auto"
               />
-              <span
-                style="
-                  position: absolute;
-                  top: 50%;
-                  transform: translateY(-50%);
-                "
+              <span style="position: absolute; bottom: 35%; left: 0; right: 0"
                 >9.3</span
               >
             </div>
-            <div style="color: #1f2937">
+            <div style="float: left; color: #1f2937; margin-left: 8px">
               <p style="margin: 0; font-size: 16px; line-height: 22px">
                 Recommended by
               </p>
@@ -480,64 +412,66 @@
               </p>
             </div>
           </div>
-          <a
-            href="https://www.kiyoh.com/reviews/1046319/voetbaltrips_com?lang=en"
+          <div
             style="
-              background-color: #016feb;
-              padding: 8px 10px;
-              border-radius: 8px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-              text-decoration: none;
+              display: table-cell;
+              vertical-align: middle;
+              text-align: right;
             "
           >
-            <p
+            <a
+              href="https://www.kiyoh.com/reviews/1046319/voetbaltrips_com?lang=en"
               style="
+                background-color: #016feb;
+                padding: 8px 10px;
+                border-radius: 8px;
+                text-decoration: none;
                 color: white;
-                font-size: 0.875rem;
-                font-weight: 700;
-                margin: 0;
+                display: inline-block;
               "
             >
-              Show all 1258 reviews
-            </p>
-            <div>
+              <p
+                style="
+                  font-size: 0.875rem;
+                  font-weight: 700;
+                  margin: 0;
+                  display: inline;
+                "
+              >
+                Show all 1258 reviews
+              </p>
               <img
                 src="./static/right-arrow-white.svg"
                 alt="arrow"
-                style="margin-left: 4px"
+                style="vertical-align: middle; margin-left: 4px"
               />
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="container">
+
+      <div style="padding: 0 30px">
         <p
           style="
             color: #4a5566;
-            margin: 0px;
+            margin: 24px 0 0 0;
             line-height: 26px;
             font-size: 18px;
-            margin-top: 24px;
           "
         >
-          Best regards,
-          <br />
-          Visitfootball Team
+          Best regards,<br />Visitfootball Team
         </p>
         <div
-          class="footer"
           style="
             font-size: 12px;
             line-height: 16px;
             border-top: 1px solid #ededf2;
             padding: 17px 0;
             color: #8492a6;
+            margin-top: 50px;
           "
         >
-          <p style="margin-bottom: 7">
+          <p style="margin: 0 0 7px 0">
             If you have any questions please refer to our link
             <a
               href="https://voetbaltrips.com/faqs"
@@ -545,7 +479,7 @@
               >voetbaltrips.com/faqs</a
             >
           </p>
-          <p style="margin-bottom: 7">
+          <p style="margin: 0 0 7px 0">
             You can also reply to this email or contact us at
             <a
               href="mailto:info@voetbaltrips.com"
@@ -553,9 +487,7 @@
               >info@voetbaltrips.com</a
             >
           </p>
-          <p style="margin-bottom: 0">
-            © 2024 Voetbaltrips. All rights reserved
-          </p>
+          <p style="margin: 0">© 2024 Voetbaltrips. All rights reserved</p>
         </div>
       </div>
     </div>

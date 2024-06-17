@@ -5,36 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoice Quote</title>
     <style>
-      strong {
-        font-weight: 600;
-        opacity: 100% !important;
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #016feb;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        padding: 0 25px;
       }
-    </style>
-  </head>
-  <body
-    style="
-      font-family: 'Inter', sans-serif;
-      background-color: #016feb;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px;
-      height: 100%;
-    "
-  >
-    <!-- Header -->
-    <div
-      style="
+      .header {
         color: white;
         font-size: 8px;
         padding: 25px 25px 33px 25px;
         display: flex;
         justify-content: space-between;
         align-items: end;
-      "
-    >
+      }
+      .invoice-table {
+        background-color: white;
+        width: 100%;
+        min-height: 510px;
+        height: auto;
+        border-radius: 12px;
+        border: 0.5px solid #d7dae0;
+        flex-grow: 1; /* This allows the table to take up available space */
+        display: flex;
+        flex-direction: column;
+      }
+      .table-header,
+      .table-row {
+        display: grid;
+        grid-template-columns: 2fr 0.5fr 1fr auto;
+        gap: 1px;
+        font-size: 10px;
+        padding: 18px 30px;
+        text-align: start;
+        align-items: center;
+      }
+      .table-header {
+        background-color: #eff6ff;
+        border-radius: 12px 12px 0 0;
+        font-size: 8px;
+        padding: 12px 30px;
+      }
+      .table-row {
+        background-color: white;
+        border-bottom: 0.5px solid #d7dae0;
+      }
+      .total-row {
+        display: grid;
+        grid-template-columns: 2fr 0.4fr auto;
+        gap: 1px;
+        padding: 18px 30px;
+        align-items: center;
+      }
+      .footer {
+        color: white;
+        padding: 30px 16px 16px 16px;
+        border-radius: 0 0 8px 8px;
+        font-size: 10px;
+      }
+      h5 {
+        font-weight: 700;
+        margin: 0 0 4px 0;
+      }
+      ul {
+        padding-left: 15px;
+        margin: 0;
+        line-height: 14px;
+      }
+      strong {
+        font-weight: 600;
+        opacity: 100% !important;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
       <div>
         <strong style="font-size: 10px">Customer Name</strong>
         <div
@@ -224,30 +280,8 @@
     </div>
 
     <!-- Invoice Table -->
-    <div
-      style="
-        background-color: white;
-        width: 100%;
-        min-height: 510px;
-        height: auto;
-        border-radius: 12px;
-        border: 0.5px solid #d7dae0;
-      "
-    >
-      <div
-        style="
-          display: grid;
-          grid-template-columns: 2fr 0.5fr 1fr auto;
-          gap: 1px;
-          font-size: 8px;
-          color: #19213d;
-          background-color: #eff6ff;
-          padding: 12px 30px;
-          border-radius: 12px 12px 0 0;
-          text-align: start;
-          align-items: center;
-        "
-      >
+    <div class="invoice-table">
+      <div class="table-header">
         <span style="font-weight: 500">Description</span>
         <span style="font-weight: 500; text-align: center">Quantity</span>
         <span style="font-weight: 500; text-align: center"
@@ -255,19 +289,7 @@
         >
         <span style="font-weight: 500">Total</span>
       </div>
-      <div
-        style="
-          display: grid;
-          grid-template-columns: 2fr 0.5fr 1fr auto;
-          gap: 1px;
-          font-size: 10px;
-          background-color: white;
-          padding: 18px 30px;
-          text-align: start;
-          border-bottom: 0.5px solid #d7dae0;
-          align-items: center;
-        "
-      >
+      <div class="table-row">
         <div
           style="
             display: flex;
@@ -285,19 +307,7 @@
         <div style="color: #5d6481; text-align: center">€ 795</div>
         <strong style="color: #19213d">€ 1590</strong>
       </div>
-      <div
-        style="
-          display: grid;
-          grid-template-columns: 2fr 0.5fr 1fr auto;
-          gap: 1px;
-          font-size: 10px;
-          background-color: white;
-          padding: 18px 30px;
-          text-align: start;
-          border-bottom: 0.5px solid #d7dae0;
-          align-items: center;
-        "
-      >
+      <div class="table-row">
         <div style="display: flex; flex-direction: column; gap: 10px">
           <strong style="color: #1a1c21">Trip</strong>
           <div
@@ -329,19 +339,7 @@
         <div style="color: #5d6481; text-align: center">€ 475</div>
         <strong style="color: #19213d">€ 1900</strong>
       </div>
-      <div
-        style="
-          display: grid;
-          grid-template-columns: 2fr 0.5fr 1fr auto;
-          gap: 1px;
-          font-size: 10px;
-          background-color: white;
-          padding: 18px 30px;
-          text-align: start;
-          border-bottom: 0.5px solid #d7dae0;
-          align-items: center;
-        "
-      >
+      <div class="table-row">
         <div style="display: flex; flex-direction: column; gap: 10px">
           <strong style="color: #1a1c21">Hotel*</strong>
           <div
@@ -361,17 +359,7 @@
         <div style="color: #5d6481; text-align: center">€ 50</div>
         <strong style="color: #19213d">€ 250</strong>
       </div>
-      <div
-        style="
-          display: grid;
-          grid-template-columns: 2fr 0.4fr auto;
-          gap: 1px;
-          font-size: 10px;
-          padding: 18px 30px;
-          text-align: start;
-          align-items: center;
-        "
-      >
+      <div class="total-row">
         <div style="font-size: 8px; color: #5e6470; max-width: 251px">
           * Breakfast is not included in the price of the hotel. Additional cost
           for the breakfast is €20.00 per person for the complete stay.
@@ -384,16 +372,9 @@
     </div>
 
     <!-- Invoice Footer -->
-    <div
-      style="
-        color: white;
-        padding: 30px 16px 16px 16px;
-        border-radius: 0 0 8px 8px;
-        font-size: 10px;
-      "
-    >
-      <h5 style="font-weight: 700; margin: 0 0 4px 0">Terms & Conditions</h5>
-      <ul style="padding-left: 15px; margin: 0; line-height: 14px">
+    <div class="footer">
+      <h5>Terms & Conditions</h5>
+      <ul>
         <li>
           We request that you transfer the amount
           <span style="font-weight: 700">€1672</span> no later than
@@ -409,14 +390,7 @@
           so no VAT is stated.
         </li>
       </ul>
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 30px 15px 0 0;
-        "
-      >
+      <div class="flex" style="padding-top: 30px">
         <span>CoC: <strong>74415670</strong></span>
         <span>VAT: <strong>NL859888216B01</strong></span>
         <span>IBAN: <strong>NL47 BUNQ 2036146686</strong></span>

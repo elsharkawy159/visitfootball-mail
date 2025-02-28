@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Football Trip - Quote & Details</title>
+    <title>Football Trip - Table of Contents</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .bg-image {
-        background-image: url("./images/1-bg.png");
+      .bg-people {
+        background-image: url("./images/people-bg.png");
         background-size: cover;
-        background-position: center;
-        z-index: 1000;
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
       }
 
-      .football-overlay {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 60%;
-        height: 60%;
-        background-image: url("./images/logo-white.png");
-        background-size: contain;
+      .blue-overlay {
+        background-image: url("./images/2-blue-overlay.png");
+        background-size: cover;
+        background-position: bottom;
+        background-size: 100%;
         background-repeat: no-repeat;
-        background-position: bottom right;
+      }
+
+      .signature {
+        max-width: 100px;
       }
     </style>
   </head>
@@ -190,38 +191,104 @@
         >
       </nav>
     </header>
-
     <div
-      class="relative mx-auto mt-5 bg-image overflow-hidden w-[595px] h-[842px] mb-5"
+      class="relative w-[595px] h-[842px] mb-5 mx-auto mt-5 bg-people bg-[#016FEB] overflow-hidden"
     >
-      <div class="absolute w-full h-full bg-[#016FEB] opacity-75 z-0"></div>
+      <div class="grid blue-overlay grid-cols-2 h-full">
+        <div class="flex flex-col px-10 pt-8">
+          <div class="mb-6">
+            <img
+              src="./images/logo-white-voetbaltrips.png"
+              alt="Voetbaltrips"
+              width="150"
+            />
+          </div>
 
-      <!-- Top content -->
-      <div class="relative z-10 p-10">
-        <!-- Logo -->
-        <div class="mb-12">
-          <img
-            src="./images/logo-white-voetbaltrips.png"
-            alt="Voetbaltrips"
-            width="200"
-            class="mt-6"
-          />
+          <h2 class="text-[22px] font-bold text-[#00FFA3] mb-8 px-5">
+            Table of content
+          </h2>
+
+          <div class="flex flex-col space-y-3.5 text-xs text-white px-5">
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0"
+                >Why Choose Voetbaltrips?</span
+              >
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">3</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Itinerary</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">4</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Quote</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">5</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Testimonials</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">6</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Contact</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">7</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Main Headings -->
-        <div class="mt-8">
-          <h1 class="text-[22px] text-white font-semibold leading-[26px] mb-4">
-            Your personal <br />football experience
-          </h1>
+        <!-- Right column - Quote text -->
+        <div
+          class="bg-gradient-to-b from-white from-35% to-80% px-[23px] pt-[100px] text-[#016FEB] font-bold text-[10px] w-[248px]"
+        >
+          <div class="flex flex-col h-full">
+            <!-- Quote text -->
+            <div class="mb-8 space-y-2.5">
+              <p>
+                Here is the quote for your personalized football trip, specially
+                tailored by Voetbaltrips.
+              </p>
 
-          <h2 class="text-[36px] font-bold text-[#00FFA3] mb-4">
-            Quote & Details
-          </h2>
+              <p>
+                By booking with us, you get more than just a ticket, flight, and
+                hotel - you choose peace of mind and reliability.
+              </p>
+
+              <p>
+                We offer an optimized travel itinerary for a comfortable yet
+                affordable trip, with a match guarantee: if the match is
+                rescheduled, we'll ensure you can still attend.
+              </p>
+
+              <p>
+                Our goal is to take the stress off your shoulders and make your
+                trip absolutely perfect. Do you have any questions? Let us know,
+                we are here for you!
+              </p>
+              <p>Paul Emsbroek - Co-founder</p>
+            </div>
+
+            <!-- Signature -->
+            <div>
+              <p class="text-blue-600 font-semibold mb-2">
+                <img src="./images/2-signature.png" width="70" height="auto" />
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Football overlay graphic -->
-      <div class="football-overlay"></div>
     </div>
   </body>
 </html>

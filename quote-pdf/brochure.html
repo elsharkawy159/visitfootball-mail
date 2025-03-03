@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Trip - Quote & Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .bg-image {
+        background-image: url("./images/1-bg.png");
+        background-size: cover;
+        background-position: center;
+        z-index: 1000;
+      }
+
+      .football-overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60%;
+        height: 60%;
+        background-image: url("./images/logo-white.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+      }
+      .bg-people {
+        background-image: url("./images/people-bg.png");
+        background-size: cover;
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      .blue-overlay {
+        background-image: url("./images/2-blue-overlay.png");
+        background-size: cover;
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      .signature {
+        max-width: 100px;
+      }
+      .bg-stadium {
+        background-image: url("./images/stadium-bg.png");
+        background-size: cover;
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Inter', sans-serif; background-color: gray">
+    <header
+      style="
+        background-color: #f8f8f8;
+        padding: 10px 20px;
+        border-bottom: 1px solid #d1d5db;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <nav
+        style="
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          gap: 16px 0px;
+        "
+      >
+        <a
+          href="thanks-for-booking.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Thanks for booking</a
+        >
+        <a
+          href="uncomplete-order.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Uncomplete order</a
+        >
+        <a
+          href="notification.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Notification signup</a
+        >
+        <a
+          href="thanks-for-quote-request.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Thanks for quote request</a
+        >
+        <a
+          href="quote-request-ready.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Quote request ready</a
+        >
+        <a
+          href="date-confirmation-booked.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Date confirmation booked</a
+        >
+        <a
+          href="date-confirmation-not-booked.html"
+          style="
+            text-decoration: none;
+            color: #016feb;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Date confirmation not booked</a
+        >
+        <a
+          href="invoice.html"
+          style="
+            text-decoration: none;
+            color: #016feb;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Invoice</a
+        >
+        <a
+          href="invoice-quote.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Invoice - Quote</a
+        >
+        <a
+          href="/quote-pdf/brochure.html"
+          style="
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 10px;
+          "
+          >Brochure</a
+        >
+      </nav>
+    </header>
+
+    <!-- 1 -->
+    <div
+      class="relative mx-auto mt-5 bg-image overflow-hidden w-[595px] h-[842px] mb-5"
+    >
+      <div class="absolute w-full h-full bg-[#016FEB] opacity-75 z-0"></div>
+
+      <!-- Top content -->
+      <div class="relative z-10 p-10">
+        <!-- Logo -->
+        <div class="mb-12">
+          <img
+            src="./images/logo-white-voetbaltrips.png"
+            alt="Voetbaltrips"
+            width="200"
+            class="mt-6"
+          />
+        </div>
+
+        <!-- Main Headings -->
+        <div class="mt-8">
+          <h1 class="text-[22px] text-white font-semibold leading-[26px] mb-4">
+            Your personal <br />football experience
+          </h1>
+
+          <h2 class="text-[36px] font-bold text-[#00FFA3] mb-4">
+            Quote & Details
+          </h2>
+        </div>
+      </div>
+
+      <!-- Football overlay graphic -->
+      <div class="football-overlay"></div>
+    </div>
+
+    <!-- 2 -->
+    <div
+      class="relative w-[595px] h-[842px] mb-5 mx-auto mt-5 bg-people bg-[#016FEB] overflow-hidden"
+    >
+      <div class="grid blue-overlay grid-cols-2 h-full">
+        <div class="flex flex-col px-10 pt-8">
+          <div class="mb-6">
+            <img
+              src="./images/logo-white-voetbaltrips.png"
+              alt="Voetbaltrips"
+              width="150"
+            />
+          </div>
+
+          <h2 class="text-[22px] font-bold text-[#00FFA3] mb-8 px-5">
+            Table of content
+          </h2>
+
+          <div class="flex flex-col space-y-3.5 text-xs text-white px-5">
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0"
+                >Why Choose Voetbaltrips?</span
+              >
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">3</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Itinerary</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">4</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Quote</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">5</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Testimonials</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">6</span>
+            </div>
+            <div class="flex justify-between items-end">
+              <span class="font-semibold shrink-0">Contact</span>
+              <div
+                class="w-full h-[1px] bg-white mx-1.5 ml-1 opacity-40 mb-1"
+              ></div>
+              <span class="font-semibold">7</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column - Quote text -->
+        <div
+          class="bg-gradient-to-b from-white from-35% to-80% px-[23px] pt-[100px] text-[#016FEB] font-bold text-[10px] w-[248px]"
+        >
+          <div class="flex flex-col h-full">
+            <!-- Quote text -->
+            <div class="mb-8 space-y-2.5">
+              <p>
+                Here is the quote for your personalized football trip, specially
+                tailored by Voetbaltrips.
+              </p>
+
+              <p>
+                By booking with us, you get more than just a ticket, flight, and
+                hotel - you choose peace of mind and reliability.
+              </p>
+
+              <p>
+                We offer an optimized travel itinerary for a comfortable yet
+                affordable trip, with a match guarantee: if the match is
+                rescheduled, we'll ensure you can still attend.
+              </p>
+
+              <p>
+                Our goal is to take the stress off your shoulders and make your
+                trip absolutely perfect. Do you have any questions? Let us know,
+                we are here for you!
+              </p>
+              <p>Paul Emsbroek - Co-founder</p>
+            </div>
+
+            <!-- Signature -->
+            <div>
+              <p class="text-blue-600 font-semibold mb-2">
+                <img src="./images/2-signature.png" width="70" height="auto" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div
+      class="relative w-[595px] h-[842px] mb-5 mx-auto mt-5 bg-[#016FEB] bg-stadium overflow-hidden z-0"
+    >
+      <div
+        class="bg-gradient-to-t from-[#016FEB] to-transparent absolute w-full h-1/2 z-[-1]"
+      ></div>
+      <div
+        class="bg-[#016FEB] bg-opacity-50 to-transparent absolute w-full h-1/2 z-[-1]"
+      ></div>
+      <!-- Logo section -->
+      <div class="px-6 pt-8">
+        <img
+          src="./images/logo-white-voetbaltrips.png"
+          alt="Voetbaltrips"
+          width="150"
+        />
+      </div>
+
+      <!-- Main heading section -->
+      <div class="px-[50px] mt-8">
+        <h1 class="text-[32px] font-bold leading-[32px] text-white">
+          Why Choose
+        </h1>
+        <h1 class="text-[42px] leading-[50px] font-bold text-white">
+          <span class="text-[#00FFA3]">Voetbaltrips</span>?
+        </h1>
+
+        <p class="text-white py-5 text-[10px] font-bold leading-[12px]">
+          We handle everything, so you can focus on enjoying the game.
+          <br />
+          With guaranteed seats, reliable match tickets, and
+          <span class="text-[#00FFA3]">24/7</span> support, your trip is in safe
+          hands.
+        </p>
+      </div>
+
+      <!-- Benefits cards -->
+      <div class="px-[50px] grid grid-cols-3 gap-2 mb-8">
+        <!-- 24/7 Support Card -->
+        <div class="bg-white rounded-[5px] space-y-2.5 p-3">
+          <div class="flex items-center">
+            <div class="mr-3">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.45703 18.9576C10.6389 18.9576 11.8093 18.7248 12.9012 18.2726C13.9931 17.8203 14.9853 17.1573 15.821 16.3216C16.6567 15.4859 17.3197 14.4937 17.772 13.4018C18.2242 12.3099 18.457 11.1395 18.457 9.95764C18.457 8.77574 18.2242 7.60542 17.7719 6.51349C17.3197 5.42156 16.6567 4.4294 15.821 3.59368C14.9853 2.75795 13.9931 2.09502 12.9012 1.64272C11.8093 1.19043 10.6389 0.95764 9.45703 0.95764C7.07008 0.95764 4.7809 1.90585 3.09307 3.59368C1.40524 5.28151 0.457032 7.57069 0.457033 9.95764C0.457033 12.3446 1.40525 14.6338 3.09307 16.3216C4.7809 18.0094 7.07009 18.9576 9.45703 18.9576ZM9.22503 13.5976L14.225 7.59764L12.689 6.31764L8.38903 11.4766L6.16403 9.25064L4.75003 10.6646L7.75003 13.6646L8.52403 14.4386L9.22503 13.5976Z"
+                  fill="#016FEB"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-[#016FEB] leading-none">
+                24/7
+              </h3>
+              <p class="text-[#016FEB] text-[8px] font-bold">Support</p>
+            </div>
+          </div>
+          <p class="text-[#4B5563] leading-[13px] text-[8px]">
+            You can reach us at any time <br />
+            during your trip
+          </p>
+        </div>
+
+        <!-- Match Card -->
+        <div class="bg-white rounded-[5px] space-y-2.5 p-3">
+          <div class="flex items-center">
+            <div class="mr-3">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.45703 18.9576C10.6389 18.9576 11.8093 18.7248 12.9012 18.2726C13.9931 17.8203 14.9853 17.1573 15.821 16.3216C16.6567 15.4859 17.3197 14.4937 17.772 13.4018C18.2242 12.3099 18.457 11.1395 18.457 9.95764C18.457 8.77574 18.2242 7.60542 17.7719 6.51349C17.3197 5.42156 16.6567 4.4294 15.821 3.59368C14.9853 2.75795 13.9931 2.09502 12.9012 1.64272C11.8093 1.19043 10.6389 0.95764 9.45703 0.95764C7.07008 0.95764 4.7809 1.90585 3.09307 3.59368C1.40524 5.28151 0.457032 7.57069 0.457033 9.95764C0.457033 12.3446 1.40525 14.6338 3.09307 16.3216C4.7809 18.0094 7.07009 18.9576 9.45703 18.9576ZM9.22503 13.5976L14.225 7.59764L12.689 6.31764L8.38903 11.4766L6.16403 9.25064L4.75003 10.6646L7.75003 13.6646L8.52403 14.4386L9.22503 13.5976Z"
+                  fill="#016FEB"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-[#016FEB] leading-none">
+                Match
+              </h3>
+              <p class="text-[#016FEB] text-[8px] font-bold">Secured</p>
+            </div>
+          </div>
+          <p class="text-[#4B5563] leading-[13px] text-[8px]">
+            Attend the match under all circumstances
+          </p>
+        </div>
+        <!-- Seats Card -->
+        <div class="bg-white rounded-[5px] space-y-2.5 p-3">
+          <div class="flex items-center">
+            <div class="mr-3">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.45703 18.9576C10.6389 18.9576 11.8093 18.7248 12.9012 18.2726C13.9931 17.8203 14.9853 17.1573 15.821 16.3216C16.6567 15.4859 17.3197 14.4937 17.772 13.4018C18.2242 12.3099 18.457 11.1395 18.457 9.95764C18.457 8.77574 18.2242 7.60542 17.7719 6.51349C17.3197 5.42156 16.6567 4.4294 15.821 3.59368C14.9853 2.75795 13.9931 2.09502 12.9012 1.64272C11.8093 1.19043 10.6389 0.95764 9.45703 0.95764C7.07008 0.95764 4.7809 1.90585 3.09307 3.59368C1.40524 5.28151 0.457032 7.57069 0.457033 9.95764C0.457033 12.3446 1.40525 14.6338 3.09307 16.3216C4.7809 18.0094 7.07009 18.9576 9.45703 18.9576ZM9.22503 13.5976L14.225 7.59764L12.689 6.31764L8.38903 11.4766L6.16403 9.25064L4.75003 10.6646L7.75003 13.6646L8.52403 14.4386L9.22503 13.5976Z"
+                  fill="#016FEB"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-sm text-[#016FEB] leading-none">
+                Seats
+              </h3>
+              <p class="text-[#016FEB] text-[8px] font-bold">Together</p>
+            </div>
+          </div>
+          <p class="text-[#4B5563] leading-[13px] text-[8px]">
+            We ensure you sit together when booking an even number
+          </p>
+        </div>
+      </div>
+
+      <h2 class="text-[32px] font-bold text-white mb-4 pl-[50px]">
+        Service Packages
+      </h2>
+      <div class="flex px-[50px] gap-5">
+        <!-- Service Packages Section -->
+        <div class="w-[186px]">
+          <p class="text-white mb-5 text-[10px] leading-3 font-semibold">
+            <span class="text-[#00FFA3] font-bold">Book with Confidence</span>
+            <br />
+            No surprises, no stress.<br />We've got you covered.
+          </p>
+
+          <p class="text-white text-[8px] leading-[10px] mb-2.5">
+            Whether your match gets rescheduled, played without fans, or even
+            canceled, our flexible refund and rebooking options ensure you'll
+            never be left with a loss or financial risk.
+          </p>
+
+          <p class="text-white text-[8px] leading-[10px] mb-4">
+            Choose the package that suits you best and enjoy the game
+            worry-free!
+          </p>
+
+          <div class="mt-8 space-y-3">
+            <h3 class="text-[#00FFA3] text-[11px] font-bold">
+              Included in All Packages
+            </h3>
+
+            <div class="flex items-center gap-1.5">
+              <svg
+                width="8"
+                height="6"
+                viewBox="0 0 8 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="shrink-0"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.52664 0.997866C7.72594 1.19717 7.72594 1.5203 7.52664 1.71961L3.44386 5.80239C3.24456 6.00169 2.92142 6.00169 2.72212 5.80239L0.680727 3.761C0.481424 3.56169 0.481424 3.23856 0.680727 3.03926C0.880031 2.83995 1.20316 2.83995 1.40247 3.03926L3.08299 4.71978L6.8049 0.997866C7.0042 0.798563 7.32734 0.798563 7.52664 0.997866Z"
+                  fill="#00FFA3"
+                />
+              </svg>
+
+              <p class="text-white text-[7px]">
+                <span class="font-bold"> 24/7 </span> Support in case of an
+                emergency
+              </p>
+            </div>
+
+            <div class="flex items-start gap-1.5">
+              <svg
+                width="8"
+                height="6"
+                viewBox="0 0 8 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="shrink-0 mt-0.5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.52664 0.997866C7.72594 1.19717 7.72594 1.5203 7.52664 1.71961L3.44386 5.80239C3.24456 6.00169 2.92142 6.00169 2.72212 5.80239L0.680727 3.761C0.481424 3.56169 0.481424 3.23856 0.680727 3.03926C0.880031 2.83995 1.20316 2.83995 1.40247 3.03926L3.08299 4.71978L6.8049 0.997866C7.0042 0.798563 7.32734 0.798563 7.52664 0.997866Z"
+                  fill="#00FFA3"
+                />
+              </svg>
+
+              <p class="text-white text-[7px] leading-[10px]">
+                Extensive information & city guide with a complete journey
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex items-center gap-1.5">
+                <svg
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="shrink-0"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.52664 0.997866C7.72594 1.19717 7.72594 1.5203 7.52664 1.71961L3.44386 5.80239C3.24456 6.00169 2.92142 6.00169 2.72212 5.80239L0.680727 3.761C0.481424 3.56169 0.481424 3.23856 0.680727 3.03926C0.880031 2.83995 1.20316 2.83995 1.40247 3.03926L3.08299 4.71978L6.8049 0.997866C7.0042 0.798563 7.32734 0.798563 7.52664 0.997866Z"
+                    fill="#00FFA3"
+                  />
+                </svg>
+
+                <p class="text-white text-[8px] font-bold leading-[10px]">
+                  Match Rescheduling Guarantee
+                </p>
+              </div>
+
+              <ul
+                class="text-[7px] leading-[10px] text-white list-disc pl-6 space-y-[5px]"
+              >
+                <li>Valid match tickets for the new date</li>
+                <li>Refund options in case of cancellation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Packages section -->
+        <div class="space-y-3 flex-1">
+          <!-- Standard Package -->
+          <div class="bg-white rounded pt-2">
+            <div class="flex justify-between mb-2 px-3">
+              <div>
+                <h3 class="font-semibold text-xs text-[#016FEB] leading-[12px]">
+                  Standard
+                </h3>
+                <p class="text-[#6B7280] text-[7px]">
+                  Our basic guarantees without additional payment.
+                </p>
+              </div>
+              <span class="font-bold text-[#016FEB]">€0</span>
+            </div>
+            <div class="h-px bg-[#E5E7EB] w-full"></div>
+            <div class="px-3 pb-4 mt-3">
+              <div class="text-[7.14px] font-semibold mb-1">
+                Rescheduling Options
+              </div>
+
+              <div class="space-y-1">
+                <div class="flex items-center gap-1.5">
+                  <svg
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.28445 0.459658C7.48376 0.658961 7.48376 0.982096 7.28445 1.1814L3.20167 5.26418C3.00237 5.46348 2.67923 5.46348 2.47993 5.26418L0.43854 3.22279C0.239237 3.02349 0.239237 2.70035 0.43854 2.50105C0.637843 2.30175 0.960977 2.30175 1.16028 2.50105L2.8408 4.18157L6.56271 0.459658C6.76202 0.260355 7.08515 0.260355 7.28445 0.459658Z"
+                      fill="#10B981"
+                    />
+                  </svg>
+
+                  <p class="text-[7.14px] leading-[10px] text-[#6B7280]">
+                    50% of ticket back in credit if match is played in different
+                    week
+                  </p>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <svg
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.28445 0.459658C7.48376 0.658961 7.48376 0.982096 7.28445 1.1814L3.20167 5.26418C3.00237 5.46348 2.67923 5.46348 2.47993 5.26418L0.43854 3.22279C0.239237 3.02349 0.239237 2.70035 0.43854 2.50105C0.637843 2.30175 0.960977 2.30175 1.16028 2.50105L2.8408 4.18157L6.56271 0.459658C6.76202 0.260355 7.08515 0.260355 7.28445 0.459658Z"
+                      fill="#10B981"
+                    />
+                  </svg>
+
+                  <p class="text-[7.14px] leading-[10px] text-[#6B7280]">
+                    100% of ticket back in credit if match is not played or
+                    without fans
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plus Package -->
+          <div class="bg-white rounded pt-2">
+            <div class="flex justify-between mb-2 px-3">
+              <div>
+                <h3 class="font-semibold text-xs text-[#016FEB] leading-[12px]">
+                  Plus
+                </h3>
+                <p class="text-[#6B7280] text-[7px]">
+                  Extra assurance, with a small additional cost.
+                </p>
+              </div>
+              <span class="font-bold text-[#016FEB]">€25</span>
+            </div>
+            <div class="h-px bg-[#E5E7EB] w-full"></div>
+            <div class="px-3 pb-4 mt-3">
+              <div class="text-[7.14px] font-semibold mb-1">
+                Enhanced Rescheduling Coverage
+              </div>
+
+              <div class="space-y-1">
+                <div class="flex items-center gap-1.5">
+                  <svg
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.28445 0.459658C7.48376 0.658961 7.48376 0.982096 7.28445 1.1814L3.20167 5.26418C3.00237 5.46348 2.67923 5.46348 2.47993 5.26418L0.43854 3.22279C0.239237 3.02349 0.239237 2.70035 0.43854 2.50105C0.637843 2.30175 0.960977 2.30175 1.16028 2.50105L2.8408 4.18157L6.56271 0.459658C6.76202 0.260355 7.08515 0.260355 7.28445 0.459658Z"
+                      fill="#10B981"
+                    />
+                  </svg>
+
+                  <p class="text-[7.14px] leading-[10px] text-[#6B7280]">
+                    100% of ticket back in credit if match is played in
+                    different week
+                  </p>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <svg
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.28445 0.459658C7.48376 0.658961 7.48376 0.982096 7.28445 1.1814L3.20167 5.26418C3.00237 5.46348 2.67923 5.46348 2.47993 5.26418L0.43854 3.22279C0.239237 3.02349 0.239237 2.70035 0.43854 2.50105C0.637843 2.30175 0.960977 2.30175 1.16028 2.50105L2.8408 4.18157L6.56271 0.459658C6.76202 0.260355 7.08515 0.260355 7.28445 0.459658Z"
+                      fill="#10B981"
+                    />
+                  </svg>
+
+                  <p class="text-[7.14px] leading-[10px] text-[#6B7280]">
+                    100% of ticket back in credit if match is not played or
+                    without fans
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Package -->
+          <div class="bg-white rounded pt-2">
+            <div class="flex justify-between mb-2 px-3">
+              <div>
+                <h3 class="font-semibold text-xs text-[#016FEB] leading-[12px]">
+                  Premium
+                </h3>
+                <p class="text-[#6B7280] text-[7px]">
+                  Our basic guarantees without additional payment.
+                </p>
+              </div>
+              <span class="font-bold text-[#016FEB]">€60</span>
+            </div>
+            <div class="h-px bg-[#E5E7EB] w-full"></div>
+            <div class="px-3 pb-4 mt-3">
+              <div class="text-[7.14px] font-semibold mb-1">
+                Full Rescheduling Coverage
+              </div>
+
+              <div class="space-y-1">
+                <div class="flex items-center gap-1.5">
+                  <svg
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.28445 0.459658C7.48376 0.658961 7.48376 0.982096 7.28445 1.1814L3.20167 5.26418C3.00237 5.46348 2.67923 5.46348 2.47993 5.26418L0.43854 3.22279C0.239237 3.02349 0.239237 2.70035 0.43854 2.50105C0.637843 2.30175 0.960977 2.30175 1.16028 2.50105L2.8408 4.18157L6.56271 0.459658C6.76202 0.260355 7.08515 0.260355 7.28445 0.459658Z"
+                      fill="#10B981"
+                    />
+                  </svg>
+
+                  <p class="text-[7.14px] leading-[10px] text-[#6B7280]">
+                    100% of flight/hotel covered if match is played in different
+                    week
+                  </p>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <svg
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.28445 0.459658C7.48376 0.658961 7.48376 0.982096 7.28445 1.1814L3.20167 5.26418C3.00237 5.46348 2.67923 5.46348 2.47993 5.26418L0.43854 3.22279C0.239237 3.02349 0.239237 2.70035 0.43854 2.50105C0.637843 2.30175 0.960977 2.30175 1.16028 2.50105L2.8408 4.18157L6.56271 0.459658C6.76202 0.260355 7.08515 0.260355 7.28445 0.459658Z"
+                      fill="#10B981"
+                    />
+                  </svg>
+
+                  <p class="text-[7.14px] leading-[10px] text-[#6B7280]">
+                    100% of costs refunded as credit if match is not played or
+                    without fans
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+
+  </body>
+</html>

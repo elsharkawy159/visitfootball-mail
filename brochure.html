@@ -31,7 +31,6 @@
         background-size: 100%;
         background-repeat: no-repeat;
       }
-
       .blue-overlay {
         background-image: url("./images/2-blue-overlay.png");
         background-size: cover;
@@ -45,6 +44,20 @@
       }
       .bg-stadium {
         background-image: url("./images/stadium-bg.png");
+        background-size: cover;
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .bg-plane {
+        background-image: url("./images/plane-bg.jpg");
+        background-size: cover;
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .people-bg-2 {
+        background-image: url("./images/6-people-bg.png");
         background-size: cover;
         background-position: top;
         background-size: 100%;
@@ -944,6 +957,644 @@
         You can upgrade your tickets upon filling in the reservation form
         through the link in the email.
       </p>
+    </div>
+
+    <!-- 5 -->
+    <div
+      class="relative w-[595px] h-[842px] mb-5 mx-auto mt-5 bg-[#016FEB] bg-plane overflow-hidden z-0"
+    >
+      <div
+        class="bg-gradient-to-t from-[#016FEB] to-[#016FEB]/60 absolute w-full h-1/2 z-[-1]"
+      ></div>
+      <!-- Itinerary Title -->
+      <div class="mb-6 pl-[50px] pt-9">
+        <img
+          src="./images/logo-white-voetbaltrips.png"
+          alt="Voetbaltrips"
+          width="115"
+        />
+      </div>
+
+      <!-- Flights Section -->
+      <div class="mb-10 px-[50px]">
+        <h1 class="text-4xl text-white font-bold mb-10">Itinerary</h1>
+        <div class="flex items-center gap-3 mb-5">
+          <div
+            class="size-[27px] bg-white rounded-full flex items-center justify-center"
+          >
+            ✈️
+          </div>
+          <h2 class="text-[26px] font-bold text-[#00FFA3]">Flights</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <!-- Outgoing Flight -->
+          <div
+            class="rounded-[4.7px] p-2 pt-2.5 bg-gray-50 border border-gray-300"
+          >
+            <div class="flex justify-between items-center mb-3">
+              <h4 class="text-[8px] font-semibold text-gray-700">
+                Outgoing flight
+              </h4>
+              <div class="text-blue-600 font-bold">
+                <img
+                  src="./images/logo-example.png"
+                  alt="company logo"
+                  height="10"
+                  width="45"
+                />
+              </div>
+            </div>
+
+            <div
+              class="text-center rounded text-[8.4px] mb-2.5 py-[3.6px] border border-gray-300 font-medium text-gray-800"
+            >
+              Saturday, 21 April 2024, 22:00
+            </div>
+
+            <img
+              src="./images/plane-line.png"
+              alt="airline"
+              class="w-full h-auto object-contain"
+            />
+            <div class="flex justify-between mt-1">
+              <div class="text-left font-semibold text-[#5E6470] text-[8.4px]">
+                <div>London</div>
+                <div>Heathrow</div>
+              </div>
+              <div class="text-right font-semibold text-[#5E6470] text-[8.4px]">
+                <div>Brussels</div>
+                <div>International</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Return Flight -->
+          <div
+            class="rounded-[4.7px] p-2 pt-2.5 bg-gray-50 border border-gray-300"
+          >
+            <div class="flex justify-between items-center mb-3">
+              <h4 class="text-[8px] font-semibold text-gray-700">
+                Return flight
+              </h4>
+              <div class="text-blue-600 font-bold">
+                <img
+                  src="./images/logo-example.png"
+                  alt="company logo"
+                  height="10"
+                  width="45"
+                />
+              </div>
+            </div>
+
+            <div
+              class="text-center rounded text-[8.4px] mb-2.5 py-[3.6px] border border-gray-300 font-medium text-gray-800"
+            >
+              Sunday, 22 April 2024, 22:00
+            </div>
+
+            <img
+              src="./images/plane-line.png"
+              alt="airline"
+              class="w-full h-auto object-contain"
+            />
+            <div class="flex justify-between mt-1">
+              <div class="text-left font-semibold text-[#5E6470] text-[8.4px]">
+                <div>Brussels</div>
+                <div>International</div>
+              </div>
+              <div class="text-right font-semibold text-[#5E6470] text-[8.4px]">
+                <div>London</div>
+                <div>Heathrow</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotel Section -->
+      <div class="mb-10 px-[50px]">
+        <div class="flex items-center gap-3 mb-5">
+          <div
+            class="size-[27px] bg-white rounded-full flex items-center justify-center"
+          >
+            🏨
+          </div>
+          <h2 class="text-[26px] font-bold text-[#00FFA3]">Hotel</h2>
+        </div>
+
+        <div class="bg-white rounded-md p-2.5 flex gap-2.5 text-gray-800">
+          <!-- Timeline -->
+          <div
+            class="min-w-[106px] gap-3 border border-gray-300 rounded justify-between p-2.5 flex flex-col"
+          >
+            <div class="leading-[14px]">
+              <div class="font-semibold text-xs text-[#016FEB]">From</div>
+              <div class="font-medium text-[8.4px] text-[#5E6470]">
+                Tuesday, May 7
+                <br />
+                at 6:00 PM
+              </div>
+            </div>
+
+            <svg
+              width="8"
+              height="150"
+              viewBox="0 0 8 150"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-full mx-auto"
+            >
+              <path
+                d="M4 149.211C5.77373 149.211 7.21163 147.773 7.21163 145.999C7.21163 144.225 5.77373 142.788 4 142.788C2.22627 142.788 0.788374 144.225 0.788374 145.999C0.788374 147.773 2.22627 149.211 4 149.211ZM4 7.21076C5.77374 7.21076 7.21163 5.77288 7.21163 3.99914C7.21163 2.22541 5.77374 0.787515 4 0.787515C2.22627 0.787515 0.788379 2.22541 0.788379 3.99914C0.788379 5.77288 2.22627 7.21076 4 7.21076ZM4.60218 145.999L4.60218 144.224L3.39782 144.224L3.39782 145.999L4.60218 145.999ZM4.60218 140.674L4.60218 137.124L3.39782 137.124L3.39782 140.674L4.60218 140.674ZM4.60218 133.574L4.60218 130.024L3.39782 130.024L3.39782 133.574L4.60218 133.574ZM4.60218 126.474L4.60218 122.924L3.39782 122.924L3.39782 126.474L4.60218 126.474ZM4.60218 119.374L4.60218 115.824L3.39782 115.824L3.39782 119.374L4.60218 119.374ZM4.60218 112.274L4.60218 108.724L3.39782 108.724L3.39782 112.274L4.60218 112.274ZM4.60218 105.174L4.60218 101.624L3.39782 101.624L3.39782 105.174L4.60218 105.174ZM4.60218 98.0741L4.60218 94.5241L3.39782 94.5241L3.39782 98.0741L4.60218 98.0741ZM4.60218 90.9742L4.60218 87.4241L3.39782 87.4241L3.39782 90.9742L4.60218 90.9742ZM4.60218 83.8742L4.60218 80.3241L3.39782 80.3241L3.39782 83.8742L4.60218 83.8742ZM4.60218 76.7741L4.60218 73.2241L3.39782 73.2241L3.39782 76.7741L4.60218 76.7741ZM4.60218 69.6741L4.60218 66.1241L3.39782 66.1241L3.39782 69.6741L4.60218 69.6741ZM4.60218 62.5741L4.60218 59.0241L3.39782 59.0241L3.39782 62.5741L4.60218 62.5741ZM4.60218 55.4741L4.60218 51.9241L3.39782 51.9241L3.39782 55.4741L4.60218 55.4741ZM4.60218 48.3741L4.60218 44.8241L3.39782 44.8241L3.39782 48.3741L4.60218 48.3741ZM4.60218 41.2741L4.60218 37.7241L3.39782 37.7241L3.39782 41.2741L4.60218 41.2741ZM4.60218 34.1741L4.60218 30.6241L3.39782 30.6241L3.39782 34.1741L4.60218 34.1741ZM4.60218 27.0741L4.60218 23.5241L3.39782 23.5241L3.39782 27.0741L4.60218 27.0741ZM4.60218 19.9741L4.60218 16.4241L3.39782 16.4241L3.39782 19.9741L4.60218 19.9741ZM4.60218 12.8741L4.60218 9.32409L3.39782 9.32409L3.39782 12.8741L4.60218 12.8741ZM4.60218 5.77409L4.60218 3.99914L3.39782 3.99914L3.39782 5.77409L4.60218 5.77409Z"
+                fill="#E1E1E1"
+              />
+            </svg>
+
+            <div class="leading-[14px]">
+              <div class="font-semibold text-xs text-[#016FEB]">From</div>
+              <div class="font-medium text-[8.4px] text-[#5E6470]">
+                Wednesday, May 8
+                <br />
+                at 6:00 PM
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-2.5">
+              <h3 class="text-[10px] font-bold text-[#5E6470]">
+                Bloc Hotel Birmingham
+              </h3>
+              <span
+                class="px-1 bg-blue-50 rounded-sm text-[6.7px] text-[#016FEB] font-medium"
+                >4 ⭐</span
+              >
+            </div>
+
+            <div class="grid grid-cols-4 gap-4 mb-2.5">
+              <!-- Hotel Images -->
+              <div class="md:col-span-4 grid grid-cols-4 gap-1.5">
+                <div class="col-span-1">
+                  <img
+                    src="./images/hotel-image1.png"
+                    alt="Hotel exterior"
+                    class="w-full h-[120px] object-cover rounded"
+                  />
+                </div>
+                <div class="col-span-1">
+                  <img
+                    src="./images/hotel-image2.png"
+                    alt="Hotel room"
+                    class="w-full h-[120px] object-cover rounded"
+                  />
+                </div>
+                <div class="col-span-1">
+                  <img
+                    src="./images/hotel-image3.png"
+                    alt="Hotel bathroom"
+                    class="w-full h-[120px] object-cover rounded"
+                  />
+                </div>
+                <div class="col-span-1">
+                  <img
+                    src="./images/hotel-image4.png"
+                    alt="Hotel bed"
+                    class="w-full h-[120px] object-cover rounded"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Breakfast Included Badge -->
+            <div class="mb-1.5">
+              <span
+                class="flex items-center text-[6px] py-px text-[#016FEB] font-medium px-1 rounded-sm border border-[#69B0FF] w-fit"
+              >
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mr-1"
+                >
+                  <path
+                    d="M10.6183 9.87167L9.17761 8.91121L10.6183 7.95075V9.87167ZM7.25668 7.95075L9.17761 5.06936L10.6183 6.99028L8.69737 8.43098L7.25668 7.95075ZM2.45437 8.91121L1.01367 9.87167V7.95075L2.45437 8.91121ZM4.37529 7.95075L2.9346 8.43098L1.01367 6.99028L2.45437 5.06936L4.37529 7.95075ZM6.77645 3.62866L8.69737 4.58912L6.29622 7.95075H5.33575L2.9346 4.58912L4.85552 3.62866H6.77645Z"
+                    fill="#016FEB"
+                  />
+                </svg>
+
+                Breakfast included
+              </span>
+            </div>
+
+            <!-- Hotel Description -->
+            <div class="text-[7.68px] leading-[11.5px] text-gray-600 mb-1.5">
+              <p>
+                De kamers van het Bloc Hotel zijn voorzien van ultramodern decor
+                geïnspireerd op de Japanse uitstekendheid ontwerpen. Gelegen in
+                het Jewellery Quarter, het culturele hart van Birmingham, hebben
+                de kamers elk gratis high-speed WiFi en een flatscreen-tv. Met
+                een groot bed en airconditioning hebben de kamers ook
+                mensgerichte Artemide-sfeerverlichting. Elke kamer heeft ook een
+                monsoon-douchekop. Gasten kunnen inchecken en uitchecken binnen
+                10 minuten hotelstad, terwijl tramhaltes op 5 minuten
+                loopafstand liggen. De snelweg M5 is slechts 10 minuten met de
+                auto te bereiken.
+              </p>
+            </div>
+
+            <!-- Amenities -->
+            <div
+              class="flex gap-[3.3px] flex-wrap font-medium text-[6.7px] text-[#016FEB]"
+            >
+              <div
+                class="flex gap-1 py-0.5 bg-blue-50 h-[13.45px] px-1 rounded-[2px] items-center"
+              >
+                <svg
+                  width="7"
+                  height="5"
+                  viewBox="0 0 7 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.5903 0.142558C6.68033 0.232615 6.73091 0.354742 6.73091 0.482082C6.73091 0.609422 6.68033 0.731549 6.5903 0.821606L2.74845 4.66346C2.65839 4.75349 2.53627 4.80406 2.40893 4.80406C2.28159 4.80406 2.15946 4.75349 2.0694 4.66346L0.148478 2.74253C0.0610005 2.65196 0.0125959 2.53065 0.01369 2.40474C0.0147842 2.27882 0.0652896 2.15837 0.154328 2.06933C0.243367 1.9803 0.363815 1.92979 0.48973 1.9287C0.615645 1.9276 0.736953 1.97601 0.827526 2.06348L2.40893 3.64489L5.91126 0.142558C6.00131 0.052529 6.12344 0.00195312 6.25078 0.00195312C6.37812 0.00195312 6.50025 0.052529 6.5903 0.142558Z"
+                    fill="#016FEB"
+                  />
+                </svg>
+
+                24-hour reception
+              </div>
+              <div
+                class="flex gap-1 py-0.5 bg-blue-50 h-[13.45px] px-1 rounded-[2px] items-center"
+              >
+                <svg
+                  width="7"
+                  height="5"
+                  viewBox="0 0 7 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.5903 0.142558C6.68033 0.232615 6.73091 0.354742 6.73091 0.482082C6.73091 0.609422 6.68033 0.731549 6.5903 0.821606L2.74845 4.66346C2.65839 4.75349 2.53627 4.80406 2.40893 4.80406C2.28159 4.80406 2.15946 4.75349 2.0694 4.66346L0.148478 2.74253C0.0610005 2.65196 0.0125959 2.53065 0.01369 2.40474C0.0147842 2.27882 0.0652896 2.15837 0.154328 2.06933C0.243367 1.9803 0.363815 1.92979 0.48973 1.9287C0.615645 1.9276 0.736953 1.97601 0.827526 2.06348L2.40893 3.64489L5.91126 0.142558C6.00131 0.052529 6.12344 0.00195312 6.25078 0.00195312C6.37812 0.00195312 6.50025 0.052529 6.5903 0.142558Z"
+                    fill="#016FEB"
+                  />
+                </svg>
+
+                Free cancellation
+              </div>
+              <div
+                class="flex gap-1 py-0.5 bg-blue-50 h-[13.45px] px-1 rounded-[2px] items-center"
+              >
+                <svg
+                  width="7"
+                  height="5"
+                  viewBox="0 0 7 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.5903 0.142558C6.68033 0.232615 6.73091 0.354742 6.73091 0.482082C6.73091 0.609422 6.68033 0.731549 6.5903 0.821606L2.74845 4.66346C2.65839 4.75349 2.53627 4.80406 2.40893 4.80406C2.28159 4.80406 2.15946 4.75349 2.0694 4.66346L0.148478 2.74253C0.0610005 2.65196 0.0125959 2.53065 0.01369 2.40474C0.0147842 2.27882 0.0652896 2.15837 0.154328 2.06933C0.243367 1.9803 0.363815 1.92979 0.48973 1.9287C0.615645 1.9276 0.736953 1.97601 0.827526 2.06348L2.40893 3.64489L5.91126 0.142558C6.00131 0.052529 6.12344 0.00195312 6.25078 0.00195312C6.37812 0.00195312 6.50025 0.052529 6.5903 0.142558Z"
+                    fill="#016FEB"
+                  />
+                </svg>
+
+                4.1 km from the center
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div
+      class="relative w-[595px] h-[842px] mb-5 mx-auto mt-5 bg-[#016FEB] people-bg-2 overflow-hidden z-0"
+    >
+      <!-- Logo -->
+      <div
+        class="bg-gradient-to-t from-[#016FEB] from-50% to-[#016FEB]/60 absolute w-full h-full z-[-1]"
+      ></div>
+
+      <div class="pl-[50px] pt-9">
+        <img
+          src="./images/logo-white-voetbaltrips.png"
+          alt="Voetbaltrips"
+          width="115"
+          class="object-contain"
+        />
+      </div>
+
+      <!-- Main Content -->
+      <div class="px-[50px] pt-10">
+        <div class="flex">
+          <div>
+            <h1 class="text-4xl text-white font-bold">We have delivered</h1>
+            <h1 class="text-4xl text-[#00FFA3] font-bold">
+              10,000+ <span class="text-white">unforgettable</span>
+            </h1>
+            <h1 class="text-4xl text-white font-bold mb-2">
+              football experiences
+            </h1>
+
+            <p class="text-white text-sm mb-10">
+              Don't just take our word for it – hear from our customers!
+            </p>
+          </div>
+          <img
+            src="./images/testimonial-logos.png"
+            alt="Voetbaltrips"
+            width="156"
+            class="object-contain"
+          />
+        </div>
+        <!-- Ratings -->
+        <div class="flex justify-end mb-5">
+          <div class="flex flex-col items-end">
+            <div class="flex items-center mb-2">
+              <img
+                src="/placeholder.svg?height=20&width=80"
+                alt="Trustpilot"
+                class="h-5 mr-2"
+              />
+              <span class="text-white font-bold">9.3</span>
+              <div class="flex ml-2">
+                <span class="text-yellow-400">★★★★★</span>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img
+                src="/placeholder.svg?height=20&width=80"
+                alt="Google"
+                class="h-5 mr-2"
+              />
+              <div class="flex">
+                <span class="text-yellow-400">★★★★★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Testimonial 1 -->
+          <div class="relative">
+            <img
+              src="/placeholder.svg?height=180&width=250"
+              alt="Football fans"
+              class="w-full h-44 object-cover rounded-md"
+            />
+            <p class="text-white text-xs mt-2 leading-tight">
+              "Inmiddels mijn tweede reis via deze organisatie en net als de
+              vorige keer helemaal goed verzorgd reis naar Manchester, genoot
+              met mijn 13 jarige zoon. Zeker een aanrader!"
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="relative">
+            <p class="text-white text-xs mb-2 leading-tight">
+              "Enorm genoten van onze voetbalreis naar Madrid. Verjaardagscadeau
+              voor mijn zoon. Zijn wens kwam in vervulling! Real-Madrid-Osasuna
+              (spannend) 4-0 gewonnen wat een feest!"
+            </p>
+            <img
+              src="/placeholder.svg?height=180&width=250"
+              alt="Football stadium"
+              class="w-full h-44 object-cover rounded-md"
+            />
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="relative">
+            <img
+              src="/placeholder.svg?height=180&width=250"
+              alt="Football fans"
+              class="w-full h-44 object-cover rounded-md"
+            />
+            <p class="text-white text-xs mt-2 leading-tight">
+              "Nadat ik in Juni '24 de kaarten had besteld werd ik kort daarna
+              gebeld met de vraag of ik tevreden was met de uitgekozen plaatsen.
+              Tijdens de reis werd ik regelmatig geïnformeerd hoe de stand van
+              zaken was met duidelijke aanwijzingen tot ik altijd contact kon
+              opnemen."
+            </p>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="relative">
+            <p class="text-white text-xs mb-2 leading-tight">
+              "Het bestellen van de tickets voor de CL wedstrijd Lille -
+              Juventus verliep probleemloos. Ook de communicatie voorafgaand aan
+              het opsturen van de tickets was ook zoals het hoort te zijn: snel
+              en duidelijk."
+            </p>
+            <img
+              src="/placeholder.svg?height=180&width=250"
+              alt="Football stadium"
+              class="w-full h-44 object-cover rounded-md"
+            />
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex justify-center mt-10">
+          <button
+            class="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition"
+          >
+            Offerte accorderen
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div
+      class="relative w-[595px] h-[842px] mb-5 mx-auto mt-5 bg-[#016FEB] people-bg-2 overflow-hidden z-0"
+    >
+      <!-- Logo -->
+      <div
+        class="bg-gradient-to-t from-[#016FEB] from-50% to-[#016FEB]/60 absolute w-full h-full z-[-1]"
+      ></div>
+
+      <div class="pl-[50px] pt-9">
+        <img
+          src="./images/logo-white-voetbaltrips.png"
+          alt="Voetbaltrips"
+          width="115"
+          class="object-contain"
+        />
+      </div>
+
+      <!-- Main Content -->
+      <div class="px-[50px] pt-10">
+        <h1 class="text-5xl text-white font-bold mb-5">Contact</h1>
+
+        <p class="text-white text-sm mb-10 max-w-md">
+          We're on a journey to transform ordinary trips into extraordinary
+          ones. We are your guide, bringing you personal experiences. Wherever
+          your travels take you, we'll show you the unique and unmissable things
+          to do in your destination.
+        </p>
+
+        <!-- Contact Card -->
+        <div class="bg-white rounded-lg p-8 max-w-md mx-auto">
+          <div class="grid grid-cols-2 gap-8">
+            <!-- Email Contact -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-primary font-bold text-sm mb-2">Contact us</h3>
+              <p class="text-gray-500 text-xs mb-1">Send us an email</p>
+              <p class="text-gray-700 text-xs">info@voetbaltrips.com</p>
+            </div>
+
+            <!-- Phone Contact -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-primary font-bold text-sm mb-2">
+                Call Customer Service
+              </h3>
+              <p class="text-gray-500 text-xs mb-1">
+                Talk to us over the phone 24/7
+              </p>
+              <p class="text-gray-700 text-xs">+31 (0) 30 368 0039</p>
+            </div>
+
+            <!-- WhatsApp Contact -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-primary font-bold text-sm mb-2">
+                Message us Using Whatsapp
+              </h3>
+              <p class="text-gray-500 text-xs mb-1">
+                We currently support chat
+              </p>
+              <p class="text-gray-700 text-xs">+316 43 17 18 42</p>
+            </div>
+
+            <!-- Office Location -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-primary font-bold text-sm mb-2">
+                Visiting our Office
+              </h3>
+              <p class="text-gray-500 text-xs mb-1">Bemuurdseslaan 13,</p>
+              <p class="text-gray-700 text-xs">3527GV, Utrecht</p>
+            </div>
+          </div>
+
+          <!-- Customer Support -->
+          <div class="mt-10 flex items-center border-t pt-6">
+            <div class="mr-4">
+              <img
+                src="/placeholder.svg?height=60&width=60"
+                alt="Support Agent"
+                class="w-14 h-14 rounded-full object-cover border-2 border-green-400"
+              />
+            </div>
+            <div>
+              <h3 class="text-primary font-bold text-lg">
+                24/7 Customer Support
+              </h3>
+              <p class="text-gray-600 text-xs">
+                Can't find the answer you're looking for?
+              </p>
+              <p class="text-gray-600 text-xs">
+                Meet Nino, our manager. He will make sure to help you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=794, initial-scale=1.0" />
+    <title>Gift Voucher - VisitFootball</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .page {
+        width: 794px;
+        height: 1123px;
+        box-sizing: border-box;
+        position: relative;
+        background: #016feb;
+        color: white;
+        font-family: "Inter", sans-serif;
+      }
+      .bg-image {
+        background-image: url("../images/gift-bg.png");
+        background-size: cover;
+        background-position: top;
+        z-index: 1000;
+      }
+      .voucher-box {
+        background: white;
+        border-radius: 12px;
+        margin: 0 auto;
+        margin-top: 45px;
+        width: 90%;
+        min-height: 54%;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 60px 20px;
+      }
+      .voucher-amount {
+        background: #fff;
+        color: #016feb;
+        font-size: 48px;
+        transform: skew(-15deg);
+        padding: 5px 12px;
+        margin: 20px 0 10px 0;
+        display: inline-block;
+        box-shadow: 0 2px 8px rgba(1, 111, 235, 0.08);
+      }
+
+      .voucher-subtitle {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .voucher-link {
+        color: #00ffa3;
+        font-weight: 600;
+      }
+      .voucher-bow {
+        width: 120px;
+        margin: 0 auto 20px auto;
+        display: block;
+      }
+      .voucher-placeholder {
+        color: #888;
+        font-size: 20px;
+        text-align: center;
+      }
+      .voucher-message {
+        color: #888;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-600">
+    <header class="w-full">
+      <nav
+        class="flex justify-evenly flex-wrap gap-y-2 py-4 bg-[#f8f8f8] border-b border-gray-300"
+      >
+        <a href="../index.html" class="text-[#333] px-3 text-sm">Home</a>
+        <a href="../brochure.html" class="text-[#333] px-3 text-sm">Brochure</a>
+        <a href="2.html" class="text-[#333] px-3 text-sm">Brochure 2</a>
+        <a href="3.html" class="text-[#333] px-3 text-sm">Brochure 3</a>
+        <a href="4.html" class="text-[#333] px-3 text-sm">Brochure 4</a>
+        <a href="gift-pdf.html" class="text-[#016feb] px-3 text-sm font-bold"
+          >Gift PDF</a
+        >
+      </nav>
+    </header>
+    <div
+      class="relative mx-auto mt-5 flex-col justify-between items-center bg-image overflow-hidden page mb-5 flex pb-10"
+    >
+      <div class="absolute -left-20 top-[17%] w-[250px] rotate-[-15deg] h-[250px]">
+        <img
+          src="/images/gift-placeholder2.png"
+          alt="placeholder1"
+          class="object-cover object-right border-[7px] border-white"
+        />
+      </div>
+      <div class="absolute -right-20 top-[23%] w-[250px] rotate-[15deg] h-[250px]">
+        <img
+          src="/images/gift-placeholder1.jpg"
+          alt="placeholder1"
+          class="object-cover object-right border-[7px] border-white"
+        />
+      </div>
+      <div class="flex flex-col justify-between pt-40 h-full items-center">
+        <div class="text-6xl font-extrabold">GIFT VOUCHER</div>
+        <div class="space-y-4 flex flex-col items-center">
+          <div class="voucher-subtitle">Specially for you</div>
+          <div class="voucher-amount text-7xl">
+            €<span class="font-extrabold">75</span>
+          </div>
+          <div class="voucher-subtitle text-center">
+            for any purchase on <br />
+            <a
+              href="https://www.visitfootball.com"
+              class="voucher-link font-bold"
+              >www.visitfootball.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="voucher-box text-[#888]">
+        <img
+          src="/images/bow.png"
+          alt="Blue Bow"
+          class="voucher-bow w-full absolute top-[42.5%]"
+        />
+        <div class="text-4xl mt-20">[Name]</div>
+        <div class="text-xl mt-20">[Personal Message]</div>
+      </div>
+    </div>
+  </body>
+</html>

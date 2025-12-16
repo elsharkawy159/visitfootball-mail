@@ -10,51 +10,2503 @@
       body {
         margin: 0;
         padding: 20px;
-        background: #e5e7eb;
+        background: gray;
         font-family: "Plus Jakarta Sans", sans-serif;
       }
       .pdf-container {
         max-width: 595px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
       .pdf-page {
         height: 842px;
+        width: 595px;
         margin-bottom: 20px;
+        padding: 32px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         background: white;
-      }
-      .pdf-page iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
+        position: relative;
       }
     </style>
   </head>
-  <body>
+  <body style="font-family: 'Plus Jakarta Sans', sans-serif">
     <div class="pdf-container">
       <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-1.html"></iframe>
+        <div
+          style="background: linear-gradient(180deg, #e8f4fd 0%, #d6ebfc 100%)"
+        >
+          <!-- Background map overlay -->
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0.1;
+              background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTk1IiBoZWlnaHQ9Ijg0MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMTAwTDUwIDE1MEwxMDAgMTIwTDE1MCAxODBMMjAwIDE1MEwyNTAgMjAwTDMwMCAxNTBMMzUwIDE4MEw0MDAgMTUwTDQ1MCAxODBMNTAwIDE1MEw1NTAgMjAwIiBzdHJva2U9IiMwMTZGRUIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC4xIi8+PC9zdmc+');
+              background-size: cover;
+            "
+          ></div>
+
+          <!-- Title Section -->
+          <div style="position: absolute; top: 80px; left: 50px; z-index: 10">
+            <div
+              style="
+                font-size: 48px;
+                font-weight: 800;
+                color: #016feb;
+                line-height: 1.1;
+                margin-bottom: 10px;
+              "
+            >
+              Your
+            </div>
+            <div
+              style="
+                font-size: 48px;
+                font-weight: 800;
+                color: #016feb;
+                line-height: 1.1;
+                margin-bottom: 20px;
+              "
+            >
+              TRAVEL ITINERARY
+            </div>
+            <div
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                color: #016feb;
+                line-height: 1.2;
+              "
+            >
+              for ARSENAL – LIVERPOOL
+            </div>
+          </div>
+
+          <!-- Flight path line -->
+          <svg
+            style="
+              position: absolute;
+              top: 150px;
+              left: 50px;
+              width: 400px;
+              height: 200px;
+              z-index: 5;
+            "
+            viewBox="0 0 400 200"
+          >
+            <path
+              d="M 0 20 Q 100 80, 200 100 T 400 120"
+              stroke="#016FEB"
+              stroke-width="3"
+              fill="none"
+              stroke-dasharray="5,5"
+              opacity="0.6"
+            />
+          </svg>
+
+          <!-- Airplane icon -->
+          <div
+            style="
+              position: absolute;
+              top: 250px;
+              left: 420px;
+              width: 40px;
+              height: 40px;
+              z-index: 10;
+            "
+          >
+            <svg viewBox="0 0 24 24" fill="#016FEB">
+              <path
+                d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
+              />
+            </svg>
+          </div>
+
+          <!-- Football player image (left) -->
+          <div
+            style="
+              position: absolute;
+              top: 350px;
+              left: 50px;
+              width: 200px;
+              height: 250px;
+              border-radius: 16px;
+              overflow: hidden;
+              z-index: 10;
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            "
+          >
+            <img
+              src="../images/stadium-view-1.png"
+              alt="Football player"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+
+          <!-- Stadium images (right, stacked) -->
+          <div
+            style="
+              position: absolute;
+              top: 350px;
+              right: 50px;
+              width: 200px;
+              z-index: 10;
+            "
+          >
+            <div
+              style="
+                width: 100%;
+                height: 115px;
+                border-radius: 16px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+              "
+            >
+              <img
+                src="../images/stadium-bg.png"
+                alt="Stadium"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+            <div
+              style="
+                width: 100%;
+                height: 115px;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+              "
+            >
+              <img
+                src="../images/stadium.png"
+                alt="Stadium"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
+
+          <!-- Logo bottom right -->
+          <div
+            style="
+              position: absolute;
+              bottom: 40px;
+              right: 50px;
+              z-index: 10;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            "
+          >
+            <img
+              src="../images/logo-blue-voetbaltrips.png"
+              alt="voetbaltrips.com"
+              style="height: 30px"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="pdf-page"
+        style="background: linear-gradient(180deg, #e8f4fd 0%, #ffffff 100%)"
+      >
+        <!-- Title -->
+        <div
+          style="
+            font-size: 36px;
+            font-weight: 800;
+            color: #016feb;
+            margin-bottom: 50px;
+          "
+        >
+          TABLE OF CONTENTS
+        </div>
+
+        <!-- Content Items -->
+        <div style="display: flex; flex-direction: column; gap: 16px">
+          <!-- Item 1 -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              background: #f8f9fa;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              padding: 20px;
+              gap: 16px;
+            "
+          >
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+                />
+              </svg>
+            </div>
+            <div
+              style="flex: 1; font-size: 16px; font-weight: 600; color: #016feb"
+            >
+              Game Overview & Match Tickets
+            </div>
+            <div style="font-size: 16px; font-weight: 600; color: #016feb">
+              Page 2
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              background: #f8f9fa;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              padding: 20px;
+              gap: 16px;
+            "
+          >
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
+                />
+              </svg>
+            </div>
+            <div
+              style="flex: 1; font-size: 16px; font-weight: 600; color: #016feb"
+            >
+              Flight Information
+            </div>
+            <div style="font-size: 16px; font-weight: 600; color: #016feb">
+              Page 3
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              background: #f8f9fa;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              padding: 20px;
+              gap: 16px;
+            "
+          >
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+                />
+              </svg>
+            </div>
+            <div
+              style="flex: 1; font-size: 16px; font-weight: 600; color: #016feb"
+            >
+              Check-In & Airlines Overview
+            </div>
+            <div style="font-size: 16px; font-weight: 600; color: #016feb">
+              Page 2
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              background: #f8f9fa;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              padding: 20px;
+              gap: 16px;
+            "
+          >
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5-6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm-5 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm5 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm5-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm5 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+            </div>
+            <div
+              style="flex: 1; font-size: 16px; font-weight: 600; color: #016feb"
+            >
+              Hotel Details
+            </div>
+            <div style="font-size: 16px; font-weight: 600; color: #016feb">
+              Page 2
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              background: #f8f9fa;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              padding: 20px;
+              gap: 16px;
+            "
+          >
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+            </div>
+            <div
+              style="flex: 1; font-size: 16px; font-weight: 600; color: #016feb"
+            >
+              Matchday Overview
+            </div>
+            <div style="font-size: 16px; font-weight: 600; color: #016feb">
+              Page 2
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              background: #f8f9fa;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              padding: 20px;
+              gap: 16px;
+            "
+          >
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"
+                />
+              </svg>
+            </div>
+            <div
+              style="flex: 1; font-size: 16px; font-weight: 600; color: #016feb"
+            >
+              Important Contacts & Support
+            </div>
+            <div style="font-size: 16px; font-weight: 600; color: #016feb">
+              Page 2
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo bottom right -->
+        <div
+          style="
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="../images/logo-blue-voetbaltrips.png"
+            alt="voetbaltrips.com"
+            style="height: 30px"
+          />
+        </div>
       </div>
       <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-2.html"></iframe>
+        <!-- Vertical blue line -->
+        <div
+          style="
+            position: absolute;
+            left: 30px;
+            top: 120px;
+            bottom: 40px;
+            width: 3px;
+            background: #016feb;
+          "
+        ></div>
+
+        <!-- Header -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+          "
+        >
+          <div
+            style="
+              width: 48px;
+              height: 48px;
+              background: #016feb;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+              />
+            </svg>
+          </div>
+          <div style="font-size: 28px; font-weight: 800; color: #1f2937">
+            GAME OVERVIEW & MATCH TICKETS
+          </div>
+        </div>
+
+        <!-- Match Details Box -->
+        <div
+          style="
+            border: 2px dashed #016feb;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 30px;
+            background: #f0f7ff;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 16px;
+            "
+          >
+            <div style="display: flex; align-items: center; gap: 12px">
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background: #ffffff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid #016feb;
+                "
+              >
+                <div
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: #dc2626;
+                  "
+                ></div>
+              </div>
+              <div style="font-size: 20px; font-weight: 700; color: #1f2937">
+                Arsenal vs Liverpool
+              </div>
+            </div>
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #016feb;
+              "
+            >
+              <div
+                style="
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background: #1e40af;
+                "
+              ></div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              font-size: 14px;
+              color: #4b5563;
+            "
+          >
+            <div style="display: flex; align-items: center; gap: 6px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#4B5563">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <span>Etihad Stadium</span>
+            </div>
+            <span style="color: #9ca3af">•</span>
+            <div style="display: flex; align-items: center; gap: 6px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#4B5563">
+                <path
+                  d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"
+                />
+              </svg>
+              <span>Saturday 19 October 2024, 18:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Introduction Text -->
+        <div
+          style="
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 24px;
+          "
+        >
+          You will receive confirmation by email no later than 5 days before
+          departure about how you will receive the match tickets. This can be
+          done in one of the following ways.
+        </div>
+
+        <div
+          style="
+            width: 100%;
+            height: 1px;
+            background: #e5e7eb;
+            margin-bottom: 24px;
+          "
+        ></div>
+
+        <!-- Ticket Types -->
+        <div
+          style="margin-bottom: 24px; position: relative; padding-left: 20px"
+        >
+          <div
+            style="
+              position: absolute;
+              left: -8px;
+              top: 8px;
+              width: 12px;
+              height: 12px;
+              background: #016feb;
+              border-radius: 50%;
+            "
+          ></div>
+          <div
+            style="
+              font-size: 16px;
+              font-weight: 700;
+              color: #1f2937;
+              margin-bottom: 8px;
+            "
+          >
+            Membercard:
+          </div>
+          <div style="font-size: 14px; color: #4b5563; line-height: 1.6">
+            Your admission ticket is loaded onto a plastic card that grants
+            access to the stadium. Member cards are not in your name but can be
+            used by you. You will receive instructions for use with these member
+            cards with a brief explanation. The passes must be returned to us.
+          </div>
+        </div>
+
+        <div
+          style="margin-bottom: 24px; position: relative; padding-left: 20px"
+        >
+          <div
+            style="
+              position: absolute;
+              left: -8px;
+              top: 8px;
+              width: 12px;
+              height: 12px;
+              background: #016feb;
+              border-radius: 50%;
+            "
+          ></div>
+          <div
+            style="
+              font-size: 16px;
+              font-weight: 700;
+              color: #1f2937;
+              margin-bottom: 8px;
+            "
+          >
+            (Digital) Mobile tickets:
+          </div>
+          <div style="font-size: 14px; color: #4b5563; line-height: 1.6">
+            You will receive match tickets in the form of a link. By clicking on
+            this link you can download your match tickets into your Wallet on a
+            phone. Precise instructions on how this works will be sent with the
+            tickets
+          </div>
+        </div>
+
+        <div
+          style="margin-bottom: 24px; position: relative; padding-left: 20px"
+        >
+          <div
+            style="
+              position: absolute;
+              left: -8px;
+              top: 8px;
+              width: 12px;
+              height: 12px;
+              background: #016feb;
+              border-radius: 50%;
+            "
+          ></div>
+          <div
+            style="
+              font-size: 16px;
+              font-weight: 700;
+              color: #1f2937;
+              margin-bottom: 8px;
+            "
+          >
+            (Digital) E-tickets:
+          </div>
+          <div style="font-size: 14px; color: #4b5563; line-height: 1.6">
+            These are digital files in PDF format that you can print at home and
+            take with you to the stadium.
+          </div>
+        </div>
+
+        <div
+          style="margin-bottom: 24px; position: relative; padding-left: 20px"
+        >
+          <div
+            style="
+              position: absolute;
+              left: -8px;
+              top: 8px;
+              width: 12px;
+              height: 12px;
+              background: #016feb;
+              border-radius: 50%;
+            "
+          ></div>
+          <div
+            style="
+              font-size: 16px;
+              font-weight: 700;
+              color: #1f2937;
+              margin-bottom: 8px;
+            "
+          >
+            Hospitality tickets:
+          </div>
+          <div style="font-size: 14px; color: #4b5563; line-height: 1.6">
+            In many cases, these exclusive tickets also offer access to a lounge
+            or bar and in some cases to a pre-match dinner. You will receive
+            further explanation with these tickets.
+          </div>
+        </div>
+
+        <!-- Logo bottom right -->
+        <div
+          style="
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="../images/logo-blue-voetbaltrips.png"
+            alt="voetbaltrips.com"
+            style="height: 30px"
+          />
+        </div>
+      </div>
+      <div
+        class="pdf-page"
+        style="background: linear-gradient(180deg, #e8f4fd 0%, #d6ebfc 100%)"
+      >
+        <!-- Background clouds -->
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTk1IiBoZWlnaHQ9Ijg0MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjQwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjMiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSI4MCIgcj0iNTAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMyIvPjxjaXJjbGUgY3g9IjUwMCIgY3k9IjEyMCIgcj0iNDUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMyIvPjwvc3ZnPg==');
+            background-size: cover;
+          "
+        ></div>
+
+        <!-- Header -->
+        <div
+          style="
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            font-size: 36px;
+            font-weight: 800;
+            color: #016feb;
+            z-index: 10;
+          "
+        >
+          FLIGHT INFORMATION
+        </div>
+
+        <!-- Outward Flight Card -->
+        <div
+          style="
+            position: absolute;
+            top: 140px;
+            left: 50px;
+            width: 240px;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+          "
+        >
+          <!-- Perforated line -->
+          <div
+            style="
+              border-top: 2px dashed #e5e7eb;
+              margin: -20px -20px 16px -20px;
+              padding-top: 16px;
+            "
+          ></div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 20px;
+            "
+          >
+            <div style="font-size: 14px; font-weight: 700; color: #016feb">
+              Outward Flight
+            </div>
+            <div style="font-size: 18px; font-weight: 700; color: #ff6600">
+              easyJet
+            </div>
+          </div>
+
+          <!-- Departure -->
+          <div style="margin-bottom: 16px">
+            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
+              Amsterdam, NL
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px">
+              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
+                AMS
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path d="M7 14l5-5 5 5z" />
+              </svg>
+              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
+                10:00
+              </div>
+            </div>
+            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+              May 1, 2024
+            </div>
+          </div>
+
+          <!-- Airplane icon -->
+          <div style="text-align: center; margin: 12px 0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+              <path
+                d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
+              />
+            </svg>
+          </div>
+
+          <!-- Arrival -->
+          <div style="margin-bottom: 20px">
+            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
+              Manchester, UK
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px">
+              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
+                MAN
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
+                10:30
+              </div>
+            </div>
+            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+              May 1, 2024
+            </div>
+          </div>
+
+          <!-- Flight Details -->
+          <div
+            style="
+              border-top: 1px dashed #e5e7eb;
+              padding-top: 16px;
+              display: flex;
+              justify-content: space-between;
+              font-size: 12px;
+            "
+          >
+            <div>
+              <div style="color: #6b7280; margin-bottom: 4px">
+                Flight Number
+              </div>
+              <div style="font-weight: 700; color: #1f2937">EZY2162</div>
+            </div>
+            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
+              <div style="color: #6b7280; margin-bottom: 4px">Duration</div>
+              <div style="font-weight: 700; color: #1f2937">2h 20m</div>
+            </div>
+            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
+              <div style="color: #6b7280; margin-bottom: 4px">
+                Booking Number
+              </div>
+              <div style="font-weight: 700; color: #1f2937">K8WDR5P</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Return Flight Card -->
+        <div
+          style="
+            position: absolute;
+            top: 420px;
+            left: 50px;
+            width: 240px;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+          "
+        >
+          <!-- Perforated line -->
+          <div
+            style="
+              border-top: 2px dashed #e5e7eb;
+              margin: -20px -20px 16px -20px;
+              padding-top: 16px;
+            "
+          ></div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 20px;
+            "
+          >
+            <div style="font-size: 14px; font-weight: 700; color: #016feb">
+              Return Flight
+            </div>
+            <div style="font-size: 18px; font-weight: 700; color: #ff6600">
+              easyJet
+            </div>
+          </div>
+
+          <!-- Departure -->
+          <div style="margin-bottom: 16px">
+            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
+              Manchester, UK
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px">
+              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
+                MAN
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path d="M7 14l5-5 5 5z" />
+              </svg>
+              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
+                18:40
+              </div>
+            </div>
+            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+              May 3, 2024
+            </div>
+          </div>
+
+          <!-- Airplane icon -->
+          <div style="text-align: center; margin: 12px 0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+              <path
+                d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
+              />
+            </svg>
+          </div>
+
+          <!-- Arrival -->
+          <div style="margin-bottom: 20px">
+            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
+              Amsterdam, NL
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px">
+              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
+                AMS
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path d="M7 10l5 5 5-5z" />
+              </svg>
+              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
+                21:00
+              </div>
+            </div>
+            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+              May 3, 2024
+            </div>
+          </div>
+
+          <!-- Flight Details -->
+          <div
+            style="
+              border-top: 1px dashed #e5e7eb;
+              padding-top: 16px;
+              display: flex;
+              justify-content: space-between;
+              font-size: 12px;
+            "
+          >
+            <div>
+              <div style="color: #6b7280; margin-bottom: 4px">
+                Flight Number
+              </div>
+              <div style="font-weight: 700; color: #1f2937">EZY2167</div>
+            </div>
+            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
+              <div style="color: #6b7280; margin-bottom: 4px">Duration</div>
+              <div style="font-weight: 700; color: #1f2937">2h 20m</div>
+            </div>
+            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
+              <div style="color: #6b7280; margin-bottom: 4px">
+                Booking Number
+              </div>
+              <div style="font-weight: 700; color: #1f2937">K8WDR5P</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info Box Top Right -->
+        <div
+          style="
+            position: absolute;
+            top: 140px;
+            right: 50px;
+            width: 220px;
+            background: #ffffff;
+            border: 2px solid #016feb;
+            border-radius: 12px;
+            padding: 16px;
+            z-index: 10;
+          "
+        >
+          <div style="display: flex; align-items: start; gap: 12px">
+            <div
+              style="
+                width: 24px;
+                height: 24px;
+                background: #016feb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+              "
+            >
+              <span style="color: white; font-weight: 700; font-size: 14px"
+                >i</span
+              >
+            </div>
+            <div style="font-size: 11px; color: #4b5563; line-height: 1.5">
+              Please note that you are traveling with hand luggage. The maximum
+              dimensions of your hand luggage differ per airline. For example, a
+              trolley is not allowed as standard if there is insufficient space.
+              You can add extra and/or larger luggage or select your seats on
+              the plane during check-in, any costs for which are at your
+              expense. We recommend that you arrive at least two and a half
+              hours before departure.
+            </div>
+          </div>
+        </div>
+
+        <!-- Check-ins Box Bottom Right -->
+        <div
+          style="
+            position: absolute;
+            top: 420px;
+            right: 50px;
+            width: 220px;
+            background: #016feb;
+            border-radius: 12px;
+            padding: 16px;
+            z-index: 10;
+          "
+        >
+          <div style="display: flex; align-items: start; gap: 12px">
+            <div
+              style="
+                width: 24px;
+                height: 24px;
+                background: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+              "
+            >
+              <span style="color: #016feb; font-weight: 700; font-size: 14px"
+                >i</span
+              >
+            </div>
+            <div
+              style="
+                font-size: 12px;
+                color: #ffffff;
+                line-height: 1.5;
+                font-weight: 500;
+              "
+            >
+              Information on Check-ins can be seen in the next page.
+            </div>
+          </div>
+        </div>
+
+        <!-- Airplane graphic bottom right -->
+        <div
+          style="
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            width: 120px;
+            height: 80px;
+            z-index: 5;
+            opacity: 0.6;
+          "
+        >
+          <svg viewBox="0 0 200 120" fill="none">
+            <path
+              d="M180 60 L160 50 L140 55 L120 50 L100 55 L80 50 L60 55 L40 50 L20 60 L40 70 L60 65 L80 70 L100 65 L120 70 L140 65 L160 70 Z"
+              fill="#FFFFFF"
+              stroke="#016FEB"
+              stroke-width="2"
+            />
+            <circle cx="180" cy="60" r="8" fill="#016FEB" />
+            <rect x="20" y="55" width="40" height="10" fill="#016FEB" />
+          </svg>
+        </div>
+
+        <!-- Logo bottom left -->
+        <div
+          style="
+            position: absolute;
+            bottom: 40px;
+            left: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 10;
+          "
+        >
+          <img
+            src="../images/logo-blue-voetbaltrips.png"
+            alt="voetbaltrips.com"
+            style="height: 30px"
+          />
+        </div>
       </div>
       <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-3.html"></iframe>
+        <!-- Header -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+          "
+        >
+          <div
+            style="
+              width: 48px;
+              height: 48px;
+              background: #016feb;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
+              />
+            </svg>
+          </div>
+          <div style="font-size: 28px; font-weight: 800; color: #016feb">
+            CHECK-IN & AIRLINES OVERVIEW
+          </div>
+        </div>
+
+        <!-- Check-In Info Box -->
+        <div
+          style="
+            border: 2px solid #016feb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background: #f0f7ff;
+          "
+        >
+          <div
+            style="
+              background: #016feb;
+              border-radius: 8px;
+              padding: 12px;
+              margin-bottom: 16px;
+              display: inline-block;
+            "
+          >
+            <div style="font-size: 18px; font-weight: 700; color: #ffffff">
+              Check-In
+            </div>
+          </div>
+          <div style="font-size: 13px; color: #4b5563; line-height: 1.6">
+            You have to check in by yourself through the website of the
+            airline.<br />
+            If you only check in at the airport, an airline may charge
+            additional fees.<br />
+            You can check in with your booking number, your name and in some
+            cases with the e-mail address info@voetbaltrips.com.<br />
+            Below you can find an overview of the websites from the airlines.
+            Please check all details carefully during check-in.<br />
+            As a traveler you are responsible for checking your boarding pass.
+            If you are not admitted to the aircraft due to an error in the
+            flight details, we take no responsibility if you have not informed
+            us in advance of the presence of this error.
+          </div>
+        </div>
+
+        <!-- Airlines Table -->
+        <div
+          style="
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+          "
+        >
+          <!-- Table Header -->
+          <div
+            style="
+              display: flex;
+              background: #f8f9fa;
+              border-bottom: 2px solid #e5e7eb;
+              font-weight: 700;
+              color: #1f2937;
+              font-size: 14px;
+            "
+          >
+            <div
+              style="
+                flex: 1;
+                padding: 12px 16px;
+                border-right: 1px solid #e5e7eb;
+              "
+            >
+              Airlines
+            </div>
+            <div style="flex: 2; padding: 12px 16px">
+              Website & Check-in Process
+            </div>
+          </div>
+
+          <!-- Table Rows -->
+          <div
+            style="
+              display: flex;
+              border-bottom: 1px solid #e5e7eb;
+              font-size: 12px;
+            "
+          >
+            <div
+              style="
+                flex: 1;
+                padding: 12px 16px;
+                border-right: 1px solid #e5e7eb;
+                font-weight: 600;
+                color: #1f2937;
+              "
+            >
+              Aer Lingus
+            </div>
+            <div style="flex: 2; padding: 12px 16px; color: #4b5563">
+              <a href="#" style="color: #016feb; text-decoration: underline"
+                >aerlingus.com</a
+              ><br />
+              Manage trip > 'Check-in' > booking number and last name
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              border-bottom: 1px solid #e5e7eb;
+              font-size: 12px;
+            "
+          >
+            <div
+              style="
+                flex: 1;
+                padding: 12px 16px;
+                border-right: 1px solid #e5e7eb;
+                font-weight: 600;
+                color: #1f2937;
+              "
+            >
+              Air Europa
+            </div>
+            <div style="flex: 2; padding: 12px 16px; color: #4b5563">
+              <a href="#" style="color: #016feb; text-decoration: underline"
+                >aireuropa.com</a
+              ><br />
+              'Check-in' > ICW booking number and last name
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              border-bottom: 1px solid #e5e7eb;
+              font-size: 12px;
+            "
+          >
+            <div
+              style="
+                flex: 1;
+                padding: 12px 16px;
+                border-right: 1px solid #e5e7eb;
+                font-weight: 600;
+                color: #1f2937;
+              "
+            >
+              British Airways
+            </div>
+            <div style="flex: 2; padding: 12px 16px; color: #4b5563">
+              <a href="#" style="color: #016feb; text-decoration: underline"
+                >britishairways.com</a
+              ><br />
+              'Check-in' > ICW booking number and last name
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              border-bottom: 1px solid #e5e7eb;
+              font-size: 12px;
+            "
+          >
+            <div
+              style="
+                flex: 1;
+                padding: 12px 16px;
+                border-right: 1px solid #e5e7eb;
+                font-weight: 600;
+                color: #1f2937;
+              "
+            >
+              Brussels Airlines
+            </div>
+            <div style="flex: 2; padding: 12px 16px; color: #4b5563">
+              <a href="#" style="color: #016feb; text-decoration: underline"
+                >https://checkin.brusselsairlines.com/ci/webforms/paxbyquery.aspx</a
+              ><br />
+              ICW booking number and last name
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              border-bottom: 1px solid #e5e7eb;
+              font-size: 12px;
+            "
+          >
+            <div
+              style="
+                flex: 1;
+                padding: 12px 16px;
+                border-right: 1px solid #e5e7eb;
+                font-weight: 600;
+                color: #1f2937;
+              "
+            >
+              Eurowings
+            </div>
+            <div style="flex: 2; padding: 12px 16px; color: #4b5563">
+              <a href="#" style="color: #016feb; text-decoration: underline"
+                >eurowings.com</a
+              ><br />
+              'Check-in' > 'with booking code' > ICW booking number and last
+              name
+            </div>
+          </div>
+          <div style="display: flex; font-size: 12px">
+            <div
+              style="
+                flex: 1;
+                padding: 12px 16px;
+                border-right: 1px solid #e5e7eb;
+                font-weight: 600;
+                color: #1f2937;
+              "
+            >
+              Wizz Air
+            </div>
+            <div style="flex: 2; padding: 12px 16px; color: #4b5563">
+              <a href="#" style="color: #016feb; text-decoration: underline"
+                >wizzair.com/nl-nl</a
+              ><br />
+              'Check-in & Booking' > ICW booking number and last name
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo bottom right -->
+        <div
+          style="
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="../images/logo-blue-voetbaltrips.png"
+            alt="voetbaltrips.com"
+            style="height: 30px"
+          />
+        </div>
       </div>
       <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-4.html"></iframe>
+        <!-- Hotel Images Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 30px;
+            height: 200px;
+          "
+        >
+          <div style="border-radius: 12px; overflow: hidden">
+            <img
+              src="../images/hotel-image1.png"
+              alt="Hotel bathroom"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div style="border-radius: 12px; overflow: hidden">
+            <img
+              src="../images/hotel-image2.png"
+              alt="Hotel bedroom"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div
+            style="grid-column: 1 / 2; border-radius: 12px; overflow: hidden"
+          >
+            <img
+              src="../images/hotel-image3.png"
+              alt="Hotel suite"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div
+            style="grid-column: 2 / 3; border-radius: 12px; overflow: hidden"
+          >
+            <img
+              src="../images/hotel-image4.png"
+              alt="Hotel bedroom"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+
+        <!-- Hotel Name -->
+        <div
+          style="
+            font-size: 32px;
+            font-weight: 800;
+            color: #016feb;
+            margin-bottom: 30px;
+          "
+        >
+          Premier Inn London Angel Islington
+        </div>
+
+        <!-- Two Column Layout -->
+        <div style="display: flex; gap: 30px; margin-bottom: 30px">
+          <!-- Left Column -->
+          <div style="flex: 1">
+            <!-- Travel Directions Box -->
+            <div
+              style="
+                border: 2px solid #016feb;
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 20px;
+                background: #f0f7ff;
+              "
+            >
+              <div
+                style="
+                  font-size: 16px;
+                  font-weight: 700;
+                  color: #016feb;
+                  margin-bottom: 12px;
+                "
+              >
+                Travel directions: Airport -----►Hotel
+              </div>
+              <div style="font-size: 13px; color: #4b5563; line-height: 1.6">
+                Walk to Manchester Airport train station and take the northern
+                line towards Windermere. Then get off at Manchester Piccadilly,
+                from here it's a 7-mins walk
+              </div>
+            </div>
+            <div
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 10px 16px;
+                background: #016feb;
+                border-radius: 8px;
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+              "
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <span>View on Google Map</span>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div style="flex: 1">
+            <div style="margin-bottom: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
+                Address:
+              </div>
+              <div
+                style="
+                  font-size: 14px;
+                  color: #1f2937;
+                  font-weight: 500;
+                  line-height: 1.6;
+                "
+              >
+                Park-field Street, Islington, London<br />
+                N1 OPS, United Kingdom
+              </div>
+            </div>
+
+            <div style="margin-bottom: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
+                Hotel Reservation Number:
+              </div>
+              <div style="font-size: 14px; color: #1f2937; font-weight: 600">
+                #VT-61284-ARS
+              </div>
+            </div>
+
+            <div style="margin-bottom: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
+                Reservation Name:
+              </div>
+              <div style="font-size: 14px; color: #1f2937; font-weight: 600">
+                James Verhoeven
+              </div>
+            </div>
+
+            <div style="margin-bottom: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
+                Check-in time:
+              </div>
+              <div style="font-size: 14px; color: #1f2937; font-weight: 500">
+                Sunday 23 February 2025
+              </div>
+              <div style="font-size: 13px; color: #6b7280">(14:00 - 00:00)</div>
+            </div>
+
+            <div>
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
+                Check-out time:
+              </div>
+              <div style="font-size: 14px; color: #1f2937; font-weight: 500">
+                Monday 24 February 2025
+              </div>
+              <div style="font-size: 13px; color: #6b7280">(00:00 - 11:00)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Important Note Box -->
+        <div
+          style="
+            border: 2px solid #016feb;
+            border-radius: 12px;
+            padding: 16px;
+            background: #f0f7ff;
+            margin-bottom: 20px;
+          "
+        >
+          <div style="display: flex; align-items: start; gap: 12px">
+            <div
+              style="
+                width: 24px;
+                height: 24px;
+                background: #016feb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+              "
+            >
+              <span style="color: white; font-weight: 700; font-size: 14px"
+                >ⓘ</span
+              >
+            </div>
+            <div style="font-size: 12px; color: #4b5563; line-height: 1.6">
+              <strong style="color: #016feb">Please note!</strong> You can check
+              in with the name under 'Reservation Name' in combination with a
+              valid passport/ID card. In case the accommodation cannot find your
+              reservation, you can use your reservation number. In some cases it
+              may happen that the room is registered in the name of our account,
+              this is 'CityTravel Group'.
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo bottom right -->
+        <div
+          style="
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="../images/logo-blue-voetbaltrips.png"
+            alt="voetbaltrips.com"
+            style="height: 30px"
+          />
+        </div>
       </div>
       <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-5.html"></iframe>
+        <!-- Header -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+          "
+        >
+          <div
+            style="
+              width: 48px;
+              height: 48px;
+              background: #016feb;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+              />
+            </svg>
+          </div>
+          <div style="font-size: 28px; font-weight: 800; color: #1f2937">
+            MATCHDAY OVERVIEW
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div style="position: relative; padding-left: 40px">
+          <!-- Vertical line -->
+          <div
+            style="
+              position: absolute;
+              left: 15px;
+              top: 0;
+              bottom: 0;
+              width: 2px;
+              background: #e5e7eb;
+            "
+          ></div>
+
+          <!-- Start Your Day -->
+          <div style="position: relative; margin-bottom: 30px">
+            <div
+              style="
+                position: absolute;
+                left: -32px;
+                top: 4px;
+                width: 24px;
+                height: 24px;
+                background: #e8f4fd;
+                border: 3px solid #016feb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M6.76 4.84l-1.8 1.79-1.41-1.41 1.79-1.8 1.42 1.42zM4 10.5V1h2v9.5h-2zm15.24 2.66l-1.79 1.8 1.41 1.41 1.8-1.79-1.42-1.42zM17 10.5V1h2v9.5h-2zm-4.05-6.16l-1.41 1.41-1.79-1.8 1.41-1.41 1.79 1.8zm-8.19 12.32l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 12.5c0 4.14-3.36 7.5-7.5 7.5S5 16.64 5 12.5 8.36 5 12.5 5 20 8.36 20 12.5z"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                font-size: 18px;
+                font-weight: 700;
+                color: #1f2937;
+                margin-bottom: 8px;
+              "
+            >
+              Start Your Day
+            </div>
+            <div
+              style="
+                font-size: 14px;
+                color: #4b5563;
+                line-height: 1.6;
+                padding-left: 0;
+              "
+            >
+              • Enjoy breakfast at your hotel (included).<br />
+              • Optional sightseeing around London
+            </div>
+          </div>
+
+          <!-- Depart hotel for Stadium -->
+          <div style="position: relative; margin-bottom: 30px">
+            <div
+              style="
+                position: absolute;
+                left: -32px;
+                top: 4px;
+                width: 24px;
+                height: 24px;
+                background: #e8f4fd;
+                border: 3px solid #016feb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                font-size: 18px;
+                font-weight: 700;
+                color: #1f2937;
+                margin-bottom: 8px;
+              "
+            >
+              Depart hotel for Stadium
+            </div>
+            <div
+              style="
+                font-size: 14px;
+                color: #4b5563;
+                line-height: 1.6;
+                margin-bottom: 12px;
+              "
+            >
+              • Depart hotel for Etihad Stadium via Tube or pre-arranged
+              transfer.
+            </div>
+            <div
+              style="
+                border: 2px solid #e8f4fd;
+                border-radius: 12px;
+                padding: 16px;
+                background: #f0f7ff;
+                margin-left: 0;
+              "
+            >
+              <div
+                style="
+                  font-size: 14px;
+                  font-weight: 700;
+                  color: #016feb;
+                  margin-bottom: 8px;
+                "
+              >
+                Travel directions: Hotel Stadium
+              </div>
+              <div
+                style="
+                  font-size: 12px;
+                  color: #4b5563;
+                  line-height: 1.6;
+                  margin-bottom: 12px;
+                "
+              >
+                From the hotel, walk to Piccadilly Gardens in 12 minutes. Take
+                the tram (Ashton-under-Lyne line) to the Etihad Campus stop (8
+                minutes). From there, it is a 5-minute walk to Etihad Stadium.
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                  margin-bottom: 12px;
+                  padding: 8px 0;
+                  border-top: 1px solid #e5e7eb;
+                  border-bottom: 1px solid #e5e7eb;
+                "
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+                  />
+                </svg>
+                <span style="font-size: 13px; color: #016feb; font-weight: 600"
+                  >Total Journey Time: Approx. 20-25 minutes</span
+                >
+              </div>
+              <div
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  padding: 8px 16px;
+                  background: #016feb;
+                  border-radius: 8px;
+                  color: #ffffff;
+                  font-size: 12px;
+                  font-weight: 600;
+                  cursor: pointer;
+                "
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                <span>View on Google Map</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrive & Hospitality -->
+          <div style="position: relative; margin-bottom: 30px">
+            <div
+              style="
+                position: absolute;
+                left: -32px;
+                top: 4px;
+                width: 24px;
+                height: 24px;
+                background: #e8f4fd;
+                border: 3px solid #016feb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                font-size: 18px;
+                font-weight: 700;
+                color: #1f2937;
+                margin-bottom: 8px;
+              "
+            >
+              Arrive & Hospitality
+            </div>
+            <div style="font-size: 14px; color: #4b5563; line-height: 1.6">
+              • Arrive at the stadium; gates open for Club Level guests.<br />
+              • Access hospitality lounge and enjoy refreshments.
+            </div>
+          </div>
+
+          <!-- Match Kick-off -->
+          <div style="position: relative; margin-bottom: 30px">
+            <div
+              style="
+                position: absolute;
+                left: -36px;
+                top: 0px;
+                width: 32px;
+                height: 32px;
+                background: #016feb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                font-size: 20px;
+                font-weight: 800;
+                color: #ffffff;
+                position: absolute;
+                left: -36px;
+                top: 36px;
+                width: 32px;
+                text-align: center;
+              "
+            >
+              16:30
+            </div>
+            <div
+              style="
+                font-size: 18px;
+                font-weight: 700;
+                color: #1f2937;
+                margin-bottom: 8px;
+                margin-left: 50px;
+              "
+            >
+              Match Kick-off
+            </div>
+            <div
+              style="
+                font-size: 14px;
+                color: #4b5563;
+                line-height: 1.6;
+                margin-left: 50px;
+              "
+            >
+              • Arsenal FC vs Liverpool FC begins
+            </div>
+          </div>
+
+          <!-- Full Time -->
+          <div style="position: relative">
+            <div
+              style="
+                position: absolute;
+                left: -32px;
+                top: 4px;
+                width: 24px;
+                height: 24px;
+                background: #e8f4fd;
+                border: 3px solid #016feb;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                font-size: 20px;
+                font-weight: 800;
+                color: #016feb;
+                position: absolute;
+                left: -36px;
+                top: 36px;
+                width: 32px;
+                text-align: center;
+              "
+            >
+              18:30
+            </div>
+            <div
+              style="
+                font-size: 18px;
+                font-weight: 700;
+                color: #1f2937;
+                margin-bottom: 8px;
+                margin-left: 50px;
+              "
+            >
+              Full Time
+            </div>
+            <div
+              style="
+                font-size: 14px;
+                color: #4b5563;
+                line-height: 1.6;
+                margin-bottom: 12px;
+                margin-left: 50px;
+              "
+            >
+              • Match ends, Stadium exits open.
+            </div>
+            <div
+              style="
+                border: 2px solid #e8f4fd;
+                border-radius: 12px;
+                padding: 16px;
+                background: #f0f7ff;
+                margin-left: 50px;
+              "
+            >
+              <div
+                style="
+                  font-size: 14px;
+                  font-weight: 700;
+                  color: #016feb;
+                  margin-bottom: 8px;
+                "
+              >
+                Travel directions: Stadium Hotel
+              </div>
+              <div
+                style="
+                  font-size: 12px;
+                  color: #4b5563;
+                  line-height: 1.6;
+                  margin-bottom: 12px;
+                "
+              >
+                Follow Stadium Hotel in reverse direction.
+              </div>
+              <div
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 8px;
+                  padding: 8px 16px;
+                  background: #016feb;
+                  border-radius: 8px;
+                  color: #ffffff;
+                  font-size: 12px;
+                  font-weight: 600;
+                  cursor: pointer;
+                "
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                <span>View on Google Map</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo bottom right -->
+        <div
+          style="
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <img
+            src="../images/logo-blue-voetbaltrips.png"
+            alt="voetbaltrips.com"
+            style="height: 30px"
+          />
+        </div>
       </div>
       <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-6.html"></iframe>
-      </div>
-      <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-7.html"></iframe>
-      </div>
-      <div class="pdf-page">
-        <iframe src="travel-itinerary-pdf/page-8.html"></iframe>
+        <!-- Header -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+          "
+        >
+          <div
+            style="
+              width: 48px;
+              height: 48px;
+              background: #e8f4fd;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+              <path
+                d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"
+              />
+            </svg>
+          </div>
+          <div style="font-size: 28px; font-weight: 800; color: #016feb">
+            IMPORTANT CONTACTS & SUPPORT
+          </div>
+        </div>
+
+        <!-- Introduction Text -->
+        <div
+          style="
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 30px;
+          "
+        >
+          Whether you need assistance before, during, or after your trip, our
+          team is ready to help. From travel updates to matchday guidance, you
+          can reach us anytime through the channels below.
+        </div>
+
+        <!-- Contact Cards Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px;
+          "
+        >
+          <!-- Regular Call line -->
+          <div
+            style="
+              background: #ffffff;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: #e8f4fd;
+                padding: 12px 16px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              "
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                />
+              </svg>
+              <span style="font-size: 14px; font-weight: 700; color: #016feb"
+                >Regular Call line</span
+              >
+            </div>
+            <div style="padding: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
+                Reachable weekdays, 09:00-17:00
+              </div>
+              <a
+                href="tel:+31303690059"
+                style="
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #016feb;
+                  text-decoration: underline;
+                "
+                >+31 30 369 0059</a
+              >
+            </div>
+          </div>
+
+          <!-- Contact us -->
+          <div
+            style="
+              background: #ffffff;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: #e8f4fd;
+                padding: 12px 16px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              "
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+              <span style="font-size: 14px; font-weight: 700; color: #016feb"
+                >Contact us</span
+              >
+            </div>
+            <div style="padding: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
+                Send us a mail, We are here to help.
+              </div>
+              <a
+                href="mailto:info@voetbaltrips.com"
+                style="
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #016feb;
+                  text-decoration: underline;
+                "
+                >info@voetbaltrips.com</a
+              >
+            </div>
+          </div>
+
+          <!-- Visit our website -->
+          <div
+            style="
+              background: #ffffff;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: #e8f4fd;
+                padding: 12px 16px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              "
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+              <span style="font-size: 14px; font-weight: 700; color: #016feb"
+                >Visit our website</span
+              >
+            </div>
+            <div style="padding: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
+                Explore other juicy matchday experience
+              </div>
+              <a
+                href="https://voetbaltrips.com"
+                style="
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #016feb;
+                  text-decoration: underline;
+                "
+                >voetbaltrips.com</a
+              >
+            </div>
+          </div>
+
+          <!-- Visit us -->
+          <div
+            style="
+              background: #ffffff;
+              border: 1px solid #e5e7eb;
+              border-radius: 12px;
+              overflow: hidden;
+            "
+          >
+            <div
+              style="
+                background: #e8f4fd;
+                padding: 12px 16px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              "
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <span style="font-size: 14px; font-weight: 700; color: #016feb"
+                >Visit us</span
+              >
+            </div>
+            <div style="padding: 16px">
+              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
+                Visit our office, weekdays, 8am - 10pm
+              </div>
+              <div style="font-size: 14px; font-weight: 600; color: #016feb">
+                Zwarte Woud 212, 524SL, Utrecht
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency Call line -->
+        <div
+          style="
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            position: relative;
+          "
+        >
+          <div
+            style="
+              background: #e8f4fd;
+              padding: 12px 16px;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            "
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            <span style="font-size: 14px; font-weight: 700; color: #016feb"
+              >Emergency Call line</span
+            >
+          </div>
+          <div style="padding: 16px">
+            <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
+              Active 3 hours before the game.
+            </div>
+            <a
+              href="tel:+31303690268"
+              style="
+                font-size: 16px;
+                font-weight: 600;
+                color: #016feb;
+                text-decoration: underline;
+              "
+              >+31 30 369 0268</a
+            >
+          </div>
+          <!-- Decorative line with airplane -->
+          <div
+            style="
+              position: absolute;
+              bottom: -20px;
+              right: 20px;
+              width: 100px;
+              height: 60px;
+              opacity: 0.3;
+            "
+          >
+            <svg viewBox="0 0 100 60" fill="none">
+              <path
+                d="M 0 30 Q 30 20, 60 30 T 100 30"
+                stroke="#016FEB"
+                stroke-width="2"
+                fill="none"
+                stroke-dasharray="3,3"
+              />
+              <path d="M 90 25 L 100 30 L 90 35 Z" fill="#016FEB" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div
+          style="
+            background: #016feb;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+          "
+        >
+          <div
+            style="
+              font-size: 24px;
+              font-weight: 800;
+              color: #ffffff;
+              margin-bottom: 16px;
+              text-align: center;
+            "
+          >
+            Enjoy Your Football Experience
+          </div>
+          <div
+            style="
+              font-size: 14px;
+              color: #ffffff;
+              line-height: 1.6;
+              text-align: center;
+              margin-bottom: 24px;
+              opacity: 0.9;
+            "
+          >
+            Thank you for choosing Voetbaltrips.com. We wish you an
+            unforgettable matchday experience. Safe travels and enjoy the game!
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 16px;
+              margin-bottom: 20px;
+            "
+          >
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <span style="font-size: 18px; font-weight: 700; color: #016feb"
+                >f</span
+              >
+            </div>
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div style="text-align: center">
+            <img
+              src="../images/logo-white-voetbaltrips.png"
+              alt="voetbaltrips.com"
+              style="height: 30px"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </body>

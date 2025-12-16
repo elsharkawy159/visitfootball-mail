@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=595, initial-scale=1.0" />
+    <title>Travel Itinerary - Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #e8f4fd;
+    "
+  >
+    <div
+      style="
+        width: 595px;
+        height: 842px;
+        position: relative;
+        background: linear-gradient(180deg, #e8f4fd 0%, #d6ebfc 100%);
+        overflow: hidden;
+      "
+    >
+      <!-- Background map overlay -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.1;
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTk1IiBoZWlnaHQ9Ijg0MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMTAwTDUwIDE1MEwxMDAgMTIwTDE1MCAxODBMMjAwIDE1MEwyNTAgMjAwTDMwMCAxNTBMMzUwIDE4MEw0MDAgMTUwTDQ1MCAxODBMNTAwIDE1MEw1NTAgMjAwIiBzdHJva2U9IiMwMTZGRUIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC4xIi8+PC9zdmc+');
+          background-size: cover;
+        "
+      ></div>
+
+      <!-- Title Section -->
+      <div style="position: absolute; top: 80px; left: 50px; z-index: 10">
+        <div
+          style="
+            font-size: 48px;
+            font-weight: 800;
+            color: #016feb;
+            line-height: 1.1;
+            margin-bottom: 10px;
+          "
+        >
+          Your
+        </div>
+        <div
+          style="
+            font-size: 48px;
+            font-weight: 800;
+            color: #016feb;
+            line-height: 1.1;
+            margin-bottom: 20px;
+          "
+        >
+          TRAVEL ITINERARY
+        </div>
+        <div
+          style="
+            font-size: 32px;
+            font-weight: 700;
+            color: #016feb;
+            line-height: 1.2;
+          "
+        >
+          for ARSENAL – LIVERPOOL
+        </div>
+      </div>
+
+      <!-- Flight path line -->
+      <svg
+        style="
+          position: absolute;
+          top: 150px;
+          left: 50px;
+          width: 400px;
+          height: 200px;
+          z-index: 5;
+        "
+        viewBox="0 0 400 200"
+      >
+        <path
+          d="M 0 20 Q 100 80, 200 100 T 400 120"
+          stroke="#016FEB"
+          stroke-width="3"
+          fill="none"
+          stroke-dasharray="5,5"
+          opacity="0.6"
+        />
+      </svg>
+
+      <!-- Airplane icon -->
+      <div
+        style="
+          position: absolute;
+          top: 250px;
+          left: 420px;
+          width: 40px;
+          height: 40px;
+          z-index: 10;
+        "
+      >
+        <svg viewBox="0 0 24 24" fill="#016FEB">
+          <path
+            d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
+          />
+        </svg>
+      </div>
+
+      <!-- Football player image (left) -->
+      <div
+        style="
+          position: absolute;
+          top: 350px;
+          left: 50px;
+          width: 200px;
+          height: 250px;
+          border-radius: 16px;
+          overflow: hidden;
+          z-index: 10;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        "
+      >
+        <img
+          src="../images/stadium-view-1.png"
+          alt="Football player"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+
+      <!-- Stadium images (right, stacked) -->
+      <div
+        style="
+          position: absolute;
+          top: 350px;
+          right: 50px;
+          width: 200px;
+          z-index: 10;
+        "
+      >
+        <div
+          style="
+            width: 100%;
+            height: 115px;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+          "
+        >
+          <img
+            src="../images/stadium-bg.png"
+            alt="Stadium"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div
+          style="
+            width: 100%;
+            height: 115px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+          "
+        >
+          <img
+            src="../images/stadium.png"
+            alt="Stadium"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+      </div>
+
+      <!-- Logo bottom right -->
+      <div
+        style="
+          position: absolute;
+          bottom: 40px;
+          right: 50px;
+          z-index: 10;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        "
+      >
+        <img
+          src="../images/logo-blue-voetbaltrips.png"
+          alt="voetbaltrips.com"
+          style="height: 30px"
+        />
+      </div>
+    </div>
+  </body>
+</html>

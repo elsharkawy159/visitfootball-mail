@@ -71,10 +71,24 @@
         color: white;
         font-size: 10px;
         font-weight: 700;
-        padding: 4px 8px;
+        padding: 4px 6px;
         border-radius: 4px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        animation: badgePulse 1.2s infinite cubic-bezier(0.4,0,0.6,1);
+        box-shadow: 0 0 0 0 #016feb;
+      }
+
+      @keyframes badgePulse {
+        0% {
+          box-shadow: 0 0 0 0 #016feb80;
+        }
+        70% {
+          box-shadow: 0 0 0 6px #016feb10;
+        }
+        100% {
+          box-shadow: 0 0 0 0 #016feb00;
+        }
       }
 
       @media (max-width: 768px) {
@@ -310,6 +324,10 @@
             <h3>Gift PDF</h3>
             <p>Gift certificate PDF template</p>
           </a>
+          <a class="template-card" href="contract.html" target="_blank">
+            <h3>Contract</h3>
+            <p>Service contract document</p>
+          </a>
           <a
             class="template-card"
             href="travel-itinerary-pdf.html"
@@ -321,10 +339,6 @@
               Complete travel itinerary with match details, flights, hotel, and
               contacts
             </p>
-          </a>
-          <a class="template-card" href="contract.html" target="_blank">
-            <h3>Contract</h3>
-            <p>Service contract document</p>
           </a>
         </div>
       </main>

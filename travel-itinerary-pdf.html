@@ -554,7 +554,6 @@
                   align-items: center;
                   gap: 8px;
                   font-size: 14px;
-                  font-family: Plus Jakarta Sans;
                   font-size: 14px;
                 "
               >
@@ -702,386 +701,674 @@
       </div>
 
       <!-- Page 4 -->
-      <div
-        class="pdf-page"
-        style="background: linear-gradient(180deg, #e8f4fd 0%, #d6ebfc 100%)"
-      >
+      <div class="pdf-page">
         <!-- Background clouds -->
-        <div
-          style="
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.3;
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTk1IiBoZWlnaHQ9Ijg0MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjQwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjMiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSI4MCIgcj0iNTAiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMyIvPjxjaXJjbGUgY3g9IjUwMCIgY3k9IjEyMCIgcj0iNDUiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMyIvPjwvc3ZnPg==');
-            background-size: cover;
-          "
-        ></div>
+        <img
+          src="./images/travel-itinerary/p4/Plane-cloud.png"
+          alt="cloud"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        />
 
-        <!-- Header -->
-        <div
-          style="
-            position: absolute;
-            top: 50px;
-            right: 50px;
-            font-size: 36px;
-            font-weight: 800;
-            color: #016feb;
-            z-index: 10;
-          "
-        >
-          FLIGHT INFORMATION
-        </div>
-
-        <!-- Outward Flight Card -->
-        <div
-          style="
-            position: absolute;
-            top: 140px;
-            left: 50px;
-            width: 240px;
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            z-index: 10;
-          "
-        >
-          <!-- Perforated line -->
+        <div style="position: absolute; top: 0; right: 12px; width: 189px">
+          <!-- Header -->
           <div
             style="
-              border-top: 2px dashed #e5e7eb;
-              margin: -20px -20px 16px -20px;
-              padding-top: 16px;
-            "
-          ></div>
-
-          <div
-            style="
+              font-weight: 800;
+              font-size: 24px;
+              line-height: 130%;
+              letter-spacing: 0px;
+              text-align: center;
+              text-transform: uppercase;
+              color: #ffffff;
+              background-color: #0000004d;
+              padding: 58px 8px 32px 8px;
+              border-bottom-right-radius: 32px;
+              border-bottom-left-radius: 32px;
               display: flex;
-              justify-content: space-between;
-              align-items: center;
-              margin-bottom: 20px;
+              align-items: end;
             "
           >
-            <div style="font-size: 14px; font-weight: 700; color: #016feb">
-              Outward Flight
-            </div>
-            <div style="font-size: 18px; font-weight: 700; color: #ff6600">
-              easyJet
-            </div>
+            FLIGHT INFORMATION
           </div>
 
-          <!-- Departure -->
-          <div style="margin-bottom: 16px">
-            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
-              Amsterdam, NL
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px">
-              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
-                AMS
-              </div>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
-                <path d="M7 14l5-5 5 5z" />
-              </svg>
-              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
-                10:00
-              </div>
-            </div>
-            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
-              May 1, 2024
-            </div>
-          </div>
-
-          <!-- Airplane icon -->
-          <div style="text-align: center; margin: 12px 0">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
-              <path
-                d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
-              />
-            </svg>
-          </div>
-
-          <!-- Arrival -->
-          <div style="margin-bottom: 20px">
-            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
-              Manchester, UK
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px">
-              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
-                MAN
-              </div>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
-                <path d="M7 10l5 5 5-5z" />
-              </svg>
-              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
-                10:30
-              </div>
-            </div>
-            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
-              May 1, 2024
-            </div>
-          </div>
-
-          <!-- Flight Details -->
+          <!-- Info Box Top Right -->
           <div
             style="
-              border-top: 1px dashed #e5e7eb;
-              padding-top: 16px;
-              display: flex;
-              justify-content: space-between;
-              font-size: 12px;
+              background: #ffffff;
+              border: 1px solid #016feb;
+              border-radius: 12px;
+              padding: 12px;
+              margin-top: 34px;
+              position: relative;
             "
           >
-            <div>
-              <div style="color: #6b7280; margin-bottom: 4px">
-                Flight Number
-              </div>
-              <div style="font-weight: 700; color: #1f2937">EZY2162</div>
-            </div>
-            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
-              <div style="color: #6b7280; margin-bottom: 4px">Duration</div>
-              <div style="font-weight: 700; color: #1f2937">2h 20m</div>
-            </div>
-            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
-              <div style="color: #6b7280; margin-bottom: 4px">
-                Booking Number
-              </div>
-              <div style="font-weight: 700; color: #1f2937">K8WDR5P</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Return Flight Card -->
-        <div
-          style="
-            position: absolute;
-            top: 420px;
-            left: 50px;
-            width: 240px;
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            z-index: 10;
-          "
-        >
-          <!-- Perforated line -->
-          <div
-            style="
-              border-top: 2px dashed #e5e7eb;
-              margin: -20px -20px 16px -20px;
-              padding-top: 16px;
-            "
-          ></div>
-
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              margin-bottom: 20px;
-            "
-          >
-            <div style="font-size: 14px; font-weight: 700; color: #016feb">
-              Return Flight
-            </div>
-            <div style="font-size: 18px; font-weight: 700; color: #ff6600">
-              easyJet
-            </div>
-          </div>
-
-          <!-- Departure -->
-          <div style="margin-bottom: 16px">
-            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
-              Manchester, UK
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px">
-              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
-                MAN
-              </div>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
-                <path d="M7 14l5-5 5 5z" />
-              </svg>
-              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
-                18:40
-              </div>
-            </div>
-            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
-              May 3, 2024
-            </div>
-          </div>
-
-          <!-- Airplane icon -->
-          <div style="text-align: center; margin: 12px 0">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
-              <path
-                d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
-              />
-            </svg>
-          </div>
-
-          <!-- Arrival -->
-          <div style="margin-bottom: 20px">
-            <div style="font-size: 11px; color: #6b7280; margin-bottom: 4px">
-              Amsterdam, NL
-            </div>
-            <div style="display: flex; align-items: center; gap: 8px">
-              <div style="font-size: 32px; font-weight: 800; color: #1f2937">
-                AMS
-              </div>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
-                <path d="M7 10l5 5 5-5z" />
-              </svg>
-              <div style="font-size: 18px; font-weight: 700; color: #1f2937">
-                21:00
-              </div>
-            </div>
-            <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
-              May 3, 2024
-            </div>
-          </div>
-
-          <!-- Flight Details -->
-          <div
-            style="
-              border-top: 1px dashed #e5e7eb;
-              padding-top: 16px;
-              display: flex;
-              justify-content: space-between;
-              font-size: 12px;
-            "
-          >
-            <div>
-              <div style="color: #6b7280; margin-bottom: 4px">
-                Flight Number
-              </div>
-              <div style="font-weight: 700; color: #1f2937">EZY2167</div>
-            </div>
-            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
-              <div style="color: #6b7280; margin-bottom: 4px">Duration</div>
-              <div style="font-weight: 700; color: #1f2937">2h 20m</div>
-            </div>
-            <div style="border-left: 1px dashed #e5e7eb; padding-left: 12px">
-              <div style="color: #6b7280; margin-bottom: 4px">
-                Booking Number
-              </div>
-              <div style="font-weight: 700; color: #1f2937">K8WDR5P</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Info Box Top Right -->
-        <div
-          style="
-            position: absolute;
-            top: 140px;
-            right: 50px;
-            width: 220px;
-            background: #ffffff;
-            border: 2px solid #016feb;
-            border-radius: 12px;
-            padding: 16px;
-            z-index: 10;
-          "
-        >
-          <div style="display: flex; align-items: start; gap: 12px">
             <div
               style="
-                width: 24px;
-                height: 24px;
+                width: 20px;
+                height: 20px;
                 background: #016feb;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-shrink: 0;
+                position: absolute;
+                top: -10px;
+                left: 12px;
               "
             >
-              <span style="color: white; font-weight: 700; font-size: 14px"
-                >i</span
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
+                <path
+                  d="M6 1.125C5.03582 1.125 4.09329 1.41091 3.2916 1.94659C2.48991 2.48226 1.86507 3.24363 1.49609 4.13442C1.12711 5.02521 1.03057 6.00541 1.21867 6.95107C1.40678 7.89672 1.87108 8.76536 2.55286 9.44715C3.23464 10.1289 4.10328 10.5932 5.04894 10.7813C5.99459 10.9694 6.97479 10.8729 7.86558 10.5039C8.75637 10.1349 9.51774 9.51009 10.0534 8.7084C10.5891 7.90671 10.875 6.96418 10.875 6C10.8736 4.70749 10.3596 3.46831 9.44564 2.55436C8.5317 1.64042 7.29251 1.12636 6 1.125ZM6 10.125C5.18415 10.125 4.38663 9.88307 3.70827 9.42981C3.02992 8.97655 2.50121 8.33231 2.189 7.57857C1.87679 6.82482 1.7951 5.99542 1.95426 5.19525C2.11343 4.39508 2.5063 3.66008 3.08319 3.08318C3.66008 2.50629 4.39508 2.11342 5.19525 1.95426C5.99543 1.7951 6.82483 1.87679 7.57857 2.189C8.33232 2.50121 8.97655 3.02992 9.42981 3.70827C9.88308 4.38663 10.125 5.18415 10.125 6C10.1238 7.09364 9.68877 8.14213 8.91545 8.91545C8.14213 9.68876 7.09364 10.1238 6 10.125ZM6.75 8.25C6.75 8.34946 6.71049 8.44484 6.64017 8.51517C6.56984 8.58549 6.47446 8.625 6.375 8.625C6.17609 8.625 5.98532 8.54598 5.84467 8.40533C5.70402 8.26468 5.625 8.07391 5.625 7.875V6C5.52555 6 5.43016 5.96049 5.35984 5.89016C5.28951 5.81984 5.25 5.72446 5.25 5.625C5.25 5.52554 5.28951 5.43016 5.35984 5.35984C5.43016 5.28951 5.52555 5.25 5.625 5.25C5.82391 5.25 6.01468 5.32902 6.15533 5.46967C6.29598 5.61032 6.375 5.80109 6.375 6V7.875C6.47446 7.875 6.56984 7.91451 6.64017 7.98483C6.71049 8.05516 6.75 8.15054 6.75 8.25ZM5.25 3.9375C5.25 3.82625 5.28299 3.71749 5.3448 3.62499C5.40661 3.53249 5.49446 3.46039 5.59724 3.41782C5.70003 3.37524 5.81313 3.3641 5.92224 3.38581C6.03135 3.40751 6.13158 3.46109 6.21025 3.53975C6.28892 3.61842 6.34249 3.71865 6.36419 3.82776C6.3859 3.93688 6.37476 4.04998 6.33218 4.15276C6.28961 4.25554 6.21751 4.34339 6.12501 4.4052C6.03251 4.46701 5.92375 4.5 5.8125 4.5C5.66332 4.5 5.52024 4.44074 5.41475 4.33525C5.30927 4.22976 5.25 4.08668 5.25 3.9375Z"
+                  fill="#FFFFFD"
+                />
+              </svg>
             </div>
-            <div style="font-size: 11px; color: #4b5563; line-height: 1.5">
-              Please note that you are traveling with hand luggage. The maximum
-              dimensions of your hand luggage differ per airline. For example, a
-              trolley is not allowed as standard if there is insufficient space.
-              You can add extra and/or larger luggage or select your seats on
-              the plane during check-in, any costs for which are at your
-              expense. We recommend that you arrive at least two and a half
-              hours before departure.
+            <div style="font-size: 12px; line-height: 150%; letter-spacing: 2%">
+              <span style="font-weight: 700; display: block"
+                >Please note that you are traveling with hand luggage. The
+                maximum dimensions of your hand luggage differ per airline.
+              </span>
+              For example, a trolley is not allowed as standard if there is
+              insufficient space. You can add extra and/or larger luggage or
+              select your seats on the plane during check-in, any costs for
+              which are at your expense. We recommend that you arrive at least
+              two and a half hours before departure.
+            </div>
+          </div>
+
+          <!-- Check-ins Box Bottom Right -->
+          <div
+            style="
+              background: #016feb;
+              border-radius: 12px;
+              border: 1px dashed #ffffff;
+              padding: 12px;
+              margin-top: 24px;
+            "
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 1.5C6.71442 1.5 5.45772 1.88122 4.3888 2.59545C3.31988 3.30968 2.48676 4.32484 1.99479 5.51256C1.50282 6.70028 1.37409 8.00721 1.6249 9.26809C1.8757 10.529 2.49477 11.6872 3.40381 12.5962C4.31285 13.5052 5.47104 14.1243 6.73192 14.3751C7.99279 14.6259 9.29973 14.4972 10.4874 14.0052C11.6752 13.5132 12.6903 12.6801 13.4046 11.6112C14.1188 10.5423 14.5 9.28558 14.5 8C14.4982 6.27665 13.8128 4.62441 12.5942 3.40582C11.3756 2.18722 9.72335 1.50182 8 1.5ZM8 13.5C6.91221 13.5 5.84884 13.1774 4.94437 12.5731C4.0399 11.9687 3.33495 11.1098 2.91867 10.1048C2.50238 9.09977 2.39347 7.9939 2.60568 6.927C2.8179 5.86011 3.34173 4.8801 4.11092 4.11091C4.8801 3.34172 5.86011 2.8179 6.92701 2.60568C7.9939 2.39346 9.09977 2.50238 10.1048 2.91866C11.1098 3.33494 11.9687 4.03989 12.5731 4.94436C13.1774 5.84883 13.5 6.9122 13.5 8C13.4983 9.45818 12.9184 10.8562 11.8873 11.8873C10.8562 12.9184 9.45819 13.4983 8 13.5ZM9 11C9 11.1326 8.94732 11.2598 8.85356 11.3536C8.75979 11.4473 8.63261 11.5 8.5 11.5C8.23479 11.5 7.98043 11.3946 7.7929 11.2071C7.60536 11.0196 7.5 10.7652 7.5 10.5V8C7.36739 8 7.24022 7.94732 7.14645 7.85355C7.05268 7.75979 7 7.63261 7 7.5C7 7.36739 7.05268 7.24021 7.14645 7.14645C7.24022 7.05268 7.36739 7 7.5 7C7.76522 7 8.01957 7.10536 8.20711 7.29289C8.39465 7.48043 8.5 7.73478 8.5 8V10.5C8.63261 10.5 8.75979 10.5527 8.85356 10.6464C8.94732 10.7402 9 10.8674 9 11ZM7 5.25C7 5.10166 7.04399 4.95666 7.1264 4.83332C7.20881 4.70999 7.32595 4.61386 7.46299 4.55709C7.60003 4.50032 7.75084 4.48547 7.89632 4.51441C8.04181 4.54335 8.17544 4.61478 8.28033 4.71967C8.38522 4.82456 8.45665 4.9582 8.48559 5.10368C8.51453 5.24917 8.49968 5.39997 8.44291 5.53701C8.38615 5.67406 8.29002 5.79119 8.16668 5.8736C8.04334 5.95601 7.89834 6 7.75 6C7.55109 6 7.36032 5.92098 7.21967 5.78033C7.07902 5.63968 7 5.44891 7 5.25Z"
+                fill="#FFFFFD"
+              />
+            </svg>
+
+            <div
+              style="
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 150%;
+                letter-spacing: 0px;
+                color: #fffffd;
+              "
+            >
+              Information on Check-ins can be seen in the next page
             </div>
           </div>
         </div>
 
-        <!-- Check-ins Box Bottom Right -->
         <div
           style="
             position: absolute;
-            top: 420px;
-            right: 50px;
-            width: 220px;
-            background: #016feb;
-            border-radius: 12px;
-            padding: 16px;
-            z-index: 10;
+            top: 32px;
+            left: 32px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
           "
         >
-          <div style="display: flex; align-items: start; gap: 12px">
+          <!-- Outward Flight Card -->
+          <div
+            style="
+              width: 100%;
+              background: hsl(0, 0%, 100%, 90%);
+              border-radius: 24px;
+              padding: 16px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              z-index: 10;
+            "
+          >
+            <!-- Perforated line -->
+
             <div
               style="
-                width: 24px;
-                height: 24px;
-                background: #ffffff;
-                border-radius: 50%;
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
+                margin-bottom: 53px;
+                padding: 19px 0;
               "
             >
-              <span style="color: #016feb; font-weight: 700; font-size: 14px"
-                >i</span
+              <div
+                style="
+                  font-weight: 700;
+                  font-size: 14px;
+                  line-height: 100%;
+                  color: #016feb;
+                "
               >
+                Outward Flight
+              </div>
+              <svg
+                width="78"
+                height="18"
+                viewBox="0 0 78 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect
+                  width="78"
+                  height="17.6094"
+                  fill="url(#pattern0_4826_29045)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0_4826_29045"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_4826_29045"
+                      transform="matrix(0.00196314 0 0 0.00869565 -0.00256415 0)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_4826_29045"
+                    width="512"
+                    height="115"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAABzCAYAAADuUbq8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH6QUeEwMAsPQB3AAALHBJREFUeNrtnXeYVNX5+D/vbKOosIIiNcGGsaKo8afGQmxY0KioXyOGsnMHUKKosYtLYiLGKBoCsrMLQQENQWMXxYK9oaIkitgLRRFXlLrtvr8/5qqAW2bm1pk9n+fheXh2Zu499T3vOectgsFgMBhcoyCMpDc2OwG9UXoDPYDOCNuhbAds7Xx9K6DI+f86oBaoB74FVjv/ViIsx2YpMZahfEQh78lk1prWNniBmCYwGAyGLBb84exMIb9COQDYB9hrkwXeTz4H3kN5ixgLgTekgndMjxiMAmAwGAx+LPiDKKaUo4HTgGOA7hEq3nKEeSh38w2PyhwaTI8ZjAJgMBgMbhb+UfSknvOBOFCaA0VeivI3hMmSpM70oMEoAAaDwZDJwj+GtqzlSoRLgeIcrML/sBkoVXxsetNgFACDwWBIZ/EfwfbYzAX2y/GqrAD6SZIVplcNWxIzTWAwGAybLP6DKMbmsTxY/AG6IkwyvWowCoDBYDC0RCkXAn3zR6NhoA6jm+lYg1EADAaDoXmG51l9CihkX9Othi0pNE1gMBgMzmbZojOwax5WrbPp3QiPu5HsSD27IGzTyMd1CB9TwSIBNQqAwWAw+CKJ6ZKXptHCl6ZzIzjcRnAENjfSwP7NjjsFLJIkSXj5fnMFYDAYDD/utZblYa3WUMcLpnMjtPAPZ1u1mIrNU8D+af5ssI6mxCgABoPB4MdGeTqrgYX5tNagXC7TWGN6NyIdYjGIAhYDw8jMFb8t6+jkZVnMFYDBYDBszuXAY3lQj3Uow6SSf5sujcDCP5IdaeA2UmGks6PE21wT5gTAYDAYNj0FSDIP5Vo8NrgKdNcPsynkF2bxj0BnlFOocS6ggbdcLf4Add6u2SYSoMFgMDQmuMs4iALORzmZVPreXGAhNhdIFc+ZHozAGLLYDyGJ0s+TB9rsLlUsNgqAwWAwBCHEh9CGEvoDp6AMBLpEsJi1CJdQzWSTCTACY2Yw7WnDNQiXAAWePdgoAAaDwRCSYC+nkGVch3BZhIq1EZsTpIqnTA9FYIwkOAllEtDT84d7rAAYI0CDwWBId8dUTj1wuVpsBZwXjRWHy83iH4FusOiK8neU03OlzMYI0GAwGDKlhIuBJREoSTVtmGI6JMSFv5yYJrCAd5HcWfyNAmAwGAzZnARMpCYiWfaelYnUmB4JafEvY2+W8yJKBTQaxjfSmCsAg8FgyIYGngl9C6V8ZDoihGYfQ1vWcRlwBVCcq/UwCoDBYDBkw7e8TSlrwNvgLBkhfG46IuDFP8FxrGMy0DuE/jahgA0GgyFsHHe7T8ItBNWmJwJa+MvoonHuRJkbyuKf6u/uRgEwGAyGaBD2AvyN6QKfF34QtSgjxmKE/wu5OGd6+TBzBZALA9CiAwV0oo6tgCIKEBpQCrGpZzU1rJQZrMv7dhhEMZ3ohtKOBtoSQynkK9bzlUxnY9bPHU0JNRxAKmf6hyT5n+RuGFhD0DvwMEdKA6tNJ/gqe3cDKoDDIlKkwWqxJ/AyyhfEMjQAVdaifE4D82UaawINBKSj2Io6DkLoA+wM7AJ0J2U92R5oSypqUi2wFvgO+BxlGTHeR1lIHQvln3yVdwNtFFthsz82fVH6OG20I6moY23SeMRa4CPgHeC/KC/Qhpdz1UJYB1FMB36JcCQxDkbZFehF01G11gDLgSUoi4nxDjaLaeDdxjKhqUU7lAHE+A3KiUCHTT5ehHC1VPBgWDsOytgeoQPQgRgdUedfzAnepbRBaOv8fzWCYrMOZQXClwhLJcm3gY3denqj9CZ1NNoO6ODcV7ZDnV2qsAZhOTbLifERFXyQ64qWxqlCGB5aAWz2kSoWRbqNRlJK/SZyX9gZpSup8MpbO3JfgXpH5n8HfAYsBZYQYyEbedPJ1BhMmVObgitIJYYqIf/4nDr6ie+CzOIQ4CTgcKCfR6cO7wJzEeZSzVO5GPpSx9CW9RwOHIdyBLAnXoaMTLEBZT4xZqPcH9SC4KpdyjgI4XcIZwKlHj32M4RPgc9QNiD0QdnfETxND1/hJrpymZRj+7Cz6EyMPjTQB9gVYWegK6noYV3wxrL4M+Bt4HmUx+nO617UxbGAPhE4EjgU2IPsrhNXI7yCci+1zA5SwHvYj38F/hBiEXaWJB9GTHkvYFuORhngyP29cH/drKTSND9KjEeYwot+KY8a53CECqBPnh9wXOKLAqBl9CbG74DBzi7WT5ajzMCmSqbyQaSFxRDaUMxJKL9FONrZKQXFBmAGNrd4GUrSQ0F6JMpYhCMiVTBhslS4j/imCXZ3BOL/Aw7EjzCh6SnO44E7JUldlvP6auB0vPd5Xo9wPcXcmEunVmpxOXB9aAWI0UOmsCwSbTGCPbEZApztKLN+8iFwO1AlSVZ4JJ87Usw44Hxah31c0lMFwBEQlwPDCN6+wAbuQSiXCt6JmJDYyxlUZ7L5UXMoxQFmY3OlVPFxBNqmK/AP4NQIT5QrJMn4LARid2ziASnCmbAYZZBU8nYGO7qxKJeS3nWUG56klhPd2HQEOn4TjEb5e2gFaKCTTA3XEFHL2HsTxTDo/DK1wGxgnJuTEI0zAGE6sD2tBeFeTzpLR7IjDVwW0sLfmCIwC7hIkqwKdWLEORHhIlJHpVGj1tm5/Dmb3aBHwvNUlKlAx4hPlXpsfiVVvJxWvc6jE/X8EcUiuoa2q1AOkUrea7YuqbvQWcBpAZbtJklySU4oAHGGIUwNsQjtJcn6kObvPihXhbTwb0kdcBsbuDJTg2gdSR8aeIv8vOtvVtl2dcyhw9haE9xCA+9BZIRdzNlxva2JcOIya5wBavEqwoMRXfwhdcd8LfCqY+ka5BGEqMUfUe7OgcUfoJAYM3RUyznhNc7B1PE2yiii7WXTmRhVLX6rhssDXvwBRqgV6PWYG2kTrvdNt+BPSrSMLmoxA+VNYBDRyCpbBPyetizSERleI9qc3QoXfxAkawVAE/yaQt5BuQDvjde8YHuUOWoxRcc0a+zl5cLfVy2eQXgEOCBHhkFf4BWNc2JQiz8JKoBryK101DtTz4QWBGM/hCeJZr74xjrjVzqCfZv8eAhtIJS0t+2x2Tkn2tAOVQGo9cNAtQUZdxYxFgPnRLRHdsTmCU0wTgeluS4p3WilZKwA6CAKNMFfUOYBPXKgjgnW8YIO86+TdQhtNMEtCK8RHX/RTNgG4X6NM8z3N1lMQonn6HwZriM4sNExUE6MGDPx/47c6wXs4GbOPfaAYJTnRt69dU60n4SqAGwIbOEfQ1u1mIZwF9555/hFAcpYSnlER6dhrKo5tREJTwHQIXSklIdQriC3rCT3pZCXNM4enk+MBLtQzMsRPglJfywISY1zlm9CxOJCYGQOt5Fgc2OjnyzncAj2KsUjtm3ms7oQy/VJjsyaMBWAQI7/dQTdWcezwNAcG9vHUMNzOsLb8Ll5g1KT9iKuFl0p5nnguBytbi+E+V7ed2ucA1BeAPbJkyFRgDBdE97XR8voB00snrnFYWpxaCN/3yNH6/NZk5/04B1SwZWCZmFUXNtapCG/TwC0jF9g8wqwf46O772xeVrLmrmWk9yLI+MRq9JSANSiF/BsDgu579kOmKej3Ptg6wgORJjvPDOfKEGZpYO8S3GpgyhwDM7yI/R0yrNjy7/V5mBN1lLHI01Ws5x6JHAXN3VOGHNFZc7bEwCN05cYz0DO76B3JsajOqQJg2Phu1Z6AvBViwqADk0tmuC7Uc4GYAX+H2v1pJ77dHT2Vp9qsRM2D5MKX+xddwiziHEoJbShhDbAL1BugMAtffegFMuzp5VyDiljw3yZOCfpKHbY4m+v5WBNrm8xrHY1EyCwuBp1CKOkksdypgVr8lMB0AS7IDwWwAZnNfAlqTDAftKXEmZo44bHn7VKBSDGS80qADqGthTxMP6FRPwCuIRCekmSdpKkmyRp6yx814JvoWv3Y2N2x9FqUYRyJ6nEMV5Ri3KWVHCOTOEFmUiNTKRGkrwrlVyOcCwELmiudKMk/bguIsBVIQzvDcAi/DnCLqSBUzbbRCR5A3g+h6b/h9Ryc4uHHXOoxeZ0+Gk+BU9VKngUm/2lgik5JUSL8u8KQEewvWPk7U9QHOF1hMFAR0lSKkl2oBttUQ4B/gk+HckrJ5JgTCNq53Tg78BbwFekMiw29i9/Eq4pL9CV+6SFxW4Gfrl7CI+hnNNcsB4nktpcUrGk/RA6x0mSeRlqxheh3OTpHgJOkyQPN/veOBcg3BLoIBFOkQrud9XIcY5CeDzAUtvAn6nnxu+TAGmcXREuA36Hd4aaD0qSgZvVNRVQ5CWibyUNcGJLY26LfjwDYbbHZViHMgPhVknybm7KUQSLesIxip4vSfp7Wp9yClnOE6Ri+PvBeLpxjZQ3veN3YvHfhz8xQmpR9ks3CmYja9Ke2LxGuHEDakglfFuWxdVjNcpzrGaOzKFWmln8zyMVotUPXgKOSieClVp0Bl4DfuZDOd6jhL3TjT3uBCf52FPNWLGkksoWvzaIAkpZRpA+5spdUsnZLhWAYLOlKUOlkulNlOVghBl4E5Z3pSR/2hcap68TGW6/CK9b75OkT6bJVNRiLt4YAa8DbqCIyTKJr3N+M2WxDkIJXDRXkhzvaV0S3Ij6FoXxFkk2sgNvfKE9BJv5pAL8eC0jnqaS/tkmE1KLt4C9Qxpu79HAMTKVT714WKyJQbA7/llsr8fmt+mGr5Qkq3xcQHalJr0B6QycAXh7LDYtncUfQObQgHJvwCcAR7jeHQknBFji+5pa/AGkkhcpYV/UkxOJ7fU8OjXyjjfpxgEIZ0P0ki45PJeV8JOm2zYD3qCAvSXJn/Jh8XewQ3mremt4qmX0RxsxcPWGRcClaQ+1KbwA/NU3uRbnTBdPCNNo8DKvFv9GFQAtpxBlJv4FALkl0yQ0UsGTwBs+lecPOiztoCNHefjehdRmnGXumYAHW1ctcxHsaSS9YQtjOX8VllktfmUi3zlKye2u31f7UwUAQMqxpYK76MaewG8hWulas144Yixw+eaXKOFIuY2PyC/skN7rWZwGHc02xLgdv64yhEsyzjlSx63gk3eNcG3akQJ/+lsNcax5ug7+tLNXMBKaDg/qeqLUMynL3871qUzbUsSoNDveq2uIb2ngjIwznhWyMPDhFnMRE8AO2PK/gS/T6sYkdSQZCvzF5fvWNvuecmxJcift2QsCtt9ofhxn5wZb04LHQPN8AZwmE/PS5SrnFQBqGIt/kV0XU8ETGQ/TlIeKX941u7FtOLliXG46VvqmAKhFZ5RxPhb/TZmWtVX2Wz7uiMaolcZdk3qi+dkoQ2UqH2T8yy68T9DR2cRFzASld8DKyp7pVwuVJFeRStOcjQD/gl58kda7JrBBkoxBQswbvzm/1PIsdnq2CwNK5QKv8rYbBeCHQeyJ65wTHO33PsrXudnet/ss9y+llbOlEPgDflowi6s7UT9T+3YBjknje174i14qldnd5TuJP74MdIS4S5TRNeDxfIkOziw2gySZhHIGmftUT884EUsx4yA762OP6cwyDsr4VwVZu77Ol0r+ncdyNLdPAIRx+GFs9+Mq4yaOhJ9yfz8/wsPnpAKgw9kWv+O0qws/SvHd7SIda/d5Lut/nSRduxAGvYtyY/QYtGX0jrTl7gxsOlJDq5J7UA6DtI1rllCS+W7e8TYZDqHeIX4/ny7OQlrsntWolwwMbY0CEKgCoCPpg/p8FO4mY6J6F5G0iXlwNq2Y2Cb/S4DPGbjUxR2TNpO1zBtOaPFYdDUPZLmDs52d/zUetOHqgE8A2rqYXGGE/j2OQl7VEelfBzhKwAIa2A94sIWvvgIck+1dtiR5BfhPBOb+KRnnxRB+mcX4eUAqfDzGNQqAOxq4CP9jGGQv92O+y/2TWr0C4Lhr+Z/pSfh/TcZjbk6GlPELUne1ftKBFc0LRMcV70xSUaHSZSXK8ZL0yK0yll7MAg9HSPbpbTW4dKVbsBs2C9Tib4256jXZv1OpliQDEY4BZgBLnL5eivAQwtl042BJurwKSkW5bIjA3P9jhr8ZmMV7/twK5GhYCoArGwAnrslZAYy0AVmVL8H/ofzK59LtnumJYT6R2qFZHALsEsD7SinmeU1wD8pHKF/T1N1rjEKgF7APyu/wNu5+U9P4QFqIey6VvK0WBwN30ry3xHqESmKMk9syUhhaKuPGQLNX266uXlaFOLbbABdTx3C1+BslTEx31y4VPA7+RS90xtCdwOCQ5//pGucAqWzZvU8t9oLMTlWAeek82ygAIZ0ACKeibON7KZX+avE4MA9luSMXGpqQ+21ReiMcgW4ebtsnCiimH/B061UAlN8EuKjsgTqGF9LsoAmeNN38JMm7Ws7+LGcgcAqpUMUdgTUIS1CepoHZMpVqH8oYbMvEXAm3KPi/dwSuo4aLNcFE6rnVl37JnHHO7qsoxDIIMcYDv07ju5lbiWvWLr9GAQhCAVB+E2BZjwKOanGd0RDkv+1LlNkcUgDE23CSOYtmcFycsgC/z/kXJJ0DfZvt4qjaZmEoEdIbpxRlLAVcpBbTgPFhuqVJkg81zl0I54Y85vurxQnN5QXQYXTL4rTiM1ann2vAKABZqW9ZXwE4bs+/xgCSvtzPN2JOpLfdzCgAYtG+C3Ky8+0b8OTIXgGo4l1wFTzGD7ZydrPvq8VVOsSFjYP7xXd8iLvHTbm12XYo4HoyTX4iVMqc0O0czAlA07LuQKCDEfqAtmYbgBj7mxHww0CIbJQyHUQBNZTjT4YsX3YZAqpwP1AWwSZtD1xHMQlNcLVUcEfgG48qFmucBxFODrktdqKEscCVjewUj8xi91+HMjWQeZFKFrYf0BVhB6AdNtVANQV8xNcskDk+hZP9kXAUHXVhBGhzgBH4PwiqNa216oVEO2tZ0BMq0OQkatGZGDvQQE+gCzGKUdohlKC0AToidMSm1HHB2iHwNrFdCjdlJhJJBeB7eqLcrgl+RwPnS1XACXyU8RFQAEC5XC1eleSPV1o6gp9j8y/I0EJIuV8q/bteUYsihKHYDAcO+KF8+qPm+cO+vJT1avESyu2sZrZPykAu2gAYuf8jq1prxQuBXU3//8B/fdu9d+AAZxHfC2EfYA+gLfYmAqsxAxjNWPx6rR27UgCkkmec9Jn7RLrnlf7EeF0tLiXJJAnIDEmqeFkt5gNHhr4Pgn+rxVjgPoQDsfkbsF0Wz6rwrZsSnIpyPcquac6LdsCvEX5NKddrguuooMLj/g0rG6AbN0Aj938c+f9trVX/3tXOAEoBr3q4S+mAcLqTQrg/foZY9ndy1HvwjGvRwI0ls6EtMJE4A7WBIS7yVmQ68m5AQlcAIOWRcD1wvYvl8UMqedLzJhpNCTVUOC7B2dId5TYsBqrNUKnyLKx2Lp4AGLmfYg1FrkIV5zQx/MsAlWvL/4syhWWuH1NGf00wE1iBUgWclrOLf0q0ub7flArux20Y5WCVnqMp5E2Ne5r+ublTkscQXs+T3dRkr09P9Dw6UcMT4Grx35QBxHhNyzxLVlUXUmtn9V7HA6CLEfqA8IATorvVKgBbm1EAxNz5LKvFoRpnPjGeRPmts5vMhwniScYx6hkKwdpYuGQ7hLkaJx7YKUDuU0sht3vaLOUUUsc9wKEel7UHMZ7W4Z74gOeUAkAt7SFCDrrhbvymtO5lL18WKncsoCuzs1z4d1KLJ4DnEI7IwwniyW7OOU4vy7HaFyJUqEW572/qxj3Aezk+Wh6SSR4recu4ATjcp/L2ooCZ6t7KJrcUgGIj8x3ukSTPt3YFoKCVD4JFxDgx09SuWk5MLS4EFpHPATU8TOjjWJj/JedaAK5Vi4m+viQ1/m7M8dEyw1PdM87BAWQSPJSEy5DM6rubYVPSO7vTObvVy3yAJyHkIFwRUQC+a6V1Xwb8ifYcJFNYmdF8H0IbljMLmEDwKW9zVgFwlICrUG7OwZY4P4CTgNvBZaKh8KimhLkeS6exBOEDo1zXYibQ5udIbUhtnt0JQNtWK/MBFqNcyDccK0nWt3YFoBD4Ftg2wHf+kxg3IyE2/gaqZXp2aXV1GN0o4gGUfq1ihPiRj7uSS7Aoxv8Mj14zVuO8JpU85IuulaROLf4O/C0HFcV/eWlMpSM4EJtjAyp9T5ZxEPBilnOkPiRX3W+z+tVE1mBhE6wdwF+AGRSEpCzVodSzQqY3kXyulSsAQWHTnvNkQmhpYt0JpTJ6EGM+ys6tZoR4fAKQeiSqSX6PxSfAePD+Hb61hjBNR9LH0wyPmyunU2jL5QSd88EtDd4e/2NzesA9e0rWCoAEkKm0ccVjZdbzL3Xy2zGgki6XJFeZ5TZ6xNBAY7ULq3LT+lSH0JEYj0Mgi389UEUqfkA3GuiEcgTKC4FX3GYrfwYCKkluAo4hevkCmmM76hnn2wSZwTqEyTk2Pd6nilc8fuYxAS+mbgLjhBNTP+YqjkGQc64QQ0QVAOF/gSoA7T3zvQ1QNiAUMYtgkiZ9irC/JIlLkvmSZIVMpVoqeYYGBhC0K53PmbIkyXwK6Zf17iucc4C4lvnoR13PrcDaHGqPO7z0/Xfi++8dcB26ufh1xxBavY6vXciCYOX+9jrMuJt7QrG3G+gY8FagFWjguJxr9ASJgFImr8DmUKlovE9kGmtIJdcJEt/tQ2Qyn5PkUIQEuWGU2oYYQ31rj6lUI8Ek0/FEP45xp8fbkp4EHwA7K2NeHUx7oGcI7f6xq2yLGrDcLwrMniO/KWQbb6da0ANBOF8H5Y4bio6kFOX6gATp2VLF0ha+F3Tcald30VpOoQ5n25bS7gqoVJCkkD2BB3NgaJzhs6L8NwjNujwTnpPb+MjTJ9pZ5R9wO/uyC/tcwl6E4UqtfODyCW8FXN5cM/iNJnXeJoSLsZp3CPa48WeUMjpnGtzmQoI44hMelik8ncY3vwm4BbZzdjmZKk59NMGDLGcdBXxNMWs0zsOaaD4pkEzmc0kyEOE0oh0Yp6+e59/1iKMIzsqBGTLDh2cGbwApWY61gpDS6orLuRFjAQElvHI4XBMRyHqZ6wj7e6oAOOkxHwu4GuN1BPtGfvdfTiEaUPQ6m2lpDoDVgQ+5tvTJqN1G0ZMGnkM5EX5wIyxEOB7ldY0zqsWXVvAfurGHcy2wLJJTsdbbydjI4nID4SWaSYeN1HK3D7vF+hB6M9tEYINCGn2uEpfJFJYhvBHwKcA/1TJJiFy24YnengCkHhr0vXIJNvfp8GDc6XQkpRpnrFo8pQlmq5Vm5rVlHAKujIMyUQCeSfN7wfuxCrtn9P16xtJ0GtkChEkaZ2yLry2nXipI0p5dgMtCOP1oqV18Hb9yG0sg0lkU7882nkYLUin4frYzT8akZfRAOSSUli/wIIRt8HK/FLhfhwZzxaMj6K4WN6jF0xrn9lzYdKYhc07wMImVowDYPAyBa929KOAZLeMXvg0AiyK1OJ8G3kcYBxyJcgbwpBPGt6XW6R9QW2yQqVSn+d3gIw/aHJ3hL36TxkAep1Z6AW9kAhskyV9pYGfgFsKLvb5lHbb3/R0xriPYo9pMmOHTc1cGXpOtsrBjEC4lnKQ6S2Qyn3swr+8Poex9KeJptejqo9xvp3HGYrMEuBQ4HOFcbF7WRMDxJbynkBiTMs1foWXsrRYXapyzdNCPwd1i8IPV8aMhVKYbMV7QuPcGVWpxAqk4/RPhJ3e1AtykcQa08Ji9AmqHTJSv4FMLC8fraErSavdhdGukvZviYk2k71MvU6mWJGMoYC/g7QhMRt+VMZnCQlJxy6PGSvxK8VzNYgg0RWsDEzI7WdOR7OhcT4WBJ5EopYpFEKg74PfsDrya9klsun1STkzjDAaWOBu+LW2XilFmtGSHlIbiFHY0wQFY6eVU0TL6qcX9xHgTmIBwF6U8/739UmyzKRAOpQizNcE/3RpV6SCK1eIUTfCkM0l2a3ZvJUxVqxkhrvw8qP1HS1bymyzGO4bQR52p5Q9pfbMgQwVFGasWl2YkuG5jCSUcDMwPdRpqQBEthfERVADulKQ/JzEyh9qA/dQLsNKfVzqIYmymgw9hstMbd//x8Flhyf0ewBNqcYOOchdszNnxD2YFryLc4Ty7KdqgTHeZATIKOQQuV4t/NXaSoqMp0TinaZx5jrHnQDav7wHUpwyMY5tog08Bb4YoTIdQxydqcUMmQVbUokjjHKwJbqGUpcC9aNpH912h2UxgQQWvEArpm+Z39wupf8ZpnPGaYJdmv1eY1VXSDWpxXkYNNpHvKORswo0iGEgYbangSeCliCkAM3x+/ryA61OW3jRA6MhklF+F1O7vUenhWGjDLHAVUdANMeBS6vlY41yhVvoRFdWinZbRX+NUASsQ7sggP0tf4q4iTa6KyBw8E/hMLZ7QBJM0wSSNM48aqhHuRjiaphQd5VhNcNJmH2qCc1Fuj0DFGhAWYDOXGG8BK1FWImwFdMVmO4TdgEOBA8BVfut7JNn4vZBaLAFXIUIz4UZJNr8T1sG0py0rCT8D4UrgGWyuc44RN22zzlkuyopSJpVpekP8+L7rIKQ448IgqfDBCr6xeiY4FeWeiAiedyTJHr7WN05fhIUB1qkO5XSp5IEmy3QenajjduCEEDdKf5BKb5NFqcU1wB8jMK5qEZ5HeQxhMcKXCKuoo5QCuqBsB+wDHOxshIpctOPNUsnFWY7NK5CcS2veGPcVbtEodwGXg3+GeWlSgHIQwkGbmT/pD4LXSyHevZlPg4xKF1eLCZJkRZPfaMcwNBLph7cHBhHjCLX4+WZpNZN8jUU1mUcQFIRKjVMglVRm8KuPQzORszdXfnylgnuxeBv8XXjTbPM7fH9FJW+qxX8Jzg6nCOFetZiGMI1qXpc51Op5dKKBnbA5izrOBX9DY7fAd0gGcyP9ZXcixYyGEAIwbU6xc3rbH91E3sfw3gzWXejnd8kPDtrMglWS1CFcRGtCWdfMZ0H6n3dEuVPHNH6aoQl2QSOhpW/KdsQ2d62R1E7+9SyfF0OoyOg6QEMJwwrwJd1dR2PLQF6haCTSBNsUeBz6t+m+DXqXFQPKUF6klBq1qKOOVdi8AowJefEH5e+S9P7aSaazGmnZLbfVyP2Wf/si0fXMyYRtf+LCIhU8iviT7zyiLGpG6i4KtCTCEazjFU1wvJanMmjpENo4VzMvEk7SkZZ3Tj+txzOuWgEmaoIbv2+DJudhyp3l7JDq/aCUBxykR5gFfBpyfz/liQtaOnTn38DiEOsapSx2X9DAX317ejWVhGkDFjxZh1SXKr4MeVx6xdLGfVgbKCMMX9xwNMH7mxG4L4dQor1QHmY5G9RiFcWsd+wyopkfXviskb8+4PqpyiUs5wkd2bh1tg5ja0q5E1owSvSv3jMCf2WSuhCttgOvt5Rjo/weAwgXOcnA/Hn8HBpQzoGAPFvClvruN7lz8qAd3m7yNl0tTgHuzfOBsIAkv2wqlamOpoQavgKTyrIJPpVk466SavGeR4tzLfAosBDhc1L2IXuRsoAN685ygSQ5MBTJlXJb/SSkuq+jkB1kcrCpitXiDpr31sl3/iNJTguorS+EkJVM/5f/u6XSXQhnHc7OFLCEcAJBedUOp8aa2W3cB9yUx8OgDhjdXB5zmUgNEhnL6ygOoH8182mVR28pJuXHei1KFUoFcD7hGixdHdpGMMl6lH+EthAFvPgDUMAFRDsxlJ98QEFA+UgAktyKBuPZEhLfoZnFHWl0Hk7lA6Idprsl3mM1DzSvvXTjUsjbBfAySfJKGotc1BOyhMVGhFub/DTGdHIjnW2mzJZk4D7qm2PzD/DvOLiZuXBHGNWV2/iGAgYStVwQ/lONcLLcFly9BZStOBd4MQ/b00YZJlV87MnTUmG6G3Jy8xtjsMyhoVkFQMqxac9gNK00tbnEeEmmd8wlSd4lP+57vOZPzbksyhRWkhvpbDPhM+f0IVScvBHJgF/7Cd15KrQ6pxIjDYC0c2bkOmuA46WCdwJv6wlsAE4mGuG2vVv84Xyp9G5D64TpnpJzLaH8QaaksknG0hoMbTgO94ZdUaAB4feS5IoMh84l4MJtJP9YQLc0LJKF63NUQ26M9cBvJBmRKGD13Eyw8fKnBe718FNl/BWUw4CleT6/PsHm0LROKP1r61UU8CvUXdrhiLAR5beS5DYfnn0V8GHOLP3CxVL548ltWgYMMpEaSjgD4d85PAi+RTlJKpiY8WSoYinCJWbdB+BLCjlNylsO+SsVvA/MzIM6b0AYKMmA86c317bTWI5wV4C7p9sjUe9K3qaWvZygZfmH8gI2B20ZYTOUtr6Nb6jjWHDl1hs2y1EOk8pm7ZXcKErfIpxGNPIDNEcNQlwquHnTP6ZtwSgTqZEKznQyYNXl2CB4CegnlczNuqMrmOL4YbdmvgNOzsgPvJ4rCeO+2kvFUTjJiccfLYJK4KU8KslG3T3DWZims1oqOdtxW/s8T+ZWDcI1dOcIx888Mm1NN45ybKFyLfjNf4B9pJIFvrZRBW8hnEKwJ3KZ8Bk2R0gFU39S9qzkQZzDEaZDYNnysmUdSjndudmL40vHLfBeaDGNsL+7UbiOOirpyFrWcp4Tl7rI5/euBo7L5lhSLS6GSESxy5SPnMXfs3tYHUx72rE3qXDKHYBVNLCUHvwvmzGqFo8DR/m7CnCCVPBIJDfMY2jLOsYAlwHb5Ojiv4AYw2RKKKl502/rBKejTCb8kMEt8TXCRVIRrNGqJjjZOZlqG51O4w4KubApQ1JxNfHWcq1zNF4QuSEgPEQ958tUbyOn6RDaUMxMCMYvd4vOfIFChjsGUZsOvHNRpuNtloRN+R/Cqc6RfubFLifGch7zfaHytq3vxibhGNy5f5zFMaQMCI9qQkCsJBV34y+Z7LY1zm8QD9PD/pQP6EafsO//W2yHYWxNAcMcedQjR0bZxwjjqWaqzMkNWxkdSSkNjAesCBavHphGHVfLP8PJEqpxDkC4D1zlGvBq8zJCKni8+WXSvdazD8qfgJMiIbaFh1Gu89OARkGwuBK4BigJ5CQDrqUbE5oSxGrxe+AWj5UAG5hMIVe49f/WUexAPS8CvSMu45aiXCyV3ti7OPm6K0k/g9xGYJwkGZ/W8wdR7KTB9mtXNkaS3JIzettoStjIGQhDgcOJZqCWN1FupTsz07GliehpwGHAdSGmRd5y4f8XNn+RqvBD9OoQOlLMDSEpSV8h3EQNt8p0Nra8T/aq0iM4EJtLSQVtKQq40usQ5iDcFOQxmo5kR2yuRxnk0+67HmEmwtUypeXERBrntwhJvEkX/KKTetQzf2C12Al4EvhZBGXaSuBWNnCrzPDG40MT7I7ySFb1VaaymkQ6O0NNcAvKBT60yXdALz8S0AQyP0fwc8dO4BSU/fDvhCzdtrwLoUoqeI08QeMc6ySQOyoEZasamEmMCTKFTyKoJB3nJLTaN4DXLQKm0J7pjhtnWng+IZyd3jDgDFK5m/2iBuVZhFkUck8oEco2P/YZDgwi8zS4jfElMJMGJmZ6heGEqPw72dkpKMozCNf7FezG0Y6vAM4FdmjkK18AHwFtSB2j7eDzidHz2ExnK+7KZOKkMQ96Us/rLnfmEyTZcnZOTXAY6oOltnKDVHJ5XixUI+iOcgLKsaTyye8QwGvfBx5GeIRinpWJkTUS82ozVIZyOv7m51iH8gQxZlLMg1FvUwUhznFAAuEEvE0w9THKQ8C/st2o+aoRq0UvUkefhwL7OwMj23d+Rypb1esIT7CeZ7zaqXlW30EU05HjiNEfZV+gL+kZJm1EWUSMZ4F5dGW+26NBRykZCpwIzabMXYfwBsqjNDDLa5uJFhfJOkcQKytoy1dbTmgdRDGd6AZ0R+mB0g3hZ0AvoBdKrwwW2XpgCfAGylMU8Hg6JysZ1yt1DP0s4kG+AOUkqWw+cYlaFAGr8NYIbgM2vaNkke6xbNoJ5WCEfYA9gF+4PJlahfI/hFdRXkVYECXPiYCVgT7YnIBysCP33bTr16TygCxAeZxveEHm5GaEUR1JKfUci3A00A/YnfRPy2schXIBKaPR57w47ZaAJ10HYDeEnig9UbogdEQpRNgGZQPCRpS1CKuBz1CWIXxMko8kx9xQHFuBHYnRCaUDSkeUjgjrEKoRqqnnK3rwuZ93gTqKntSyCwVsR8ryfA021RSwjB14N1fvIX+o3xjasp7eKNsCHRC2IZXAaSPKBpSVwAra8GkQOwbHHuNWjx73liTpm8Y7HwOO8bAakyQZftTDgOVTO0fJ7ILQnRgdgQ4oBSjbkAqhuhZlrSOQV6B8wkY+idpmJGLt2pkYfWigJ0IvoBOp1OZFwFYI61BqEb7DphpYSgGfY/NRPitRjldZD4TuzpgrIXV9W+eMsfXYfE2MT0nyhR/rn5jhaTB4Pqk/BLp79tAYvVu641SLCrwzOlpPPbvINJabHjUY8peYaQKDwUNqOMrTxR+ggePT+JaXO9AJZvE3GIwCYDAYMsP7WAeSlgLQ1aO3fUVJGnkeDAaDUQAMBsNm7O/DM4/UIbRp6kMtJ0bKst0LZeMymch3phsNBqMAGAyGzPAjIE87ipox8FvGyaS8ItyhPE0F000XGgxGATAYDJnT0ZenCiMaXbOH8zOEf3jwhg0UMkJyL+GLwWAwCoDBEAm+8em5AzTBOMfnP7X4JziaAp7Di7jjyiVb5pgwGAz5jXEDNBg8RC2eAo708RWrUJYgdMe7bJwPkuRks/s3GFoXhaYJDAZP+cTn53dG6Ozh8z6kiKFm8TcYWh/mCsBg8PQIgPk5VNpvEQbKJL42HWcwGAXAYDC4oQ33Q06Eha1FOVMqeMd0msFgFACDweASx4e+MuLFrEc5Syp5zPSYwWAUAIPB4B1/Br6K7M5fOEcqudd0k8FgFACDweDlKUCSVSjDgIaIFW01NgOkgtmmlwwGg1EADAY/lIBKHkIpIzrW9e8iHCJVPGV6x2AwGAXAYPBXCZgOjA79JECoBPoZgz+DwbC5aDAYDL6iFscAs8BT//10WIJwoVTwqOkFg8FgFACDIQwlYCjbUcRNwDkBzLsVwI18wySZQ61pfYPBYBQAgyFsRSBOX4SrgZPxPhLnQoRJFDNTJlJjWttgMBgFwGCImiJg0RU4G+VEhIOB4iweU4PyGjCPQmabZD4Gg8EoAAZDbikD7bDZmxj7ADsBXVG6AEXE2Br4FmUDqdC9nwIfIrzLRl6X6Ww0LWgwGLLh/wPYC4LHzsAQswAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNS0wNS0zMFQxOTowMzowMCswMDowMNuoF5EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjUtMDUtMzBUMTk6MDM6MDArMDA6MDCq9a8tAAAAAElFTkSuQmCC"
+                  />
+                </defs>
+              </svg>
             </div>
+
+            <!-- Departure -->
+
+            <!-- City From and to -->
             <div
               style="
-                font-size: 12px;
-                color: #ffffff;
-                line-height: 1.5;
-                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
               "
             >
-              Information on Check-ins can be seen in the next page.
+              <div style="font-size: 14px; color: #8a97aa; margin-bottom: 4px">
+                Amsterdam, NL
+              </div>
+              <div style="font-size: 14px; color: #8a97aa; margin-bottom: 4px">
+                Manchester, UK
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div
+                style="
+                  font-size: 32px;
+                  font-weight: 800;
+                  color: #1f2937;
+                  line-height: 52px;
+                  flex: 1;
+                "
+              >
+                AMS
+              </div>
+
+              <!-- Airplane icon -->
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: relative;
+                  width: 28px;
+                  height: 28px;
+                  background-color: #016feb;
+                  border-radius: 50%;
+                "
+              >
+                <span
+                  style="
+                    width: 84px;
+                    position: absolute;
+                    top: 50%;
+                    translate: (-50%);
+                    border: 1px dashed #dddddd;
+                    z-index: -1;
+                  "
+                ></span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.8311 15.9979L13.3313 9.16548L16.2476 6.24922C17.4974 4.99939 17.914 3.33295 17.4974 2.49973C16.6642 2.08313 14.9978 2.49973 13.748 3.74956L10.8317 6.66583L3.9993 5.16603C3.5827 5.08271 3.24941 5.24935 3.08276 5.58264L2.8328 5.99925C2.66616 6.41586 2.74948 6.83247 3.08276 7.08243L7.49882 9.9987L5.83238 12.4984H3.33273L2.49951 13.3316L4.99917 14.998L6.6656 17.4977L7.49882 16.6644V14.1648L9.99848 12.4984L12.9147 16.9144C13.1647 17.2477 13.5813 17.331 13.9979 17.1644L14.4145 16.9977C14.7478 16.7478 14.9145 16.4145 14.8311 15.9979Z"
+                    stroke="white"
+                    stroke-width="1.66644"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <div
+                style="
+                  font-size: 32px;
+                  font-weight: 800;
+                  color: #1f2937;
+                  line-height: 52px;
+                  flex: 1;
+                  text-align: end;
+                "
+              >
+                MAN
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 4px;
+              "
+            >
+              <div>
+                <div style="display: flex; gap: 6px; align-items: center">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66701 11.0001L11.0003 5.66673M11.0003 5.66673V10.7867M11.0003 5.66673H5.88034"
+                      stroke="#051036"
+                      stroke-width="0.615385"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div
+                    style="font-size: 18px; font-weight: 700; color: #1f2937"
+                  >
+                    10:00
+                  </div>
+                </div>
+                <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+                  May 1, 2024
+                </div>
+              </div>
+
+              <div style="text-align: end">
+                <div style="display: flex; gap: 6px; align-items: center">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66677 5.66668L11.0001 11M11.0001 11V5.88002M11.0001 11H5.8801"
+                      stroke="#051036"
+                      stroke-width="0.615385"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div
+                    style="font-size: 18px; font-weight: 700; color: #1f2937"
+                  >
+                    10:00
+                  </div>
+                </div>
+                <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+                  May 1, 2024
+                </div>
+              </div>
+            </div>
+
+            <!-- Flight Details -->
+            <div
+              style="
+                border-top: 1px dashed #dddddd;
+                margin-top: 16px;
+                padding-top: 16px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+              "
+            >
+              <div>
+                <div style="color: #8a97aa; margin-bottom: 1px">
+                  Flight Number
+                </div>
+                <div
+                  style="font-weight: 500; font-size: 14px; line-height: 20px"
+                >
+                  EZY2162
+                </div>
+              </div>
+              <div>
+                <div style="color: #8a97aa; margin-bottom: 1px">Duration</div>
+                <div
+                  style="font-weight: 500; font-size: 14px; line-height: 20px"
+                >
+                  2h 20m
+                </div>
+              </div>
+              <div>
+                <div style="color: #8a97aa; margin-bottom: 1px">
+                  Booking Number
+                </div>
+                <div
+                  style="font-weight: 500; font-size: 14px; line-height: 20px"
+                >
+                  K8WDR5P
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Return Flight Card -->
+          <div
+            style="
+              width: 100%;
+              background: hsl(0, 0%, 100%, 90%);
+              border-radius: 24px;
+              padding: 16px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              z-index: 10;
+            "
+          >
+            <!-- Perforated line -->
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 53px;
+                padding: 19px 0;
+              "
+            >
+              <div
+                style="
+                  font-weight: 700;
+                  font-size: 14px;
+                  line-height: 100%;
+                  color: #016feb;
+                "
+              >
+                Return Flight
+              </div>
+              <svg
+                width="78"
+                height="18"
+                viewBox="0 0 78 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect
+                  width="78"
+                  height="17.6094"
+                  fill="url(#pattern0_4826_29045)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0_4826_29045"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_4826_29045"
+                      transform="matrix(0.00196314 0 0 0.00869565 -0.00256415 0)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_4826_29045"
+                    width="512"
+                    height="115"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Departure -->
+
+            <!-- City From and to -->
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div style="font-size: 14px; color: #8a97aa; margin-bottom: 4px">
+                Manchester, UK
+              </div>
+              <div style="font-size: 14px; color: #8a97aa; margin-bottom: 4px">
+                Amsterdam, NL
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div
+                style="
+                  font-size: 32px;
+                  font-weight: 800;
+                  color: #1f2937;
+                  line-height: 52px;
+                  flex: 1;
+                "
+              >
+                MAN
+              </div>
+
+              <!-- Airplane icon -->
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: relative;
+                  width: 28px;
+                  height: 28px;
+                  background-color: #016feb;
+                  border-radius: 50%;
+                "
+              >
+                <span
+                  style="
+                    width: 84px;
+                    position: absolute;
+                    top: 50%;
+                    translate: (-50%);
+                    border: 1px dashed #dddddd;
+                    z-index: -1;
+                  "
+                ></span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.8311 15.9979L13.3313 9.16548L16.2476 6.24922C17.4974 4.99939 17.914 3.33295 17.4974 2.49973C16.6642 2.08313 14.9978 2.49973 13.748 3.74956L10.8317 6.66583L3.9993 5.16603C3.5827 5.08271 3.24941 5.24935 3.08276 5.58264L2.8328 5.99925C2.66616 6.41586 2.74948 6.83247 3.08276 7.08243L7.49882 9.9987L5.83238 12.4984H3.33273L2.49951 13.3316L4.99917 14.998L6.6656 17.4977L7.49882 16.6644V14.1648L9.99848 12.4984L12.9147 16.9144C13.1647 17.2477 13.5813 17.331 13.9979 17.1644L14.4145 16.9977C14.7478 16.7478 14.9145 16.4145 14.8311 15.9979Z"
+                    stroke="white"
+                    stroke-width="1.66644"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <div
+                style="
+                  font-size: 32px;
+                  font-weight: 800;
+                  color: #1f2937;
+                  line-height: 52px;
+                  flex: 1;
+                  text-align: end;
+                "
+              >
+                AMS
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 4px;
+              "
+            >
+              <div>
+                <div style="display: flex; gap: 6px; align-items: center">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66701 11.0001L11.0003 5.66673M11.0003 5.66673V10.7867M11.0003 5.66673H5.88034"
+                      stroke="#051036"
+                      stroke-width="0.615385"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div
+                    style="font-size: 18px; font-weight: 700; color: #1f2937"
+                  >
+                    18:40
+                  </div>
+                </div>
+                <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+                  May 3, 2024
+                </div>
+              </div>
+
+              <div style="text-align: end">
+                <div style="display: flex; gap: 6px; align-items: center">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.66677 5.66668L11.0001 11M11.0001 11V5.88002M11.0001 11H5.8801"
+                      stroke="#051036"
+                      stroke-width="0.615385"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div
+                    style="font-size: 18px; font-weight: 700; color: #1f2937"
+                  >
+                    21:00
+                  </div>
+                </div>
+                <div style="font-size: 12px; color: #6b7280; margin-top: 4px">
+                  May 3, 2024
+                </div>
+              </div>
+            </div>
+
+            <!-- Flight Details -->
+            <div
+              style="
+                border-top: 1px dashed #dddddd;
+                margin-top: 16px;
+                padding-top: 16px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+              "
+            >
+              <div>
+                <div style="color: #8a97aa; margin-bottom: 1px">
+                  Flight Number
+                </div>
+                <div
+                  style="font-weight: 500; font-size: 14px; line-height: 20px"
+                >
+                  EZY2162
+                </div>
+              </div>
+              <div>
+                <div style="color: #8a97aa; margin-bottom: 1px">Duration</div>
+                <div
+                  style="font-weight: 500; font-size: 14px; line-height: 20px"
+                >
+                  2h 20m
+                </div>
+              </div>
+              <div>
+                <div style="color: #8a97aa; margin-bottom: 1px">
+                  Booking Number
+                </div>
+                <div
+                  style="font-weight: 500; font-size: 14px; line-height: 20px"
+                >
+                  K8WDR5P
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Airplane graphic bottom right -->
-        <div
-          style="
-            position: absolute;
-            bottom: 40px;
-            right: 50px;
-            width: 120px;
-            height: 80px;
-            z-index: 5;
-            opacity: 0.6;
-          "
-        >
-          <svg viewBox="0 0 200 120" fill="none">
-            <path
-              d="M180 60 L160 50 L140 55 L120 50 L100 55 L80 50 L60 55 L40 50 L20 60 L40 70 L60 65 L80 70 L100 65 L120 70 L140 65 L160 70 Z"
-              fill="#FFFFFF"
-              stroke="#016FEB"
-              stroke-width="2"
-            />
-            <circle cx="180" cy="60" r="8" fill="#016FEB" />
-            <rect x="20" y="55" width="40" height="10" fill="#016FEB" />
-          </svg>
-        </div>
 
         <!-- Logo bottom left -->
         <a
@@ -1658,7 +1945,7 @@
       </div>
 
       <!-- Page 6 -->
-      <div class="pdf-page" style="padding: 0px">
+      <div class="pdf-page" style="padding: 0px; width: 595px">
         <!-- Hotel Images Grid -->
         <div style="display: flex; gap: 2px; padding: 2px">
           <div
@@ -1748,7 +2035,10 @@
               <div
                 style="font-size: 12px; line-height: 150%; letter-spacing: 2%"
               >
-              Walk to Manchester Airport train station and take the northern line towards Windermere. Then get off at <br/> Manchester Piccadilly, from here it's a <br/> 7-mins walk
+                Walk to Manchester Airport train station and take the northern
+                line towards Windermere. Then get off at <br />
+                Manchester Piccadilly, from here it's a <br />
+                7-mins walk
               </div>
 
               <div
@@ -1808,58 +2098,47 @@
           <!-- Right Column -->
           <div style="flex: 1; margin-top: -60px">
             <div style="margin-bottom: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
-                Address:
+              <div style="font-size: 12px; color: #697488; margin-bottom: 4px">
+                Address
               </div>
-              <div
-                style="
-                  font-size: 14px;
-                  color: #1f2937;
-                  font-weight: 500;
-                  line-height: 1.6;
-                "
-              >
+              <div style="font-size: 14px; color: #000000; line-height: 1.6">
                 Park-field Street, Islington, London<br />
                 N1 OPS, United Kingdom
               </div>
             </div>
-
             <div style="margin-bottom: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
-                Hotel Reservation Number:
+              <div style="font-size: 12px; color: #697488; margin-bottom: 4px">
+                Hotel Reservation Number
               </div>
-              <div style="font-size: 14px; color: #1f2937; font-weight: 600">
+              <div style="font-size: 14px; color: #000000; line-height: 1.6">
                 #VT-61284-ARS
               </div>
             </div>
-
             <div style="margin-bottom: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
-                Reservation Name:
+              <div style="font-size: 12px; color: #697488; margin-bottom: 4px">
+                Reservation Name
               </div>
-              <div style="font-size: 14px; color: #1f2937; font-weight: 600">
+              <div style="font-size: 14px; color: #000000; line-height: 1.6">
                 James Verhoeven
               </div>
             </div>
-
             <div style="margin-bottom: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
+              <div style="font-size: 12px; color: #697488; margin-bottom: 4px">
                 Check-in time:
               </div>
-              <div style="font-size: 14px; color: #1f2937; font-weight: 500">
-                Sunday 23 February 2025
+              <div style="font-size: 14px; color: #000000; line-height: 1.6">
+                Sunday 23 February 2025 <br />
+                (14:00 - 00:00)
               </div>
-              <div style="font-size: 13px; color: #6b7280">(14:00 - 00:00)</div>
             </div>
-
             <div>
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px">
+              <div style="font-size: 12px; color: #697488; margin-bottom: 4px">
                 Check-out time:
               </div>
-              <div style="font-size: 14px; color: #1f2937; font-weight: 500">
-                Monday 24 February 2025
+              <div style="font-size: 14px; color: #000000; line-height: 1.6">
+                Monday 24 February 2025 <br />
+                (00:00 - 11:00)
               </div>
-              <div style="font-size: 13px; color: #6b7280">(00:00 - 11:00)</div>
             </div>
           </div>
         </div>
@@ -1867,38 +2146,58 @@
         <!-- Important Note Box -->
         <div
           style="
-            border: 2px solid #016feb;
+            border: 1px solid #016feb;
             border-radius: 12px;
-            padding: 16px;
-            background: #f0f7ff;
-            margin-bottom: 20px;
+            padding: 12px;
+            margin: 4px 32px 0px 32px;
+            position: relative;
           "
         >
-          <div style="display: flex; align-items: start; gap: 12px">
-            <div
-              style="
-                width: 24px;
-                height: 24px;
-                background: #016feb;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
+          <div
+            style="
+              width: 20px;
+              height: 20px;
+              background: #016feb;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-shrink: 0;
+              position: absolute;
+              top: -10px;
+              left: 14px;
+            "
+          >
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span style="color: white; font-weight: 700; font-size: 14px"
-                >ⓘ</span
-              >
-            </div>
-            <div style="font-size: 12px; color: #4b5563; line-height: 1.6">
-              <strong style="color: #016feb">Please note!</strong> You can check
-              in with the name under 'Reservation Name' in combination with a
-              valid passport/ID card. In case the accommodation cannot find your
-              reservation, you can use your reservation number. In some cases it
-              may happen that the room is registered in the name of our account,
-              this is 'CityTravel Group'.
-            </div>
+              <path
+                d="M6 1.125C5.03582 1.125 4.09329 1.41091 3.2916 1.94659C2.48991 2.48226 1.86507 3.24363 1.49609 4.13442C1.12711 5.02521 1.03057 6.00541 1.21867 6.95107C1.40678 7.89672 1.87108 8.76536 2.55286 9.44715C3.23464 10.1289 4.10328 10.5932 5.04894 10.7813C5.99459 10.9694 6.97479 10.8729 7.86558 10.5039C8.75637 10.1349 9.51774 9.51009 10.0534 8.7084C10.5891 7.90671 10.875 6.96418 10.875 6C10.8736 4.70749 10.3596 3.46831 9.44564 2.55436C8.5317 1.64042 7.29251 1.12636 6 1.125ZM6 10.125C5.18415 10.125 4.38663 9.88307 3.70827 9.42981C3.02992 8.97655 2.50121 8.33231 2.189 7.57857C1.87679 6.82482 1.7951 5.99542 1.95426 5.19525C2.11343 4.39508 2.5063 3.66008 3.08319 3.08318C3.66008 2.50629 4.39508 2.11342 5.19525 1.95426C5.99543 1.7951 6.82483 1.87679 7.57857 2.189C8.33232 2.50121 8.97655 3.02992 9.42981 3.70827C9.88308 4.38663 10.125 5.18415 10.125 6C10.1238 7.09364 9.68877 8.14213 8.91545 8.91545C8.14213 9.68876 7.09364 10.1238 6 10.125ZM6.75 8.25C6.75 8.34946 6.71049 8.44484 6.64017 8.51517C6.56984 8.58549 6.47446 8.625 6.375 8.625C6.17609 8.625 5.98532 8.54598 5.84467 8.40533C5.70402 8.26468 5.625 8.07391 5.625 7.875V6C5.52555 6 5.43016 5.96049 5.35984 5.89016C5.28951 5.81984 5.25 5.72446 5.25 5.625C5.25 5.52554 5.28951 5.43016 5.35984 5.35984C5.43016 5.28951 5.52555 5.25 5.625 5.25C5.82391 5.25 6.01468 5.32902 6.15533 5.46967C6.29598 5.61032 6.375 5.80109 6.375 6V7.875C6.47446 7.875 6.56984 7.91451 6.64017 7.98483C6.71049 8.05516 6.75 8.15054 6.75 8.25ZM5.25 3.9375C5.25 3.82625 5.28299 3.71749 5.3448 3.62499C5.40661 3.53249 5.49446 3.46039 5.59724 3.41782C5.70003 3.37524 5.81313 3.3641 5.92224 3.38581C6.03135 3.40751 6.13158 3.46109 6.21025 3.53975C6.28892 3.61842 6.34249 3.71865 6.36419 3.82776C6.3859 3.93688 6.37476 4.04998 6.33218 4.15276C6.28961 4.25554 6.21751 4.34339 6.12501 4.4052C6.03251 4.46701 5.92375 4.5 5.8125 4.5C5.66332 4.5 5.52024 4.44074 5.41475 4.33525C5.30927 4.22976 5.25 4.08668 5.25 3.9375Z"
+                fill="#FFFFFD"
+              />
+            </svg>
+          </div>
+
+          <div
+            style="
+              font-size: 12px;
+              color: #051036;
+              line-height: 150%;
+              letter-spacing: 2%;
+            "
+          >
+            Please note! You can check in with the name under
+            <span style="color: #016eebbd; font-weight: 500"
+              >'Reservation Name'</span
+            >
+            in combination with a valid passport/ID card. In case the
+            accommodation cannot find your reservation, you can use your
+            reservation number. In some cases it may happen that the room is
+            registered in the name of our account, this is ‘CityTravel Group’.
           </div>
         </div>
 
@@ -1923,420 +2222,481 @@
           style="
             display: flex;
             align-items: center;
-            gap: 16px;
-            margin-bottom: 40px;
+            gap: 4px;
+            margin-bottom: 32px;
           "
         >
           <div
             style="
-              width: 48px;
-              height: 48px;
-              background: #016feb;
-              border-radius: 8px;
+              width: 40px;
+              height: 40px;
               display: flex;
               align-items: center;
               justify-content: center;
+              background-color: #016feb;
+              border-radius: 8px;
+              flex-shrink: 0;
             "
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96451 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46928 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM12.75 5.94187L15.0741 4.34344C16.4047 4.87945 17.5734 5.75163 18.4659 6.87469L17.7159 9.40031C17.6972 9.40031 17.6775 9.40969 17.6588 9.41625L15.5194 10.1109C15.4873 10.1212 15.456 10.1337 15.4256 10.1484L12.75 8.30813C12.75 8.28938 12.75 8.26969 12.75 8.25V6C12.75 5.98031 12.75 5.96063 12.75 5.94187ZM8.92875 4.34344L11.25 5.94187C11.25 5.96063 11.25 5.98031 11.25 6V8.25C11.25 8.26969 11.25 8.28938 11.25 8.30813L8.5725 10.1522C8.54218 10.1375 8.51085 10.125 8.47875 10.1147L6.33938 9.42C6.32063 9.41344 6.30094 9.40875 6.28219 9.40406L5.53219 6.87844C6.42555 5.75336 7.596 4.8798 8.92875 4.34344ZM7.71 16.4456H5.05313C4.27541 15.2364 3.82954 13.8439 3.76032 12.4078L5.82282 10.8253C5.84056 10.8332 5.85871 10.84 5.87719 10.8459L8.0175 11.5416C8.04612 11.5502 8.07524 11.5571 8.10469 11.5622L9.11625 14.5078C9.10219 14.5247 9.08813 14.5416 9.075 14.5594L7.75313 16.3791C7.73756 16.4005 7.72316 16.4227 7.71 16.4456ZM14.1272 19.9688C12.7334 20.34 11.2666 20.34 9.87282 19.9688L8.92969 17.3063C8.94188 17.2913 8.955 17.2772 8.96625 17.2612L10.2891 15.4406C10.3046 15.4196 10.319 15.3976 10.3322 15.375H13.6678C13.681 15.3976 13.6954 15.4196 13.7109 15.4406L15.0338 17.2612C15.045 17.2772 15.0581 17.2913 15.0703 17.3063L14.1272 19.9688ZM16.29 16.4428C16.2768 16.4199 16.2624 16.3976 16.2469 16.3762L14.9241 14.5594C14.9109 14.5416 14.8969 14.5247 14.8828 14.5078L15.8944 11.5622C15.9238 11.5571 15.953 11.5502 15.9816 11.5416L18.1219 10.8459C18.1404 10.84 18.1585 10.8332 18.1763 10.8253L20.2388 12.4078C20.1695 13.8439 19.7237 15.2364 18.9459 16.4456L16.29 16.4428Z"
+                fill="white"
               />
             </svg>
           </div>
-          <div style="font-size: 28px; font-weight: 800; color: #1f2937">
-            MATCHDAY OVERVIEW
+          <div
+            style="font-weight: 800; font-size: 24px; text-transform: uppercase"
+          >
+            Matchday Overview
           </div>
         </div>
 
-        <!-- Timeline -->
-        <div style="position: relative; padding-left: 40px">
-          <!-- Vertical line -->
+        <div style="position: relative; padding-left: 66px">
           <div
             style="
               position: absolute;
-              left: 15px;
+              left: 24px;
               top: 0;
               bottom: 0;
               width: 2px;
-              background: #e5e7eb;
+              height: 594px;
+              background: #016feb4d;
             "
-          ></div>
-
-          <!-- Start Your Day -->
-          <div style="position: relative; margin-bottom: 30px">
+          >
             <div
               style="
                 position: absolute;
-                left: -32px;
-                top: 4px;
-                width: 24px;
-                height: 24px;
-                background: #e8f4fd;
-                border: 3px solid #016feb;
+                left: -26px;
+                width: 52px;
+                height: 52px;
+                background: #ffffff;
+                border: 1px solid #dddddd;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
               "
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
-                <path
-                  d="M6.76 4.84l-1.8 1.79-1.41-1.41 1.79-1.8 1.42 1.42zM4 10.5V1h2v9.5h-2zm15.24 2.66l-1.79 1.8 1.41 1.41 1.8-1.79-1.42-1.42zM17 10.5V1h2v9.5h-2zm-4.05-6.16l-1.41 1.41-1.79-1.8 1.41-1.41 1.79 1.8zm-8.19 12.32l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 12.5c0 4.14-3.36 7.5-7.5 7.5S5 16.64 5 12.5 8.36 5 12.5 5 20 8.36 20 12.5z"
-                />
-              </svg>
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f5f5f5;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.6251 6.74995C13.9833 6.74956 13.3444 6.83565 12.7257 7.00589C12.4814 6.60736 12.1847 6.24347 11.8435 5.92401L12.7351 4.65182C12.7916 4.57112 12.8316 4.48008 12.853 4.3839C12.8743 4.28771 12.8765 4.18827 12.8594 4.09125C12.8422 3.99423 12.8062 3.90152 12.7533 3.81843C12.7003 3.73534 12.6316 3.66349 12.5509 3.60698C12.4701 3.55047 12.3791 3.51041 12.2829 3.48909C12.1867 3.46776 12.0873 3.46559 11.9903 3.4827C11.8933 3.4998 11.8005 3.53585 11.7175 3.58878C11.6344 3.64172 11.5625 3.7105 11.506 3.7912L10.6144 5.06245C9.88129 4.69227 9.07138 4.49959 8.25007 4.49995C8.19476 4.49995 8.14132 4.49995 8.08694 4.49995L7.81601 2.97276C7.80179 2.87325 7.76771 2.77761 7.7158 2.69154C7.66388 2.60546 7.5952 2.53069 7.51382 2.47168C7.43244 2.41267 7.34003 2.37063 7.24208 2.34804C7.14413 2.32545 7.04264 2.32278 6.94364 2.34019C6.84464 2.35761 6.75014 2.39474 6.66578 2.44939C6.58141 2.50405 6.50889 2.5751 6.45253 2.65833C6.39617 2.74157 6.35712 2.83528 6.33769 2.93391C6.31826 3.03253 6.31886 3.13406 6.33944 3.23245L6.60944 4.76432C5.77765 5.03944 5.02776 5.51799 4.42788 6.15651L3.15101 5.26307C3.07037 5.20518 2.97904 5.16386 2.88231 5.14153C2.78559 5.11919 2.68539 5.11628 2.58753 5.13297C2.48967 5.14965 2.3961 5.18559 2.31224 5.23871C2.22838 5.29184 2.1559 5.36108 2.099 5.44242C2.0421 5.52377 2.00192 5.6156 1.98078 5.71259C1.95964 5.80959 1.95797 5.90981 1.97586 6.00746C1.99375 6.1051 2.03084 6.19823 2.08499 6.28142C2.13915 6.36462 2.20928 6.43625 2.29132 6.49214L3.56257 7.38464C3.19108 8.11765 2.99832 8.92817 3.00007 9.74995C3.00007 9.80339 3.00007 9.85776 3.00007 9.9112L1.47288 10.1812C1.28803 10.2136 1.12204 10.3141 1.00767 10.4629C0.893299 10.6117 0.838865 10.7979 0.855112 10.9849C0.87136 11.1718 0.957107 11.3459 1.09543 11.4727C1.23375 11.5996 1.41459 11.6699 1.60226 11.6699C1.64593 11.6699 1.68953 11.6661 1.73257 11.6587L3.26257 11.3887C3.397 11.798 3.58152 12.1891 3.81194 12.5531C3.09456 13.2194 2.59444 14.0863 2.37672 15.0409C2.15901 15.9955 2.23377 16.9935 2.59129 17.905C2.94881 18.8165 3.57251 19.5993 4.38117 20.1513C5.18982 20.7033 6.14596 20.999 7.12507 20.9999H14.6251C16.5147 20.9999 18.327 20.2493 19.6632 18.9131C20.9994 17.5769 21.7501 15.7646 21.7501 13.8749C21.7501 11.9853 20.9994 10.173 19.6632 8.83681C18.327 7.50062 16.5147 6.74995 14.6251 6.74995ZM7.96132 11.3212C6.97539 11.151 5.96098 11.2875 5.05507 11.7121C4.55378 10.8842 4.39205 9.89441 4.60372 8.94993C4.81538 8.00545 5.38403 7.17939 6.19074 6.64453C6.99744 6.10967 7.97971 5.90745 8.93209 6.08016C9.88446 6.25287 10.7332 6.78713 11.3007 7.5712C9.77078 8.37633 8.58442 9.70856 7.96132 11.3212Z"
+                    fill="#016FEB"
+                  />
+                </svg>
+              </div>
             </div>
             <div
               style="
-                font-size: 18px;
-                font-weight: 700;
-                color: #1f2937;
+                position: absolute;
+                left: -26px;
+                top: 85px;
+                width: 52px;
+                height: 52px;
+                background: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f5f5f5;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+              <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.2929 18H2.43026C3.15934 18 3.72316 17.4372 3.72316 16.7191V15.0987C5.88123 15.2345 9.00169 15.3315 11.5 15.3315C13.9983 15.3315 17.1285 15.2345 19.2866 15.0987V16.7191C19.2866 17.4372 19.8407 18 20.5697 18H21.7168C22.4459 18 23 17.4372 23 16.7191V11.1299C23 9.49003 22.6695 8.5779 21.7751 7.41348L20.9489 6.3558C20.5989 4.60916 19.9476 2.7752 19.6171 2.05714C19.0921 0.960647 18.0909 0.310512 16.798 0.135849C16.1467 0.0485175 14.0178 0 11.5 0C8.99197 0 6.86306 0.058221 6.21175 0.135849C4.91885 0.291105 3.90786 0.960647 3.39265 2.05714C3.05241 2.7752 2.41082 4.60916 2.05114 6.3558L1.23457 7.41348C0.330516 8.5779 0 9.49003 0 11.1299V16.7191C0 17.4372 0.563821 18 1.2929 18ZM4.01479 5.5407C4.23838 4.48302 4.71471 3.09542 5.0355 2.53261C5.29797 2.07655 5.57988 1.87278 6.10482 1.80485C6.84362 1.70782 8.4962 1.63989 11.5 1.63989C14.5135 1.63989 16.1661 1.68841 16.8952 1.80485C17.4201 1.88248 17.6923 2.07655 17.9645 2.53261C18.295 3.08571 18.7422 4.48302 18.9949 5.5407C19.0824 5.89973 18.9269 6.03558 18.5575 6.01617C16.9438 5.90943 15.019 5.8124 11.5 5.8124C7.9907 5.8124 6.06593 5.90943 4.45224 6.01617C4.07312 6.03558 3.9273 5.89973 4.01479 5.5407ZM4.49112 12.7116C3.60651 12.7116 2.92604 12.0323 2.92604 11.1493C2.92604 10.2566 3.60651 9.58706 4.49112 9.58706C5.37574 9.58706 6.05621 10.2566 6.05621 11.1493C6.05621 12.0323 5.37574 12.7116 4.49112 12.7116ZM18.5089 12.7116C17.6243 12.7116 16.9535 12.0323 16.9535 11.1493C16.9535 10.2566 17.6243 9.58706 18.5089 9.58706C19.4032 9.58706 20.074 10.2566 20.074 11.1493C20.074 12.0323 19.4032 12.7116 18.5089 12.7116ZM8.93364 12.3235C8.26289 12.3235 7.806 11.8674 7.806 11.1978C7.806 10.538 8.26289 10.0819 8.93364 10.0819H14.0761C14.7371 10.0819 15.194 10.538 15.194 11.1978C15.194 11.8674 14.7371 12.3235 14.0761 12.3235H8.93364Z" fill="#016FEB"/>
+                </svg>
+                
+              </div>
+            </div>
+            <div
+              style="
+                position: absolute;
+                left: -26px;
+                width: 52px;
+                height: 52px;
+                top: 345px;
+                background: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f5f5f5;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0_4931_36446" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <rect width="24" height="24" fill="url(#pattern0_4931_36446)"/>
+                </mask>
+                <g mask="url(#mask0_4931_36446)">
+                <rect width="24" height="24" fill="#016FEB"/>
+                </g>
+                <defs>
+                <pattern id="pattern0_4931_36446" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_4931_36446" transform="scale(0.0078125)"/>
+                </pattern>
+                <image id="image0_4931_36446" width="128" height="128" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                </defs>
+                </svg>
+                
+              </div>
+            </div>
+            <div
+              style="
+                position: absolute;
+                left: -26px;
+                top: 425px;
+                width: 52px;
+                padding-bottom: 16px;
+                background: #016feb;
+                border: 1px solid #DDDDDD;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 6px 0 16px 0;
+                font-size: 12px;
+                font-weight: 500;
+                color: #ffffff;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f5f5f5;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.25C10.0716 2.25 8.18657 2.82183 6.58319 3.89317C4.97982 4.96451 3.73013 6.48726 2.99218 8.26884C2.25422 10.0504 2.06114 12.0108 2.43735 13.9021C2.81355 15.7934 3.74215 17.5307 5.10571 18.8943C6.46928 20.2579 8.20656 21.1865 10.0979 21.5627C11.9892 21.9389 13.9496 21.7458 15.7312 21.0078C17.5127 20.2699 19.0355 19.0202 20.1068 17.4168C21.1782 15.8134 21.75 13.9284 21.75 12C21.7473 9.41498 20.7192 6.93661 18.8913 5.10872C17.0634 3.28084 14.585 2.25273 12 2.25ZM12.75 5.94187L15.0741 4.34344C16.4047 4.87945 17.5734 5.75163 18.4659 6.87469L17.7159 9.40031C17.6972 9.40031 17.6775 9.40969 17.6588 9.41625L15.5194 10.1109C15.4873 10.1212 15.456 10.1337 15.4256 10.1484L12.75 8.30813C12.75 8.28938 12.75 8.26969 12.75 8.25V6C12.75 5.98031 12.75 5.96063 12.75 5.94187ZM8.92875 4.34344L11.25 5.94187C11.25 5.96063 11.25 5.98031 11.25 6V8.25C11.25 8.26969 11.25 8.28938 11.25 8.30813L8.5725 10.1522C8.54218 10.1375 8.51085 10.125 8.47875 10.1147L6.33938 9.42C6.32063 9.41344 6.30094 9.40875 6.28219 9.40406L5.53219 6.87844C6.42555 5.75336 7.596 4.8798 8.92875 4.34344ZM7.71 16.4456H5.05313C4.27541 15.2364 3.82954 13.8439 3.76032 12.4078L5.82282 10.8253C5.84056 10.8332 5.85871 10.84 5.87719 10.8459L8.0175 11.5416C8.04612 11.5502 8.07524 11.5571 8.10469 11.5622L9.11625 14.5078C9.10219 14.5247 9.08813 14.5416 9.075 14.5594L7.75313 16.3791C7.73756 16.4005 7.72316 16.4227 7.71 16.4456ZM14.1272 19.9688C12.7334 20.34 11.2666 20.34 9.87282 19.9688L8.92969 17.3063C8.94188 17.2913 8.955 17.2772 8.96625 17.2612L10.2891 15.4406C10.3046 15.4196 10.319 15.3976 10.3322 15.375H13.6678C13.681 15.3976 13.6954 15.4196 13.7109 15.4406L15.0338 17.2612C15.045 17.2772 15.0581 17.2913 15.0703 17.3063L14.1272 19.9688ZM16.29 16.4428C16.2768 16.4199 16.2624 16.3976 16.2469 16.3762L14.9241 14.5594C14.9109 14.5416 14.8969 14.5247 14.8828 14.5078L15.8944 11.5622C15.9238 11.5571 15.953 11.5502 15.9816 11.5416L18.1219 10.8459C18.1404 10.84 18.1585 10.8332 18.1763 10.8253L20.2388 12.4078C20.1695 13.8439 19.7237 15.2364 18.9459 16.4456L16.29 16.4428Z" fill="#016FEB"/>
+                </svg>
+                
+              </div>
+              16:30
+            </div>
+            <div
+              style="
+                position: absolute;
+                left: -26px;
+                bottom: -28px;
+                width: 52px;
+                background: #ffffff;
+                border: 1px solid #dddddd;
+                padding-bottom: 16px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 6px 0 16px 0;
+                font-size: 12px;
+                font-weight: 500;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  width: 40px;
+                  height: 40px;
+                  background: #f5f5f5;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 4.50002V15.75C20.9994 15.8568 20.976 15.9622 20.9314 16.0592C20.8868 16.1562 20.8219 16.2426 20.7413 16.3125C19.3088 17.5528 17.9391 18 16.6331 18C14.8603 18 13.2047 17.1806 11.6644 16.4203C9.17531 15.1875 7.01156 14.1197 4.5 16.1035V20.25C4.5 20.4489 4.42098 20.6397 4.28033 20.7803C4.13968 20.921 3.94891 21 3.75 21C3.55109 21 3.36032 20.921 3.21967 20.7803C3.07902 20.6397 3 20.4489 3 20.25V4.50002C3.00072 4.39317 3.02426 4.28771 3.06905 4.1907C3.11383 4.09369 3.17883 4.00737 3.25969 3.93752C6.63469 1.01439 9.66375 2.51158 12.3337 3.83252C14.9062 5.10564 17.1366 6.20627 19.7587 3.93752C19.8671 3.84357 20.0002 3.78267 20.1421 3.76203C20.2841 3.7414 20.4289 3.7619 20.5596 3.8211C20.6902 3.88031 20.8012 3.97573 20.8792 4.09606C20.9573 4.2164 20.9992 4.35659 21 4.50002Z" fill="#016FEB"/>
+                </svg>
+                
+              </div>
+              18:30
+            </div>
+          </div>
+
+          <!-- Start Your Day -->
+          <div style="position: relative; margin-bottom: 16px">
+            <div
+              style="
+                font-size: 14px;
+                font-weight: 600;
                 margin-bottom: 8px;
               "
             >
               Start Your Day
             </div>
+            <ul
+              style="
+                font-size: 14px;
+                color: #697488;
+                line-height: 150%;
+                padding-left: 20px;
+                margin: 8px 0px;
+              "
+            >
+              <li style="margin-bottom: 4px;">Enjoy breakfast at your hotel (included).</li>
+              <li>Optional sightseeing around London</li>
+            </ul>
+          </div>
+
+          <div style="position: relative; margin-bottom: 16px">
             <div
               style="
                 font-size: 14px;
-                color: #4b5563;
-                line-height: 1.6;
-                padding-left: 0;
-              "
-            >
-              • Enjoy breakfast at your hotel (included).<br />
-              • Optional sightseeing around London
-            </div>
-          </div>
-
-          <!-- Depart hotel for Stadium -->
-          <div style="position: relative; margin-bottom: 30px">
-            <div
-              style="
-                position: absolute;
-                left: -32px;
-                top: 4px;
-                width: 24px;
-                height: 24px;
-                background: #e8f4fd;
-                border: 3px solid #016feb;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
-                <path
-                  d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"
-                />
-              </svg>
-            </div>
-            <div
-              style="
-                font-size: 18px;
-                font-weight: 700;
-                color: #1f2937;
+                font-weight: 600;
                 margin-bottom: 8px;
               "
             >
               Depart hotel for Stadium
             </div>
-            <div
+            <ul
               style="
                 font-size: 14px;
-                color: #4b5563;
-                line-height: 1.6;
-                margin-bottom: 12px;
+                color: #697488;
+                line-height: 150%;
+                padding-left: 20px;
+                margin: 8px 0px;
               "
             >
-              • Depart hotel for Etihad Stadium via Tube or pre-arranged
-              transfer.
-            </div>
-            <div
-              style="
-                border: 2px solid #e8f4fd;
-                border-radius: 12px;
-                padding: 16px;
-                background: #f0f7ff;
-                margin-left: 0;
-              "
-            >
-              <div
-                style="
-                  font-size: 14px;
-                  font-weight: 700;
-                  color: #016feb;
-                  margin-bottom: 8px;
-                "
-              >
-                Travel directions: Hotel Stadium
-              </div>
-              <div
-                style="
-                  font-size: 12px;
-                  color: #4b5563;
-                  line-height: 1.6;
-                  margin-bottom: 12px;
-                "
-              >
-                From the hotel, walk to Piccadilly Gardens in 12 minutes. Take
-                the tram (Ashton-under-Lyne line) to the Etihad Campus stop (8
-                minutes). From there, it is a 5-minute walk to Etihad Stadium.
-              </div>
-              <div
-                style="
-                  display: flex;
-                  align-items: center;
-                  gap: 8px;
-                  margin-bottom: 12px;
-                  padding: 8px 0;
-                  border-top: 1px solid #e5e7eb;
-                  border-bottom: 1px solid #e5e7eb;
-                "
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
-                  <path
-                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
-                  />
+              <li>Depart hotel for Etihad Stadium via Tube or pre-arranged transfer.</li>
+            </ul>
+            <div style="padding: 12px; border: 1px solid #016feb; border-radius: 12px;display: flex;flex-direction: column; gap: 8px; margin-bottom: 16px;">
+              <div style="
+              font-size: 12px;
+              line-height: 150%;
+              letter-spacing: 2%;
+              color: #016feb;
+              display: flex;
+              align-items: center;
+              gap: 2px;
+              ">Travel directions: Hotel <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 8.5C0.723858 8.5 0.5 8.72386 0.5 9C0.5 9.27614 0.723858 9.5 1 9.5V9V8.5ZM25 9L20 6.11325V11.8868L25 9ZM1 9V9.5H2V9V8.5H1V9ZM4 9V9.5H6V9V8.5H4V9ZM8 9V9.5H10V9V8.5H8V9ZM12 9V9.5H14V9V8.5H12V9ZM16 9V9.5L18 9.5V9V8.5H16V9ZM20 9V9.5H22V9V8.5H20V9Z" fill="#016FEB"/>
                 </svg>
-                <span style="font-size: 13px; color: #016feb; font-weight: 600"
-                  >Total Journey Time: Approx. 20-25 minutes</span
-                >
+                Stadium
               </div>
-              <div
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 8px;
-                  padding: 8px 16px;
-                  background: #016feb;
-                  border-radius: 8px;
-                  color: #ffffff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  cursor: pointer;
-                "
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
-                  <path
-                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                  />
-                </svg>
-                <span>View on Google Map</span>
-              </div>
+              <div style="
+              font-size: 12px;
+              line-height: 150%;
+              letter-spacing: 2%;
+              ">From the hotel, walk to Piccadilly Gardens in 12 minutes. Take the tram (Ashton-under-Lyne line) to the Etihad Campus stop (8 minutes). From there, it is a 5-minute walk to Etihad Stadium.</d>
             </div>
+            <div style="padding: 8px 12px; 
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: -0.15px;
+            background-color: #EFF6FF;
+            color: #4A5565;
+            ">⏱️ Total Journey Time: Approx. 20-25 minutes
+            </div>
+            
+
+<a
+href="#"
+style="
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+padding: 4px 16px;
+display: flex;
+gap: 12px;
+align-items: center;
+color: #016feb;
+border: 1px solid #016feb;
+width: fit-content;
+border-radius: 50px;
+margin: 0 auto;
+text-decoration: none;
+"
+>
+<span>View on Google Map</span>
+<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3.86133 14.8154C4.44153 15.5526 4.96963 16.3291 5.4418 17.1393C5.84491 17.9012 6.01296 18.4179 6.30756 19.336C6.48823 19.8432 6.65152 19.9946 7.00259 19.9946C7.38515 19.9946 7.55871 19.7371 7.69281 19.3388C7.97128 18.4717 8.18979 17.8101 8.53451 17.1848C9.21096 15.9777 10.0515 14.9051 10.8774 13.8742C11.101 13.5824 12.5466 11.8826 13.1974 10.5414C13.1974 10.5414 13.9973 9.06814 13.9973 7.01054C13.9973 5.08585 13.2085 3.75098 13.2085 3.75098L10.9373 4.3573L9.55809 7.97861L9.21687 8.47795L9.14864 8.56842L9.05789 8.68166L8.89859 8.86253L8.67096 9.0894L7.44276 10.0869L4.37213 11.8543L3.86133 14.8154Z" fill="#34A853"/>
+  <path d="M0.692139 10.2938C1.44157 12.0002 2.88673 13.5003 3.8645 14.8167L9.0579 8.68404C9.0579 8.68404 8.32624 9.63794 6.99904 9.63794C5.52069 9.63794 4.32638 8.4611 4.32638 6.97717C4.32638 5.95957 4.94051 5.2605 4.94051 5.2605L1.41511 6.20219L0.692139 10.2938Z" fill="#FBBC04"/>
+  <path d="M9.11581 0.31543C10.8407 0.869817 12.317 2.03369 13.21 3.74993L9.05939 8.68061C9.05939 8.68061 9.67352 7.96889 9.67352 6.95761C9.67352 5.43913 8.39087 4.30475 7.00523 4.30475C5.69493 4.30475 4.94238 5.25706 4.94238 5.25706V2.1508L9.11581 0.31543Z" fill="#4285F4"/>
+  <path d="M1.64355 2.49401C2.67375 1.26529 4.4865 0 6.98564 0C8.19815 0 9.11163 0.31733 9.11163 0.31733L4.93859 5.25973H1.98194L1.64355 2.49401Z" fill="#1A73E8"/>
+  <path d="M0.692143 10.2937C0.692143 10.2937 0.00268555 8.94779 0.00268555 6.99793C0.00268555 5.15504 0.721335 3.54414 1.64351 2.4939L4.9409 5.26005L0.692143 10.2937Z" fill="#EA4335"/>
+  </svg>
+  
+</a>
+</div>
+<div style="position: relative; margin-bottom: 16px">
+  <div
+    style="
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    "
+  >
+  Arrive & Hospitality
+  </div>
+  <ul
+    style="
+      font-size: 14px;
+      color: #697488;
+      line-height: 150%;
+      padding-left: 20px;
+      margin: 8px 0px;
+    "
+  >
+    <li style="margin-bottom: 4px;">Arrive at the stadium; gates open for Club Level guests.</li>
+    <li>Access hospitality lounge and enjoy refreshments.</li>
+  </ul>
+</div>
+
+<div style="position: relative; margin-bottom: 16px; padding: 20px 0;">
+  <div
+    style="
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    "
+  >
+  Match Kick-off
+  </div>
+  <ul
+    style="
+      font-size: 14px;
+      color: #697488;
+      line-height: 150%;
+      padding-left: 20px;
+      margin: 8px 0px;
+    "
+  >
+    <li>Arsenal FC vs Liverpool FC begins</li>
+    
+  </ul>
+</div>
+
+<div style="position: relative; margin-bottom: 16px;">
+  <div
+    style="
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    "
+  >
+  Full Time
+  </div>
+  <ul
+    style="
+      font-size: 14px;
+      color: #697488;
+      line-height: 150%;
+      padding-left: 20px;
+      margin: 8px 0px;
+    "
+  >
+    <li>Match ends, Stadium exits open.</li>
+    
+  </ul>
+  <div style="padding: 12px; border: 1px solid #016feb; border-radius: 12px;display: flex;flex-direction: column; gap: 8px; margin-bottom: 16px;">
+    <div style="
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: #016feb;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    ">Travel directions: Stadium <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 8.5C0.723858 8.5 0.5 8.72386 0.5 9C0.5 9.27614 0.723858 9.5 1 9.5V9V8.5ZM25 9L20 6.11325V11.8868L25 9ZM1 9V9.5H2V9V8.5H1V9ZM4 9V9.5H6V9V8.5H4V9ZM8 9V9.5H10V9V8.5H8V9ZM12 9V9.5H14V9V8.5H12V9ZM16 9V9.5L18 9.5V9V8.5H16V9ZM20 9V9.5H22V9V8.5H20V9Z" fill="#016FEB"/>
+       </svg>
+       Hotel
+    </div>
+    <div style="
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    ">Follow Stadium → Hotel in reverse direction.</d>
+  </div>
+  
+<a
+href="#"
+style="
+font-weight: 500;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+padding: 4px 16px;
+display: flex;
+gap: 12px;
+align-items: center;
+color: #016feb;
+border: 1px solid #016feb;
+width: fit-content;
+border-radius: 50px;
+text-decoration: none;
+"
+>
+<span>View on Google Map</span>
+<svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.86133 14.8154C4.44153 15.5526 4.96963 16.3291 5.4418 17.1393C5.84491 17.9012 6.01296 18.4179 6.30756 19.336C6.48823 19.8432 6.65152 19.9946 7.00259 19.9946C7.38515 19.9946 7.55871 19.7371 7.69281 19.3388C7.97128 18.4717 8.18979 17.8101 8.53451 17.1848C9.21096 15.9777 10.0515 14.9051 10.8774 13.8742C11.101 13.5824 12.5466 11.8826 13.1974 10.5414C13.1974 10.5414 13.9973 9.06814 13.9973 7.01054C13.9973 5.08585 13.2085 3.75098 13.2085 3.75098L10.9373 4.3573L9.55809 7.97861L9.21687 8.47795L9.14864 8.56842L9.05789 8.68166L8.89859 8.86253L8.67096 9.0894L7.44276 10.0869L4.37213 11.8543L3.86133 14.8154Z" fill="#34A853"/>
+<path d="M0.692139 10.2938C1.44157 12.0002 2.88673 13.5003 3.8645 14.8167L9.0579 8.68404C9.0579 8.68404 8.32624 9.63794 6.99904 9.63794C5.52069 9.63794 4.32638 8.4611 4.32638 6.97717C4.32638 5.95957 4.94051 5.2605 4.94051 5.2605L1.41511 6.20219L0.692139 10.2938Z" fill="#FBBC04"/>
+<path d="M9.11581 0.31543C10.8407 0.869817 12.317 2.03369 13.21 3.74993L9.05939 8.68061C9.05939 8.68061 9.67352 7.96889 9.67352 6.95761C9.67352 5.43913 8.39087 4.30475 7.00523 4.30475C5.69493 4.30475 4.94238 5.25706 4.94238 5.25706V2.1508L9.11581 0.31543Z" fill="#4285F4"/>
+<path d="M1.64355 2.49401C2.67375 1.26529 4.4865 0 6.98564 0C8.19815 0 9.11163 0.31733 9.11163 0.31733L4.93859 5.25973H1.98194L1.64355 2.49401Z" fill="#1A73E8"/>
+<path d="M0.692143 10.2937C0.692143 10.2937 0.00268555 8.94779 0.00268555 6.99793C0.00268555 5.15504 0.721335 3.54414 1.64351 2.4939L4.9409 5.26005L0.692143 10.2937Z" fill="#EA4335"/>
+</svg>
+
+</a>
+</div>
+</div>
           </div>
 
-          <!-- Arrive & Hospitality -->
-          <div style="position: relative; margin-bottom: 30px">
-            <div
-              style="
-                position: absolute;
-                left: -32px;
-                top: 4px;
-                width: 24px;
-                height: 24px;
-                background: #e8f4fd;
-                border: 3px solid #016feb;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                />
-              </svg>
-            </div>
-            <div
-              style="
-                font-size: 18px;
-                font-weight: 700;
-                color: #1f2937;
-                margin-bottom: 8px;
-              "
-            >
-              Arrive & Hospitality
-            </div>
-            <div style="font-size: 14px; color: #4b5563; line-height: 1.6">
-              • Arrive at the stadium; gates open for Club Level guests.<br />
-              • Access hospitality lounge and enjoy refreshments.
-            </div>
-          </div>
 
-          <!-- Match Kick-off -->
-          <div style="position: relative; margin-bottom: 30px">
-            <div
-              style="
-                position: absolute;
-                left: -36px;
-                top: 0px;
-                width: 32px;
-                height: 32px;
-                background: #016feb;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                />
-              </svg>
-            </div>
-            <div
-              style="
-                font-size: 20px;
-                font-weight: 800;
-                color: #ffffff;
-                position: absolute;
-                left: -36px;
-                top: 36px;
-                width: 32px;
-                text-align: center;
-              "
-            >
-              16:30
-            </div>
-            <div
-              style="
-                font-size: 18px;
-                font-weight: 700;
-                color: #1f2937;
-                margin-bottom: 8px;
-                margin-left: 50px;
-              "
-            >
-              Match Kick-off
-            </div>
-            <div
-              style="
-                font-size: 14px;
-                color: #4b5563;
-                line-height: 1.6;
-                margin-left: 50px;
-              "
-            >
-              • Arsenal FC vs Liverpool FC begins
-            </div>
-          </div>
-
-          <!-- Full Time -->
-          <div style="position: relative">
-            <div
-              style="
-                position: absolute;
-                left: -32px;
-                top: 4px;
-                width: 24px;
-                height: 24px;
-                background: #e8f4fd;
-                border: 3px solid #016feb;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="#016FEB">
-                <path
-                  d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                />
-              </svg>
-            </div>
-            <div
-              style="
-                font-size: 20px;
-                font-weight: 800;
-                color: #016feb;
-                position: absolute;
-                left: -36px;
-                top: 36px;
-                width: 32px;
-                text-align: center;
-              "
-            >
-              18:30
-            </div>
-            <div
-              style="
-                font-size: 18px;
-                font-weight: 700;
-                color: #1f2937;
-                margin-bottom: 8px;
-                margin-left: 50px;
-              "
-            >
-              Full Time
-            </div>
-            <div
-              style="
-                font-size: 14px;
-                color: #4b5563;
-                line-height: 1.6;
-                margin-bottom: 12px;
-                margin-left: 50px;
-              "
-            >
-              • Match ends, Stadium exits open.
-            </div>
-            <div
-              style="
-                border: 2px solid #e8f4fd;
-                border-radius: 12px;
-                padding: 16px;
-                background: #f0f7ff;
-                margin-left: 50px;
-              "
-            >
-              <div
-                style="
-                  font-size: 14px;
-                  font-weight: 700;
-                  color: #016feb;
-                  margin-bottom: 8px;
-                "
-              >
-                Travel directions: Stadium Hotel
-              </div>
-              <div
-                style="
-                  font-size: 12px;
-                  color: #4b5563;
-                  line-height: 1.6;
-                  margin-bottom: 12px;
-                "
-              >
-                Follow Stadium Hotel in reverse direction.
-              </div>
-              <div
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 8px;
-                  padding: 8px 16px;
-                  background: #016feb;
-                  border-radius: 8px;
-                  color: #ffffff;
-                  font-size: 12px;
-                  font-weight: 600;
-                  cursor: pointer;
-                "
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
-                  <path
-                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                  />
-                </svg>
-                <span>View on Google Map</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         <!-- Logo bottom right -->
@@ -2355,44 +2715,68 @@
 
       <!-- Page 8 -->
       <div class="pdf-page">
+        <img
+          src="./images/travel-itinerary/p1/map.png"
+          alt="map"
+          style="
+            position: absolute;
+            top: 41%;
+            left: 50%;
+            transform: translateX(-50%);
+          "
+        />
+        <img
+          src="./images/travel-itinerary/p8/plane.png"
+          alt="plane"
+          style="position: absolute; bottom: 180px; right: 68px"
+        />
         <!-- Header -->
         <div
           style="
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 4px;
             margin-bottom: 24px;
           "
         >
           <div
             style="
-              width: 48px;
-              height: 48px;
-              background: #e8f4fd;
-              border-radius: 8px;
+              width: 40px;
+              height: 40px;
               display: flex;
               align-items: center;
               justify-content: center;
+              background-color: #016feb;
+              border-radius: 8px;
+              flex-shrink: 0;
             "
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="#016FEB">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"
+                d="M21.75 11.9999V19.4999C21.75 20.4945 21.3549 21.4483 20.6517 22.1516C19.9484 22.8548 18.9946 23.2499 18 23.2499H12.75C12.5511 23.2499 12.3603 23.1709 12.2197 23.0303C12.079 22.8896 12 22.6988 12 22.4999C12 22.301 12.079 22.1103 12.2197 21.9696C12.3603 21.829 12.5511 21.7499 12.75 21.7499H18C18.5967 21.7499 19.169 21.5129 19.591 21.0909C20.0129 20.669 20.25 20.0967 20.25 19.4999H18C17.4033 19.4999 16.831 19.2629 16.409 18.8409C15.9871 18.419 15.75 17.8467 15.75 17.2499V13.4999C15.75 12.9032 15.9871 12.3309 16.409 11.9089C16.831 11.487 17.4033 11.2499 18 11.2499H20.2172C20.0753 9.69081 19.4926 8.20426 18.5374 6.96391C17.5821 5.72357 16.2936 4.78063 14.8225 4.24524C13.3513 3.70986 11.7581 3.60413 10.2291 3.94041C8.70008 4.27668 7.2983 5.04108 6.1875 6.14431C4.80624 7.50735 3.9543 9.31689 3.78375 11.2499H6C6.59674 11.2499 7.16903 11.487 7.59099 11.9089C8.01295 12.3309 8.25 12.9032 8.25 13.4999V17.2499C8.25 17.8467 8.01295 18.419 7.59099 18.8409C7.16903 19.2629 6.59674 19.4999 6 19.4999H4.5C3.90326 19.4999 3.33097 19.2629 2.90901 18.8409C2.48705 18.419 2.25 17.8467 2.25 17.2499V11.9999C2.2521 10.0686 2.82715 8.18128 3.90235 6.5769C4.97755 4.97251 6.50456 3.72319 8.29012 2.98704C10.0757 2.2509 12.0395 2.06104 13.933 2.4415C15.8265 2.82195 17.5646 3.75561 18.9272 5.12431C19.8268 6.02835 20.5393 7.10102 21.0237 8.28086C21.5081 9.46071 21.7549 10.7245 21.75 11.9999Z"
+                fill="white"
               />
             </svg>
           </div>
-          <div style="font-size: 28px; font-weight: 800; color: #016feb">
-            IMPORTANT CONTACTS & SUPPORT
+          <div
+            style="font-weight: 800; font-size: 24px; text-transform: uppercase"
+          >
+            Important Contacts & Support
           </div>
         </div>
-
         <!-- Introduction Text -->
         <div
           style="
             font-size: 14px;
-            color: #4b5563;
-            line-height: 1.6;
-            margin-bottom: 30px;
+            line-height: 150%;
+            letter-spacing: 2%;
+            margin-bottom: 43px;
           "
         >
           Whether you need assistance before, during, or after your trip, our
@@ -2401,257 +2785,349 @@
         </div>
 
         <!-- Contact Cards Grid -->
-        <div
-          style="
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 20px;
-          "
-        >
-          <!-- Regular Call line -->
+        <div style="display: flex; gap: 16px">
           <div
             style="
-              background: #ffffff;
-              border: 1px solid #e5e7eb;
+              border: 1px solid #016feb;
               border-radius: 12px;
-              overflow: hidden;
+              position: relative;
+              padding: 24px 12px;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              background-color: #ffffff;
+              flex: 1;
             "
           >
             <div
               style="
-                background: #e8f4fd;
-                padding: 12px 16px;
+                background: #016feb;
+                border-radius: 20px;
+                padding: 4px 24px 4px 6px;
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                gap: 2px;
+                position: absolute;
+                top: -19px;
+                left: 12px;
               "
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  d="M14.4925 10.9426C14.3811 11.7895 13.9652 12.5669 13.3224 13.1295C12.6797 13.6922 11.8542 14.0016 11 14.0001C6.03751 14.0001 2.00001 9.96262 2.00001 5.00012C1.99847 4.14592 2.30794 3.32038 2.87059 2.67768C3.43324 2.03497 4.21061 1.61906 5.05751 1.50762C5.27166 1.48147 5.48854 1.52528 5.67575 1.63252C5.86296 1.73975 6.01047 1.90466 6.09626 2.10262L7.41626 5.04949V5.05699C7.48194 5.20853 7.50906 5.37397 7.49521 5.53854C7.48136 5.70311 7.42696 5.86169 7.33688 6.00012C7.32563 6.01699 7.31376 6.03262 7.30126 6.04824L6.00001 7.59074C6.46813 8.54199 7.46313 9.52824 8.42688 9.99762L9.94813 8.70324C9.96307 8.69068 9.97872 8.679 9.99501 8.66824C10.1333 8.57599 10.2924 8.51968 10.458 8.50441C10.6235 8.48913 10.7903 8.51536 10.9431 8.58074L10.9513 8.58449L13.8956 9.90387C14.0939 9.98935 14.2592 10.1367 14.3668 10.324C14.4744 10.5112 14.5185 10.7282 14.4925 10.9426Z"
+                  fill="white"
                 />
               </svg>
-              <span style="font-size: 14px; font-weight: 700; color: #016feb"
+
+              <span
+                style="
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 150%;
+                  letter-spacing: 2%;
+                  color: #ffffff;
+                "
                 >Regular Call line</span
               >
             </div>
-            <div style="padding: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
-                Reachable weekdays, 09:00-17:00
-              </div>
-              <a
-                href="tel:+31303690059"
-                style="
-                  font-size: 16px;
-                  font-weight: 600;
-                  color: #016feb;
-                  text-decoration: underline;
-                "
-                >+31 30 369 0059</a
-              >
+            <div style="font-size: 13px; line-height: 150%; letter-spacing: 2%">
+              Reachable weekdays, 09:00-17:00
             </div>
+            <a
+              href="tel:+31303690059"
+              style="
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 0%;
+                text-decoration: underline;
+                text-decoration-style: solid;
+                color: #016feb;
+              "
+              >+31 30 369 0059</a
+            >
           </div>
-
-          <!-- Contact us -->
           <div
             style="
-              background: #ffffff;
-              border: 1px solid #e5e7eb;
+              border: 1px solid #016feb;
               border-radius: 12px;
-              overflow: hidden;
+              position: relative;
+              padding: 24px 12px;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              background-color: #ffffff;
+              flex: 1;
             "
           >
             <div
               style="
-                background: #e8f4fd;
-                padding: 12px 16px;
+                background: #016feb;
+                border-radius: 20px;
+                padding: 4px 24px 4px 6px;
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                gap: 2px;
+                position: absolute;
+                top: -19px;
+                left: 12px;
               "
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  d="M14.4868 11.7081C14.8395 10.9913 15.0152 10.2005 14.9994 9.40177C14.9835 8.60308 14.7765 7.81981 14.3957 7.11757C14.0149 6.41532 13.4714 5.81454 12.8106 5.36554C12.1499 4.91654 11.3912 4.63239 10.5981 4.53689C10.335 3.92372 9.95195 3.36939 9.47136 2.90657C8.99077 2.44375 8.42241 2.0818 7.79977 1.84204C7.17713 1.60228 6.5128 1.48956 5.84592 1.51053C5.17904 1.53149 4.5231 1.68572 3.91675 1.96412C3.3104 2.24251 2.76589 2.63945 2.31533 3.13155C1.86476 3.62364 1.51724 4.20094 1.29324 4.82942C1.06924 5.45791 0.973289 6.12487 1.01105 6.79101C1.0488 7.45715 1.2195 8.10899 1.51309 8.70814L1.03434 10.3844C0.991615 10.5344 0.989743 10.693 1.02891 10.8439C1.06809 10.9949 1.14688 11.1326 1.25714 11.2428C1.36739 11.3531 1.50511 11.4319 1.65604 11.4711C1.80697 11.5102 1.96562 11.5084 2.11559 11.4656L3.79184 10.9869C4.29765 11.2352 4.84175 11.3965 5.40121 11.4638C5.6679 12.0886 6.05911 12.6525 6.55097 13.1211C7.04283 13.5897 7.62503 13.9531 8.26202 14.1892C8.89901 14.4253 9.57743 14.5292 10.2559 14.4944C10.9343 14.4596 11.5986 14.2869 12.2081 13.9869L13.8843 14.4656C14.0343 14.5084 14.193 14.5102 14.3439 14.4711C14.4948 14.4319 14.6325 14.3531 14.7428 14.2428C14.853 14.1326 14.9318 13.9949 14.971 13.8439C15.0102 13.693 15.0083 13.5344 14.9656 13.3844L14.4868 11.7081ZM13.4706 11.7919L13.9425 13.4425L12.2918 12.9706C12.1661 12.9353 12.0315 12.9505 11.9168 13.0131C10.9951 13.5146 9.91344 13.6342 8.90448 13.3462C7.89552 13.0581 7.03994 12.3856 6.52184 11.4731C7.20649 11.4018 7.86903 11.1898 8.46787 10.8504C9.06671 10.5109 9.58894 10.0514 10.0018 9.50054C10.4146 8.94972 10.7092 8.31953 10.867 7.64949C11.0248 6.97946 11.0424 6.28405 10.9187 5.60689C11.5178 5.74809 12.0763 6.02566 12.5506 6.41799C13.025 6.81032 13.4023 7.30683 13.6534 7.86886C13.9044 8.43089 14.0224 9.04328 13.998 9.65835C13.9737 10.2734 13.8077 10.8746 13.5131 11.415C13.45 11.5302 13.4347 11.6656 13.4706 11.7919Z"
+                  fill="white"
                 />
               </svg>
-              <span style="font-size: 14px; font-weight: 700; color: #016feb"
+
+              <span
+                style="
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 150%;
+                  letter-spacing: 2%;
+                  color: #ffffff;
+                "
                 >Contact us</span
               >
             </div>
-            <div style="padding: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
-                Send us a mail, We are here to help.
-              </div>
-              <a
-                href="mailto:info@voetbaltrips.com"
-                style="
-                  font-size: 16px;
-                  font-weight: 600;
-                  color: #016feb;
-                  text-decoration: underline;
-                "
-                >info@voetbaltrips.com</a
-              >
+            <div style="font-size: 13px; line-height: 150%; letter-spacing: 2%">
+              Send us a mail, We are here to help.
             </div>
-          </div>
-
-          <!-- Visit our website -->
-          <div
-            style="
-              background: #ffffff;
-              border: 1px solid #e5e7eb;
-              border-radius: 12px;
-              overflow: hidden;
-            "
-          >
-            <div
+            <a
+              href="mailto:info@voetbaltrips.com"
               style="
-                background: #e8f4fd;
-                padding: 12px 16px;
-                display: flex;
-                align-items: center;
-                gap: 8px;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 0%;
+                text-decoration: underline;
+                text-decoration-style: solid;
+                color: #016feb;
               "
+              >info@voetbaltrips.com</a
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                />
-              </svg>
-              <span style="font-size: 14px; font-weight: 700; color: #016feb"
-                >Visit our website</span
-              >
-            </div>
-            <div style="padding: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
-                Explore other juicy matchday experience
-              </div>
-              <a
-                href="https://voetbaltrips.com"
-                style="
-                  font-size: 16px;
-                  font-weight: 600;
-                  color: #016feb;
-                  text-decoration: underline;
-                "
-                >voetbaltrips.com</a
-              >
-            </div>
-          </div>
-
-          <!-- Visit us -->
-          <div
-            style="
-              background: #ffffff;
-              border: 1px solid #e5e7eb;
-              border-radius: 12px;
-              overflow: hidden;
-            "
-          >
-            <div
-              style="
-                background: #e8f4fd;
-                padding: 12px 16px;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-              "
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
-                <path
-                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                />
-              </svg>
-              <span style="font-size: 14px; font-weight: 700; color: #016feb"
-                >Visit us</span
-              >
-            </div>
-            <div style="padding: 16px">
-              <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
-                Visit our office, weekdays, 8am - 10pm
-              </div>
-              <div style="font-size: 14px; font-weight: 600; color: #016feb">
-                Zwarte Woud 212, 524SL, Utrecht
-              </div>
-            </div>
           </div>
         </div>
 
-        <!-- Emergency Call line -->
+        <div style="display: flex; gap: 16px; margin-top: 31px">
+          <div
+            style="
+              border: 1px solid #016feb;
+              border-radius: 12px;
+              position: relative;
+              padding: 24px 12px;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              background-color: #ffffff;
+              flex: 1;
+            "
+          >
+            <div
+              style="
+                background: #016feb;
+                border-radius: 20px;
+                padding: 4px 24px 4px 6px;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                position: absolute;
+                top: -19px;
+                left: 12px;
+              "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 1.5C6.71442 1.5 5.45772 1.88122 4.3888 2.59545C3.31988 3.30968 2.48676 4.32484 1.99479 5.51256C1.50282 6.70028 1.37409 8.00721 1.6249 9.26809C1.8757 10.529 2.49477 11.6872 3.40381 12.5962C4.31285 13.5052 5.47104 14.1243 6.73192 14.3751C7.99279 14.6259 9.29973 14.4972 10.4874 14.0052C11.6752 13.5132 12.6903 12.6801 13.4046 11.6112C14.1188 10.5423 14.5 9.28558 14.5 8C14.4982 6.27665 13.8128 4.62441 12.5942 3.40582C11.3756 2.18722 9.72335 1.50182 8 1.5ZM13.4769 7.5H10.9875C10.8994 5.72125 10.3456 4.03312 9.4175 2.6875C10.5045 2.97933 11.4761 3.5969 12.2018 4.45722C12.9275 5.31753 13.3725 6.37936 13.4769 7.5ZM6.01438 8.5H9.98563C9.88063 10.4294 9.17313 12.2262 8 13.4931C6.82938 12.2262 6.11938 10.4294 6.01438 8.5ZM6.01438 7.5C6.11938 5.57062 6.82688 3.77375 8 2.50688C9.17063 3.77375 9.88063 5.56938 9.98563 7.5H6.01438ZM9.4175 13.3125C10.3456 11.965 10.8994 10.2769 10.9875 8.5H13.4769C13.3725 9.62064 12.9275 10.6825 12.2018 11.5428C11.4761 12.4031 10.5045 13.0207 9.4175 13.3125Z"
+                  fill="white"
+                />
+              </svg>
+
+              <span
+                style="
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 150%;
+                  letter-spacing: 2%;
+                  color: #ffffff;
+                "
+                >Visit our website</span
+              >
+            </div>
+            <div style="font-size: 13px; line-height: 150%; letter-spacing: 2%">
+              Explore other juicy matchday experience
+            </div>
+            <a
+              href="https://www.voetbaltrips.com"
+              style="
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 0%;
+                text-decoration: underline;
+                text-decoration-style: solid;
+                color: #016feb;
+              "
+              >voetbaltrips.com
+            </a>
+          </div>
+          <div
+            style="
+              border: 1px solid #016feb;
+              border-radius: 12px;
+              position: relative;
+              padding: 24px 12px;
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              background-color: #ffffff;
+              flex: 1;
+            "
+          >
+            <div
+              style="
+                background: #016feb;
+                border-radius: 20px;
+                padding: 4px 24px 4px 6px;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                position: absolute;
+                top: -19px;
+                left: 12px;
+              "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 1C6.54182 1.00165 5.14383 1.58165 4.11274 2.61274C3.08165 3.64383 2.50165 5.04182 2.5 6.5C2.5 11.2063 7.5 14.7606 7.71313 14.9094C7.7972 14.9683 7.89735 14.9999 8 14.9999C8.10265 14.9999 8.2028 14.9683 8.28687 14.9094C8.5 14.7606 13.5 11.2063 13.5 6.5C13.4983 5.04182 12.9184 3.64383 11.8873 2.61274C10.8562 1.58165 9.45818 1.00165 8 1ZM8 4.5C8.39556 4.5 8.78224 4.6173 9.11114 4.83706C9.44004 5.05682 9.69638 5.36918 9.84776 5.73463C9.99913 6.10009 10.0387 6.50222 9.96157 6.89018C9.8844 7.27814 9.69392 7.63451 9.41421 7.91421C9.13451 8.19392 8.77814 8.3844 8.39018 8.46157C8.00222 8.53874 7.60009 8.49913 7.23463 8.34776C6.86918 8.19638 6.55682 7.94004 6.33706 7.61114C6.1173 7.28224 6 6.89556 6 6.5C6 5.96957 6.21071 5.46086 6.58579 5.08579C6.96086 4.71071 7.46957 4.5 8 4.5Z"
+                  fill="white"
+                />
+              </svg>
+
+              <span
+                style="
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 150%;
+                  letter-spacing: 2%;
+                  color: #ffffff;
+                "
+                >Visit us</span
+              >
+            </div>
+            <div style="font-size: 13px; line-height: 150%; letter-spacing: 2%">
+              Visit our office, weekdays, 8am - 10pm
+            </div>
+            <a
+              href="https://www.google.com/maps/place/Zwarte+Woud+212,+524SL,+Utrecht/@52.0857962,5.1115154,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609c1a915c917:0x7544d2ae7c137ae4!8m2!3d52.0857962!4d5.1136975!16s%2Fg%2F11c48slqwg?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
+              style="
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 0%;
+                text-decoration: underline;
+                text-decoration-style: solid;
+                color: #016feb;
+              "
+              >Zwarte Woud 212, 524SL, Utrecht</a
+            >
+          </div>
+        </div>
+
         <div
           style="
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
+            border: 1px solid #016feb;
             border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 30px;
             position: relative;
+            padding: 24px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 259.5px;
+            background-color: #ffffff;
+            margin: 31px auto 0 auto;
           "
         >
           <div
             style="
-              background: #e8f4fd;
-              padding: 12px 16px;
+              background: #016feb;
+              border-radius: 20px;
+              padding: 4px 24px 4px 6px;
               display: flex;
               align-items: center;
-              gap: 8px;
+              gap: 2px;
+              position: absolute;
+              top: -19px;
+              left: 12px;
             "
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                d="M14.4925 10.9426C14.3811 11.7895 13.9651 12.5669 13.3224 13.1295C12.6797 13.6922 11.8542 14.0016 11 14.0001C6.03751 14.0001 2.00001 9.96262 2.00001 5.00012C1.99847 4.14592 2.30794 3.32038 2.87059 2.67768C3.43324 2.03497 4.21061 1.61906 5.05751 1.50762C5.27166 1.48147 5.48854 1.52528 5.67575 1.63252C5.86296 1.73975 6.01047 1.90466 6.09626 2.10262L7.41626 5.04949V5.05699C7.48194 5.20853 7.50906 5.37397 7.49521 5.53854C7.48136 5.70311 7.42696 5.86169 7.33688 6.00012C7.32563 6.01699 7.31376 6.03262 7.30126 6.04824L6.00001 7.59074C6.46813 8.54199 7.46313 9.52824 8.42688 9.99762L9.94813 8.70324C9.96307 8.69068 9.97872 8.679 9.99501 8.66824C10.1333 8.57599 10.2924 8.51968 10.458 8.50441C10.6235 8.48913 10.7903 8.51537 10.9431 8.58074L10.9513 8.58449L13.8956 9.90387C14.0939 9.98935 14.2592 10.1367 14.3668 10.324C14.4744 10.5112 14.5185 10.7282 14.4925 10.9426Z"
+                fill="white"
               />
             </svg>
-            <span style="font-size: 14px; font-weight: 700; color: #016feb"
+            <span
+              style="
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 2%;
+                color: #ffffff;
+              "
               >Emergency Call line</span
             >
           </div>
-          <div style="padding: 16px">
-            <div style="font-size: 12px; color: #6b7280; margin-bottom: 8px">
-              Active 3 hours before the game.
-            </div>
-            <a
-              href="tel:+31303690268"
-              style="
-                font-size: 16px;
-                font-weight: 600;
-                color: #016feb;
-                text-decoration: underline;
-              "
-              >+31 30 369 0268</a
-            >
+          <div style="font-size: 13px; line-height: 150%; letter-spacing: 2%">
+            Active 3 hours before the game.
           </div>
-          <!-- Decorative line with airplane -->
-          <div
+          <a
+            href="tel:+31303690059"
             style="
-              position: absolute;
-              bottom: -20px;
-              right: 20px;
-              width: 100px;
-              height: 60px;
-              opacity: 0.3;
+              font-weight: 600;
+              font-size: 12px;
+              letter-spacing: 0%;
+              text-decoration: underline;
+              text-decoration-style: solid;
+              color: #016feb;
             "
+            >+31 30 369 0268</a
           >
-            <svg viewBox="0 0 100 60" fill="none">
-              <path
-                d="M 0 30 Q 30 20, 60 30 T 100 30"
-                stroke="#016FEB"
-                stroke-width="2"
-                fill="none"
-                stroke-dasharray="3,3"
-              />
-              <path d="M 90 25 L 100 30 L 90 35 Z" fill="#016FEB" />
-            </svg>
-          </div>
         </div>
 
         <!-- Footer Section -->
         <div
           style="
             background: #016feb;
-            border-radius: 12px;
+            color: #ffffff;
+            border-radius: 10px;
             padding: 24px;
             position: relative;
             overflow: hidden;
@@ -2659,14 +3135,17 @@
             bottom: 6px;
             right: 6px;
             left: 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
           "
         >
           <div
             style="
-              font-size: 24px;
               font-weight: 800;
-              color: #ffffff;
-              margin-bottom: 16px;
+              font-size: 24px;
+              line-height: 100%;
+              letter-spacing: -0.45px;
               text-align: center;
             "
           >
@@ -2674,29 +3153,22 @@
           </div>
           <div
             style="
+              font-weight: 500;
               font-size: 14px;
-              color: #ffffff;
-              line-height: 1.6;
+              line-height: 150%;
+              letter-spacing: -0.31px;
               text-align: center;
-              margin-bottom: 24px;
-              opacity: 0.9;
             "
           >
             Thank you for choosing Voetbaltrips.com. We wish you an
             unforgettable matchday experience. Safe travels and enjoy the game!
           </div>
-          <div
-            style="
-              display: flex;
-              justify-content: center;
-              gap: 16px;
-              margin-bottom: 20px;
-            "
-          >
+
+          <div style="display: flex; justify-content: center; gap: 12.65px">
             <div
               style="
-                width: 36px;
-                height: 36px;
+                width: 32px;
+                height: 32px;
                 background: #ffffff;
                 border-radius: 50%;
                 display: flex;
@@ -2704,31 +3176,26 @@
                 justify-content: center;
               "
             >
-              <span style="font-size: 18px; font-weight: 700; color: #016feb"
-                >f</span
+              <svg
+                width="13"
+                height="22"
+                viewBox="0 0 13 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-            </div>
-            <div
-              style="
-                width: 36px;
-                height: 36px;
-                background: #ffffff;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
                 <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  d="M11.75 0.75H8.75C7.42392 0.75 6.15215 1.27678 5.21447 2.21447C4.27678 3.15215 3.75 4.42392 3.75 5.75V8.75H0.75V12.75H3.75V20.75H7.75V12.75H10.75L11.75 8.75H7.75V5.75C7.75 5.48478 7.85536 5.23043 8.04289 5.04289C8.23043 4.85536 8.48478 4.75 8.75 4.75H11.75V0.75Z"
+                  stroke="#016FEB"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </div>
             <div
               style="
-                width: 36px;
-                height: 36px;
+                width: 32px;
+                height: 32px;
                 background: #ffffff;
                 border-radius: 50%;
                 display: flex;
@@ -2736,13 +3203,45 @@
                 justify-content: center;
               "
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#016FEB">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  d="M10 6.25C9.25832 6.25 8.5333 6.46993 7.91661 6.88199C7.29993 7.29404 6.81928 7.87971 6.53545 8.56494C6.25162 9.25016 6.17736 10.0042 6.32206 10.7316C6.46675 11.459 6.8239 12.1272 7.34835 12.6517C7.8728 13.1761 8.54098 13.5333 9.26841 13.6779C9.99584 13.8226 10.7498 13.7484 11.4351 13.4645C12.1203 13.1807 12.706 12.7001 13.118 12.0834C13.5301 11.4667 13.75 10.7417 13.75 10C13.749 9.00576 13.3535 8.05253 12.6505 7.34949C11.9475 6.64645 10.9942 6.25103 10 6.25ZM10 11.875C9.62916 11.875 9.26665 11.765 8.95831 11.559C8.64996 11.353 8.40964 11.0601 8.26773 10.7175C8.12581 10.3749 8.08868 9.99792 8.16103 9.63421C8.23337 9.27049 8.41195 8.9364 8.67417 8.67417C8.9364 8.41195 9.27049 8.23337 9.63421 8.16103C9.99792 8.08868 10.3749 8.12581 10.7175 8.26773C11.0601 8.40964 11.353 8.64996 11.559 8.95831C11.765 9.26665 11.875 9.62916 11.875 10C11.875 10.4973 11.6775 10.9742 11.3258 11.3258C10.9742 11.6775 10.4973 11.875 10 11.875ZM13.75 1.5625H6.25C5.00724 1.56395 3.8158 2.05827 2.93704 2.93704C2.05827 3.8158 1.56395 5.00724 1.5625 6.25V13.75C1.56395 14.9928 2.05827 16.1842 2.93704 17.063C3.8158 17.9417 5.00724 18.4361 6.25 18.4375H13.75C14.9928 18.4361 16.1842 17.9417 17.063 17.063C17.9417 16.1842 18.4361 14.9928 18.4375 13.75V6.25C18.4361 5.00724 17.9417 3.8158 17.063 2.93704C16.1842 2.05827 14.9928 1.56395 13.75 1.5625ZM16.5625 13.75C16.5625 14.4959 16.2662 15.2113 15.7387 15.7387C15.2113 16.2662 14.4959 16.5625 13.75 16.5625H6.25C5.50408 16.5625 4.78871 16.2662 4.26126 15.7387C3.73382 15.2113 3.4375 14.4959 3.4375 13.75V6.25C3.4375 5.50408 3.73382 4.78871 4.26126 4.26126C4.78871 3.73382 5.50408 3.4375 6.25 3.4375H13.75C14.4959 3.4375 15.2113 3.73382 15.7387 4.26126C16.2662 4.78871 16.5625 5.50408 16.5625 6.25V13.75ZM15.3125 5.9375C15.3125 6.18473 15.2392 6.4264 15.1018 6.63196C14.9645 6.83752 14.7693 6.99774 14.5409 7.09235C14.3124 7.18696 14.0611 7.21171 13.8186 7.16348C13.5762 7.11525 13.3534 6.9962 13.1786 6.82138C13.0038 6.64657 12.8847 6.42384 12.8365 6.18136C12.7883 5.93889 12.813 5.68755 12.9076 5.45915C13.0023 5.23074 13.1625 5.03551 13.368 4.89816C13.5736 4.76081 13.8153 4.6875 14.0625 4.6875C14.394 4.6875 14.712 4.8192 14.9464 5.05362C15.1808 5.28804 15.3125 5.60598 15.3125 5.9375Z"
+                  fill="#016FEB"
+                />
+              </svg>
+            </div>
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                background: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 20.9857L1.47512 15.5967C0.564864 14.0193 0.0865659 12.2312 0.0874403 10.3975C0.0900635 4.66494 4.755 0 10.4867 0C13.2682 0.000874403 15.8792 1.08426 17.8431 3.04992C19.8061 5.01558 20.8869 7.6283 20.886 10.4072C20.8834 16.1406 16.2184 20.8056 10.4867 20.8056C8.74666 20.8047 7.03195 20.3684 5.51311 19.5394L0 20.9857ZM5.76844 17.6568C7.23394 18.5269 8.63298 19.048 10.4832 19.0489C15.247 19.0489 19.1276 15.1718 19.1302 10.4054C19.1319 5.62941 15.2697 1.75755 10.4902 1.7558C5.72297 1.7558 1.84499 5.63291 1.84324 10.3984C1.84237 12.344 2.41248 13.8007 3.36995 15.3248L2.49642 18.5146L5.76844 17.6568ZM15.7253 12.8791C15.6606 12.7707 15.4874 12.706 15.2269 12.5757C14.9672 12.4454 13.6897 11.8167 13.4509 11.7301C13.2131 11.6436 13.04 11.5998 12.866 11.8604C12.6928 12.1201 12.1944 12.706 12.0432 12.8791C11.8919 13.0522 11.7397 13.0741 11.48 12.9438C11.2203 12.8135 10.3827 12.5398 9.39022 11.654C8.61812 10.965 8.0961 10.1142 7.94483 9.85365C7.79356 9.59395 7.92909 9.45318 8.0585 9.32376C8.17567 9.20747 8.3182 9.02035 8.44848 8.8682C8.58052 8.7178 8.62336 8.60938 8.7108 8.43537C8.79737 8.26224 8.75453 8.11009 8.68894 7.97981C8.62337 7.85039 8.10397 6.57114 7.88799 6.05087C7.67639 5.54459 7.46216 5.6128 7.30302 5.60493L6.80461 5.59618C6.63147 5.59618 6.34992 5.66089 6.11208 5.92146C5.87424 6.18203 5.2027 6.80985 5.2027 8.08911C5.2027 9.36836 6.13394 10.6039 6.26335 10.777C6.39364 10.9502 8.09522 13.5751 10.7018 14.7005C11.3218 14.968 11.8062 15.1281 12.1831 15.2478C12.8056 15.4455 13.3722 15.4175 13.8199 15.351C14.3192 15.2767 15.3571 14.7223 15.574 14.1155C15.7908 13.5078 15.7908 12.9875 15.7253 12.8791Z"
+                  fill="#016FEB"
                 />
               </svg>
             </div>
           </div>
+
           <div style="text-align: center">
             <a
               href="https://voetbaltrips.com"
